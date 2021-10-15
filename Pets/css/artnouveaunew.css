@@ -1,0 +1,221 @@
+
+@font-face {
+  font-family: 'Edda outline';
+  src: url('edda_outline.ttf');
+}
+
+@font-face {
+  font-family: 'Edda filled';
+  src: url('edda_filled.otf');
+}
+
+@font-face {
+  font-family: 'Tarocco Roman';
+  src: url('Tarocco Roman.ttf');
+}
+
+@font-face {
+  font-family: 'Davys';
+  src: url('Davys.ttf');
+}
+
+
+h1 {
+	color: black;
+	font-family: 'Edda outline';
+	text-align: left;
+	text-align: center;
+}
+
+
+.subtitle {
+	font-weight: bold;
+	font-family: 'Edda filled';
+	
+}
+/*I used h2 for all section titles within the articles*/
+h2 {
+	color: black;
+	font-family: 'Tarocco Roman';
+	font-weight: bold;
+	text-align: left;
+}
+
+
+body {
+	color: #262A1C;
+	text-align: justify;
+	font-family: 'Tarocco Roman';
+	background-color: rgba(241, 197, 172, 0.3);
+	
+	background-image: url('latosx.jpg'), url('latodx.jpg');
+	background-position: left bottom, right bottom;
+	background-size: 10%, 10%;
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    
+}
+
+
+p {
+	color: #262A1C;
+	text-align: justify;
+	text-justify: inter-word;
+	-webkit-hyphens: manual;
+    -ms-hyphens: manual;
+    hyphens: manual;
+	font-family: 'Tarocco Roman';
+	line-height: 1.5;
+	display: inline-block;
+	}
+
+
+.deco {
+	font-family: 'Davys';
+	font-size: 180%;
+	text-align: center;
+	color: #5E7771;
+}
+
+
+/*I used h1 as the overall title and subtitle for any subtitle of that title
+h1 {
+	color: black;
+	font-family: '';
+	text-align: left;
+	font-size: 150%;
+}*/
+
+/*figure formating*/
+figure {
+	float: left; 
+	margin: 5% 0% 5% 0%;
+}
+
+figcaption {
+	font-family: 'Tarocco Roman';
+	font-size: 70%;
+}
+
+img {
+    filter: sepia(1);
+	max-width: 100%;
+}
+
+iframe {
+	filter:sepia(1);
+	width: 100%    !important;
+	height: auto   !important;
+	text-align: left;
+	display: inline;
+}
+
+/*hyperlinks*/
+
+a { 
+	color: #E35E33; 
+	font-family: 'Tarocco Roman';
+}
+
+a:visited {
+	color: #5E7771;
+}
+
+a:hover {
+	color: #FAF9DA;
+}
+
+a:active {
+	color: #262A1C;
+}
+
+
+/*metadata top box formatting*/
+.metadata {
+    display: block;
+    padding: 5%;
+	margin-top: 5%;
+	width: 100%;
+	height: 25vh;
+	overflow-y: scroll;
+	border: 14px transparent;
+	border-radius: 160px;
+	background: rgba(224,187,147,255);
+	background-origin: border-box;
+	background-clip: content-box, border-box;
+}
+
+
+.metadata::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+.metadata::-webkit-scrollbar-track {
+  background: rgba(224,187,147,255);        /* color of the tracking area */
+}
+
+.metadata::-webkit-scrollbar-thumb {
+  background-color: rgba(224,187,147,255);    /* color of the scroll thumb */
+}
+
+
+/*article box formatting 
+.article {
+	display: block;
+    margin-top: 5%;
+	padding-top: 3%;
+	padding-right: 5%;
+	padding-left: 5%;
+	width: 100%;
+	height: 75vh;
+	overflow-y: scroll;
+	border: 5px solid black;
+} */
+
+
+
+.article {
+	display: block;
+    margin-top: 5%;
+	width: 100%;
+	height: 75vh;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	border: 30px solid;
+	border-radius: 55px;
+    padding: 15px;
+    border-image: url('dec.jpg') 80 round;
+	/*background-image: url('dec.jpg'); */
+}
+
+/*
+.article {
+  width: 300px;
+  height: 80px;
+  border: double 4px transparent;
+  border-radius: 80px;
+  background-image: url('dec.jpg');
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}  */
+
+
+.article::-webkit-scrollbar {
+  width: 12px;          /* width of the entire scrollbar */
+}
+.article::-webkit-scrollbar-track {
+  background: black;        /* color of the tracking area */
+}
+.article::-webkit-scrollbar-thumb {
+  background-color: black;    /* color of the scroll thumb */
+}
+
+/*uncomment this line to see it without the red border around the columns. The border shows how the whole thing extends past the viewport, idk why and also show thes the scroll bar area I want to get rid of
+.col {
+	border: 5px solid red;
+	padding-left: 0%;
+}*/
+
+html {
+	width: 100vw;
+}
