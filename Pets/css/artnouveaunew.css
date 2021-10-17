@@ -20,25 +20,68 @@
 }
 
 
+@font-face {
+  font-family: 'Floral';
+  src: url('Floralcaps.ttf');
+} 
+
+
+.navbar-brand {
+	font-family: 'Arial';
+}
+
+.nav-link {
+	font-family: 'Arial';
+}
+
+.dropdown-item {
+	font-family: 'Arial';
+	
+}
+
+
 h1 {
-	color: black;
+	display:block;
+	color: #221d0e;
 	font-family: 'Edda outline';
-	text-align: left;
 	text-align: center;
+	word-spacing: -1px;
+	letter-spacing: -1px;
 }
 
 
 .subtitle {
-	font-weight: bold;
+	color: #221d0e;
 	font-family: 'Edda filled';
-	
+	text-align: left;
+	font-weight: bold;
+	word-spacing: -1px;
+	padding-top: 2%;
+	padding-right: 5%;
+	padding-left: 5%;
+	text-align: justify;
 }
 /*I used h2 for all section titles within the articles*/
 h2 {
-	color: black;
-	font-family: 'Tarocco Roman';
+	color: #221d0e;
+	font-family: 'Edda filled';
 	font-weight: bold;
 	text-align: left;
+	padding-top: 3%;
+	padding-right: 5%;
+	padding-left: 5%;
+}
+
+.article > h2 {
+	color: #221d0e;
+	font-family: 'Edda filled';
+	font-weight: bold;
+	text-align: left;
+	padding-top: 4%;
+	padding-right: 5%;
+	padding-left: 5%;
+	padding-bottom: 0;
+	font-size: 20px;
 }
 
 
@@ -47,13 +90,11 @@ body {
 	text-align: justify;
 	font-family: 'Tarocco Roman';
 	background-color: rgba(241, 197, 172, 0.3);
-	
 	background-image: url('latosx.jpg'), url('latodx.jpg');
 	background-position: left bottom, right bottom;
 	background-size: 10%, 10%;
     background-repeat: no-repeat, no-repeat;
     background-attachment: fixed, fixed;
-    
 }
 
 
@@ -67,40 +108,60 @@ p {
 	font-family: 'Tarocco Roman';
 	line-height: 1.5;
 	display: inline-block;
+	padding-right: 5%;
+	padding-left: 5%;
 	}
 
 
-.deco {
-	font-family: 'Davys';
-	font-size: 180%;
-	text-align: center;
-	color: #5E7771;
+#cap {
+  font-size: 60px;
+  font-family: 'Floral';
+  padding-right: 1px;
+  padding-left: 8px;
+  
+  margin-top: -10px;
+  margin-right: 6px;
+  margin-bottom: -10px;
+  float: left;
 }
 
-
-/*I used h1 as the overall title and subtitle for any subtitle of that title
-h1 {
-	color: black;
-	font-family: '';
-	text-align: left;
-	font-size: 150%;
-}*/
 
 /*figure formating*/
 figure {
 	float: left; 
 	margin: 5% 0% 5% 0%;
+	padding-top: 3%;
+	padding-right: 5%;
+	padding-left: 5%;
 }
 
 figcaption {
 	font-family: 'Tarocco Roman';
 	font-size: 70%;
+	padding-top: 3%;
+	padding-right: 5%;
+	padding-left: 5%;
 }
 
 img {
     filter: sepia(1);
 	max-width: 100%;
 }
+
+/* I DON'T KNOW IF YOU USED THOSE BUT IN CASE
+ADD THEM!!! */
+blockquote {
+	padding-top: 3%;
+	padding-right: 5%;
+	padding-left: 5%;
+}
+
+h5 {
+	padding-top: 3%;
+	padding-right: 5%;
+	padding-left: 5%;
+}
+/*********/
 
 iframe {
 	filter:sepia(1);
@@ -113,16 +174,16 @@ iframe {
 /*hyperlinks*/
 
 a { 
-	color: #E35E33; 
+	color: #5C6469; 
 	font-family: 'Tarocco Roman';
 }
 
 a:visited {
-	color: #5E7771;
+	color: #b98a7d;
 }
 
 a:hover {
-	color: #FAF9DA;
+	color: #6d533f;
 }
 
 a:active {
@@ -136,42 +197,29 @@ a:active {
     padding: 5%;
 	margin-top: 5%;
 	width: 100%;
-	height: 25vh;
+	height: 28vh;
 	overflow-y: scroll;
-	border: 14px transparent;
-	border-radius: 160px;
-	background: rgba(224,187,147,255);
-	background-origin: border-box;
-	background-clip: content-box, border-box;
+	overflow-x: hidden;
+	scrollbar-color: #221d0e rgba(227,192,162,255);
+    scrollbar-width: thin;
+	border: 3px solid;
+	border-radius: 55px;
+	border-color: black;
+	background: rgba(227,192,162,255);
 }
 
 
 .metadata::-webkit-scrollbar {
-  width: 12px;               /* width of the entire scrollbar */
+  width: 0px;  /* width of the entire scrollbar */
 }
 
 .metadata::-webkit-scrollbar-track {
-  background: rgba(224,187,147,255);        /* color of the tracking area */
+  background: rgba(224,187,147,255); /* color of the tracking area */
 }
 
 .metadata::-webkit-scrollbar-thumb {
   background-color: rgba(224,187,147,255);    /* color of the scroll thumb */
 }
-
-
-/*article box formatting 
-.article {
-	display: block;
-    margin-top: 5%;
-	padding-top: 3%;
-	padding-right: 5%;
-	padding-left: 5%;
-	width: 100%;
-	height: 75vh;
-	overflow-y: scroll;
-	border: 5px solid black;
-} */
-
 
 
 .article {
@@ -181,40 +229,27 @@ a:active {
 	height: 75vh;
 	overflow-y: scroll;
 	overflow-x: hidden;
-	border: 30px solid;
+	scrollbar-color: #221d0e rgba(242,222,171,255);
+    scrollbar-width: thin;
+	border: 3px solid;
+	border-color: #2a2312;
 	border-radius: 55px;
+	background: rgba(242,222,171,255);
     padding: 15px;
     border-image: url('dec.jpg') 80 round;
-	/*background-image: url('dec.jpg'); */
 }
-
-/*
-.article {
-  width: 300px;
-  height: 80px;
-  border: double 4px transparent;
-  border-radius: 80px;
-  background-image: url('dec.jpg');
-  background-origin: border-box;
-  background-clip: content-box, border-box;
-}  */
 
 
 .article::-webkit-scrollbar {
-  width: 12px;          /* width of the entire scrollbar */
-}
-.article::-webkit-scrollbar-track {
-  background: black;        /* color of the tracking area */
-}
-.article::-webkit-scrollbar-thumb {
-  background-color: black;    /* color of the scroll thumb */
+  width: 0px;
 }
 
-/*uncomment this line to see it without the red border around the columns. The border shows how the whole thing extends past the viewport, idk why and also show thes the scroll bar area I want to get rid of
-.col {
-	border: 5px solid red;
-	padding-left: 0%;
-}*/
+.article::-webkit-scrollbar-track {
+  background: rgba(242,222,171,255);        /* color of the tracking area */
+  
+}
+
+
 
 html {
 	width: 100vw;
