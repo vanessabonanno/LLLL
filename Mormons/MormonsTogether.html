@@ -4,83 +4,60 @@
 		<!-- Required meta tags -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		
+		<link href="sixties2.css" type="text/css" rel="stylesheet">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Uncial+Antiqua&family=Libre+Caslon+Text&family=Modak&family=Plaster&family=Righteous&family=Teko:wght@700&display=swap" rel="stylesheet">
-		
-		<link href="css/Sixties2.css" type="text/css" rel="stylesheet">
-	
 		<title>LLLL Mormons</title>
 	
 	<!--Bootstrap CSS-->
-	  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-	  
+	  <link href="sixties2.css" type="text/css" rel="stylesheet">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	</head>
 
-	<!--Insert code for navbar here-->
-	<header>	
-	  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-		<div class="container-fluid">
-			<a class="navbar-brand" href="#">LLLL</a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-	     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-	      <ul class="navbar-nav mr-auto">
-	        <li class="nav-item">
-	          <a class="nav-link active" aria-current="page" href="homepage.html">Home</a>
-	        </li>
-	        <li class="nav-item dropdown">
-	          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Issues</a>
-	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown" id="dropdownmenuissues">
-	          	<li><a class="dropdown-item" href="Mormons/MormonsTogether.html">Mormons</a></li>
-				<li><a class="dropdown-item" href="Pets/">Pets</a></li>
-				<li><a class="dropdown-item" href="3/">Denise</a></li>
-	          </ul>
-	        </li>
-	       	
-	        <li class="nav-item">
-	          <a class="nav-link" href="documentation.html" tabindex="-1" aria-disabled="true">Documentation</a>
-	        </li>
-			<li class="nav-item">
-	          <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modaldisclaimer">About us</a>
-	        </li>
-			</ul>
-		 </div>
-		</div>
-	  </nav>
-	</header>
-
 	<body>
-<!--This is everything below the navbar-->
-	    <div class="col">
-				<a class="btn btn-light" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Index</a>
+	<!--Insert code for navbar here-->
+		<header id="header">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<a class="navbar-brand" href="#">LLLL</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
 
-			<div>
-				<div class="collapse multi-collapse" id="multiCollapseExample1">
-				  <div>
-					<ul class="nav flex-column">
-					  <li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="#">1</a>
-					  </li>
-					  <li class="nav-item">
-						<a class="nav-link" href="#">2</a>
-					  </li>
-					  <li class="nav-item">
-						<a class="nav-link" href="#">3</a>
-					  </li>
-					</ul>
-				  </div>
-				</div>
-			</div>
-			</div>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="nav-link" id="orange" href="Experimental.html">Home <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Disclaimer</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Documentation</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Issues</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="#">Animals</a>
+								<a class="dropdown-item" href="MormonsTogether.html">Mormons</a>
+								<a class="dropdown-item" href="#">Denise</a>
+							</div>
+						</li>
+					</div>
+				</nav>
+			</header>
 		
-		<div class="container">
-		  <div class="row">
-			<!-- This is a place holder for the index panel-->
-			
+<!--This is everything below the navbar-->
+			<div class="row">
+				<!-- This is a place holder for the index panel-->
+				<div class="col">
+					Index
+				</div>
 			<!--Article 1's metadata and content split into two scrollable windows stacked on top of each other in a column-->
 				<div class="col" id="Mormons and Money">
 					<!--Article 1's basic metadata-->
@@ -413,15 +390,6 @@
 						<p>Longtime <span class="mention place" about="Utah">Utah</span> news anchor <span class="mention person" about="RandallCarlisle" data-sort="CarlisleRandall" data-label="Randall Carlisle">Randall Carlisle</span> reflected on <a href="https://www.saltlakemagazine.com/newsman-randall-carlisle-reflects-on-covering-the-mark-hofmann-bombings/">covering the <span class="mention person" about="MarkHofmann">Mark Hofmann</span> case</a>. And while you’re here, check out our latest print <a href="https://www.saltlakemagazine.com/in-the-mag/">issue of <span class="mention org" about="SaltLakeMagazine" data-sort="SaltLakeMagazine" data-label="Salta Lake magazine">Salt Lake magazine</a></span> and the other stories in our <a href="https://www.saltlakemagazine.com/arts-and-entertainment/">Arts & Entertainment</a> section.</p>
 				</div>
 			</div>
-		  </div>
 		</div>
-		
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>	
-	  
-	  <!-- [Bootstrap] Option 1: Bootstrap Bundle with Popper -->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-		
 	</body>
 </html>
