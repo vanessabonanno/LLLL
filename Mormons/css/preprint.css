@@ -1,5 +1,6 @@
 font-family: 'Uncial Antiqua', cursive;
 
+
 .row:after {
   content: "";
   display: table;
@@ -16,9 +17,10 @@ body {
 	color: black;
 	text-align: left;
 	font-family: 'Uncial Antiqua';
+	cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='75' height='90' viewport='0 0 100 100' style='fill:black;font-size:60px;'><text y='50%'>☜</text></svg>") 16 0,auto; /*!emojicursor.app*/
 }
 h1 {
-	color: #8b0000;
+	color: #1b294b;
 	font-family: 'Uncial Antiqua';
 	text-align: left;
 	display: inline;
@@ -59,6 +61,12 @@ iframe {
 	height: auto   !important;
 	text-align: left;
 	display: inline;
+	border-top: 4px solid #2B6199;
+	border-bottom: 4px solid #2B6199;
+	border-left: 4px solid #8b0000;
+	border-right: 4px solid #8b0000;
+	outline: 2px solid black;
+	
 }
 
 a {
@@ -78,9 +86,9 @@ a {
 	overflow-y: scroll;
 	overflow-x: hidden;
 	background: url(parchment.jpg);
+	background-position: center;
 	border-left: 50px solid;
 	border-image: url(border.jpg) 75 round;
-	/*border-image: url(lindisfarne.png) 500 stretch;*/
 }
 
 .metadata::-webkit-scrollbar {
@@ -114,6 +122,7 @@ a {
 	overflow-y: scroll;
 	overflow-x: hidden;
 	background: url(parchment.jpg);
+	background-position: center;
 	border-left: 50px solid;
 	border-image: url(border.jpg) 50 round;
 }
@@ -166,7 +175,7 @@ div
   font-family: "Uncial Antiqua";
 } 
 /*by using span in the html file I can set each letter manually*/
-.article #first-letter {
+.article p::first-letter {
   
   padding: 0 .3rem;
   margin: 0 .3rem 0 0;

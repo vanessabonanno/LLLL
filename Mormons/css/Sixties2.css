@@ -1,59 +1,43 @@
-
-@font-face {
-	font-family: 'Plaster', cursive;
-}
-
-@font-face {
-	font-family: 'Modak', cursive;
-}
-
-@font-face {
-	font-family: 'Righteous', cursive;
-}
-
-@font-face {
-	font-family: 'Libre Caslon Text', serif;
-}
+font-family: 'Plaster', cursive;
+font-family: 'Libre Caslon Text', serif;
+font-family: 'Modak', cursive;
+font-family: 'Righteous', cursive;
 
 /*stuff for the navbar*/
 
-/*don't know why: if you remove this it makes a big gap between the nav bar and the start of the content
+/*don't know why: if you remove this it makes a big gap between the nav bar and the start of the content*/
 .row:after {
   content: "";
   display: table;
   clear: both;
-}*/
-
-/*don't know why: if you remove this it makes a big gap between the nav bar and the start of the content
+}
+/*don't know why: if you remove this it makes a big gap between the nav bar and the start of the content*/
 header {
 	text-align: center;
 	position: fixed;
 	width: 100%
-}*/
-
-/*this keeps the content from sitting on top of the navbar. Probably a better way to do it in bootstrap
+}
+/*this keeps the content from sitting on top of the navbar. Probably a better way to do it in bootstrap*/
 .row {
 	padding-top: 4%;
 	width: 100vw;
-}*/
-
+}
 /*stuff for the content of the page below the navbar*/
+.col {
+	margin: 100 0 100 0;
+}
 
 /*body tag contains navbar so this also changes the font there and as the default for anything not otherwise specificed*/
-
-
 body {
 	color: black;
 	text-align: justify;
 	font-family: 'Libre Caslon Text';
 }
-
 h1 {
 	color: black;
 	font-family: "Plaster";
 	text-align: left;
 }
-
 
 .subtitle {
 	font-weight: bold;
@@ -64,6 +48,7 @@ h2 {
 	color: black;
 	font-family: "Teko";
 	text-align: left;
+	font-size: 150%;
 }
 /*I used h1 as the overall title and subtitle for any subtitle of that title*/
 h1 {
@@ -73,16 +58,32 @@ h1 {
 	font-size: 150%;
 }
 
+p {
+	margin-bottom: 0%;
+}
+div.article {
+	text-indent: 5%;
+}
+h2 {
+	text-indent: 0%;
+	margin-bottom: 0%;
+	margin-top: 2%;
+}
+
 /*figure formating*/
 figure {
 	float: left; 
-	margin: 5% 0% 5% 0%;
+	margin: 0% 5% 0% 5%;
+	margin-left: 0%;
+	margin-right: 0%;
+	text-indent: 0%;
+	
 }
-
 figcaption {
 	font-family: Teko;
 	font-size: 70%;
 	font-weight: bold;
+	text-indent: 0%;
 }
 
 img {
@@ -97,7 +98,6 @@ iframe {
 	text-align: left;
 	display: inline;
 }
-
 /*hyperlinks*/
 
 a {
@@ -110,20 +110,19 @@ a {
     display: block;
     padding: 5%;
 	margin-top: 5%;
+	padding-left: 2%;
+	padding-right: 2%;
 	width: 100%;
 	height: 25vh;
 	overflow-y: scroll;
 	border: 5px solid black;
 }
-
 .metadata::-webkit-scrollbar {
   width: 12px;               /* width of the entire scrollbar */
 }
-
 .metadata::-webkit-scrollbar-track {
   background: black;        /* color of the tracking area */
 }
-
 .metadata::-webkit-scrollbar-thumb {
   background-color: black;    /* color of the scroll thumb */
 }
@@ -139,6 +138,7 @@ a {
 	height: 75vh;
 	overflow-y: scroll;
 	border: 5px solid black;
+	font-size: 80%;
 }
 
 .article::-webkit-scrollbar {
