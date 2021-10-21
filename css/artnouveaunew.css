@@ -82,7 +82,7 @@ body {
 	text-align: justify;
 	font-family: 'Tarocco Roman';
 	background-color: rgba(241, 197, 172, 0.3);
-	background-image: url('latosx.jpg'), url('latodx.jpg');
+	background-image: url('imgs\latosx.jpg'), url('imgs\latodx.jpg');
 	background-position: left bottom, right bottom;
 	background-size: 10%, 10%;
     background-repeat: no-repeat, no-repeat;
