@@ -1,0 +1,304 @@
+@font-face {
+  font-family: 'pirulen rg';
+  src: url('pirulen rg.otf');
+}
+
+@font-face {
+  font-family: 'Cantarell-Regular';
+  src: url('Cantarell-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Cantarell-Oblique';
+  src: url('Cantarell-Oblique.ttf');
+}
+
+@font-face {
+  font-family: 'Cantarell-BoldOblique';
+  src: url('Cantarell-BoldOblique.ttf');
+}
+
+@font-face {
+  font-family: 'Cantarell-Bold';
+  src: url('Cantarell-Bold.ttf');
+}
+
+
+.navbar {
+	background-color: black;
+}
+
+
+.navbar-brand {
+	font-family: 'Arial';
+}
+
+.nav-link {
+	font-family: 'Arial';
+	color: white;
+}
+
+
+.dropdown-item {
+	font-family: 'Arial';
+	
+}
+
+
+h1 {
+	display:block;
+	color: white;
+	font-family: 'pirulen rg';
+	text-align: center;
+	letter-spacing: 2px;
+	font-size: 180%;
+}
+
+
+.subtitle {
+	color: white;
+	font-family: 'pirulen rg';
+	word-spacing: -3%;
+	padding-top: 2%;
+	padding-right: 5%;
+	padding-left: 5%;
+	text-align: right;
+}
+
+
+
+h2 {
+	color: white;
+	font-family: '';
+	font-weight: normal;
+	text-align: left;
+	padding-top: 3%;
+	padding-right: 5%;
+	padding-left: 5%;
+}
+
+.article > h2 {
+	color: #19F318;
+	font-family: '';
+	font-weight: bold;
+	text-align: left;
+	text-transform: uppercase;
+	padding-top: 4%;
+	padding-right: 5%;
+	padding-left: 5%;
+	padding-bottom: 0;
+	font-size: 20px;
+}
+
+
+body {
+	cursor: url(fall.cur),auto;
+	color: #262A1C;
+	text-align: justify;
+	font-family: '';
+	background-color: black;
+	background-image: url('');
+	background-position: center;
+	background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+p {
+	color: grey;
+	text-align: justify;
+	font-family: 'Cantarell-Regular';
+	line-height: 1.5;
+	display: inline-block;
+	padding-right: 5%;
+	padding-left: 5%;
+	}
+
+
+
+
+/*figure formating*/
+figure {
+	float: left; 
+	margin: 5% 0% 5% 0%;
+	padding-top: 3%;
+	padding-right: 5%;
+	padding-left: 5%;
+}
+
+figcaption {
+	font-family: 'Cantarell-Oblique';
+	color: white;
+	text-align: right;
+	font-size: 90%;
+	padding-top: 3%;
+	padding-left: 2%;
+	
+}
+
+img {
+    filter:drop-shadow(8px 8px 5px grey);
+	max-width: 100%;
+	border-radius: 5px;
+
+}
+
+/* I DON'T KNOW IF YOU USED THOSE BUT IN CASE
+ADD THEM!!! */
+blockquote {
+	font-family: 'Cantarell-Regular';
+	padding-top: 3%;
+	padding-right: 5%;
+	padding-left: 5%;
+	color: #19F318
+}
+
+.twitter-tweet tw-align-center {
+	cursor: url(fall.cur),auto;
+}
+
+h5 {
+	font-family: 'Cantarell-Bold';
+	padding-top: 3%;
+	padding-right: 5%;
+	padding-left: 5%;
+	color: #19F318;
+}
+/*********/
+
+iframe {
+	filter:;
+	width: 100%    !important;
+	height: auto   !important;
+	text-align: center;
+	display: inline;
+}
+
+
+ul {
+	list-style-type: square;
+	color: grey;
+}
+
+
+
+/*hyperlinks*/
+
+a { 
+	cursor: url(fall.cur),auto;
+	color: grey; 
+	font-family: 'Cantarell-Regular';
+	text-decoration: underline;
+}
+
+a:visited {
+	color: white;
+	text-decoration: underline;
+}
+
+
+a:hover {
+	color: black;
+	background-color: white;
+	text-decoration: underline;
+}
+
+
+a:active {
+	color: white;
+	text-decoration: underline;
+}
+
+
+/*metadata top box formatting*/
+.metadata {
+    display: block;
+    padding: 5%;
+	margin-top: 5%;
+	width: 100%;
+	height: 28vh;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	scrollbar-color: black;
+    scrollbar-width: thin;
+	border: 1px solid;
+	border-radius: 5px;
+	border-color: black;
+	background: linear-gradient(-40deg, #0D2819, #0B2C19, #050E09, #000000);
+	background-size: 400% 400%;
+	animation: gradient 8s ease infinite;
+	opacity: 80%;
+}
+
+
+.metadata::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+.metadata::-webkit-scrollbar-track {
+  background: rgba(224,187,147,255);        /* color of the tracking area */
+}
+
+.metadata::-webkit-scrollbar-thumb {
+  background-color: rgba(224,187,147,255);    /* color of the scroll thumb */
+}
+
+
+.article {
+	display: block;
+    margin-top: 5%;
+	width: 100%;
+	height: 75vh;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	scrollbar-color: black;
+    scrollbar-width: thin;
+	border: 1px solid;
+	border-color: black;
+	border-radius: 5px;
+    padding: 10px;
+	background: linear-gradient(-40deg, #0D2819, #0B2C19, #050E09, #000000);
+	background-size: 400% 400%;
+	animation: gradient 8s ease infinite;
+	height: 100vh;
+	opacity: 80%;
+}
+
+	
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+
+
+
+
+
+.article::-webkit-scrollbar {
+  width: 12px;         
+}
+
+.article::-webkit-scrollbar-track {
+  background: black;        /* color of the tracking area */
+}
+
+.article::-webkit-scrollbar-thumb {
+  background-color: black;    /* color of the scroll thumb */
+}
+
+
+
+html {
+	width: 100vw;
+}

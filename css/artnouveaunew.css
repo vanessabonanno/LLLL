@@ -1,0 +1,253 @@
+@font-face {
+  font-family: 'Edda outline';
+  src: url('edda_outline.ttf');
+}
+
+@font-face {
+  font-family: 'Edda filled';
+  src: url('edda_filled.otf');
+}
+
+@font-face {
+  font-family: 'Tarocco Roman';
+  src: url('Tarocco Roman.ttf');
+}
+
+@font-face {
+  font-family: 'Davys';
+  src: url('Davys.ttf');
+}
+
+@font-face {
+  font-family: 'Floral';
+  src: url('Floralcaps.ttf');
+} 
+
+.navbar-brand {
+	font-family: 'Arial';
+}
+
+.nav-link {
+	font-family: 'Arial';
+}
+
+.dropdown-item {
+	font-family: 'Arial';
+	
+}
+
+
+h1 {
+	display:block;
+	color: #221d0e;
+	font-family: 'Edda outline';
+	text-align: center;
+	word-spacing: -1px;
+	letter-spacing: -1px;
+}
+
+
+.subtitle {
+	color: #221d0e;
+	font-family: 'Edda filled';
+	text-align: left;
+	font-weight: bold;
+	word-spacing: -1px;
+	padding-top: 2%;
+	padding-right: 5%;
+	padding-left: 5%;
+	text-align: justify;
+}
+/*I used h2 for all section titles within the articles*/
+h2 {
+	color: #221d0e;
+	font-family: 'Edda filled';
+	font-weight: bold;
+	text-align: left;
+	padding-top: 3%;
+	padding-right: 5%;
+	padding-left: 5%;
+}
+
+.article > h2 {
+	color: #221d0e;
+	font-family: 'Edda filled';
+	font-weight: bold;
+	text-align: left;
+	padding-top: 4%;
+	padding-right: 5%;
+	padding-left: 5%;
+	padding-bottom: 0;
+	font-size: 20px;
+}
+
+
+body {
+	color: #262A1C;
+	text-align: justify;
+	font-family: 'Tarocco Roman';
+	background-color: rgba(241, 197, 172, 0.3);
+	background-image: url('latosx.jpg'), url('latodx.jpg');
+	background-position: left bottom, right bottom;
+	background-size: 10%, 10%;
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: fixed, fixed;
+}
+
+
+p {
+	color: #262A1C;
+	text-align: justify;
+	text-justify: inter-word;
+	-webkit-hyphens: manual;
+    -ms-hyphens: manual;
+    hyphens: manual;
+	font-family: 'Tarocco Roman';
+	line-height: 1.5;
+	display: inline-block;
+	padding-right: 5%;
+	padding-left: 5%;
+	}
+
+
+#cap {
+  font-size: 60px;
+  font-family: 'Floral';
+  padding-right: 1px;
+  padding-left: 8px;
+  
+  margin-top: -10px;
+  margin-right: 6px;
+  margin-bottom: -10px;
+  float: left;
+}
+
+
+/*figure formating*/
+figure {
+	float: left; 
+	margin: 5% 0% 5% 0%;
+	padding-top: 3%;
+	padding-right: 5%;
+	padding-left: 5%;
+}
+
+figcaption {
+	font-family: 'Tarocco Roman';
+	font-size: 70%;
+	padding-top: 3%;
+	padding-right: 5%;
+	padding-left: 5%;
+}
+
+img {
+    filter: sepia(1);
+	max-width: 100%;
+}
+
+/* I DON'T KNOW IF YOU USED THOSE BUT IN CASE
+ADD THEM!!! */
+blockquote {
+	padding-top: 3%;
+	padding-right: 5%;
+	padding-left: 5%;
+}
+
+h5 {
+	padding-top: 3%;
+	padding-right: 5%;
+	padding-left: 5%;
+}
+/*********/
+
+iframe {
+	filter:sepia(1);
+	width: 100%    !important;
+	height: auto   !important;
+	text-align: left;
+	display: inline;
+}
+
+/*hyperlinks*/
+
+a { 
+	color: #5C6469; 
+	font-family: 'Tarocco Roman';
+}
+
+a:visited {
+	color: #b98a7d;
+}
+
+a:hover {
+	color: #6d533f;
+}
+
+a:active {
+	color: #262A1C;
+}
+
+
+/*metadata top box formatting*/
+.metadata {
+    display: block;
+    padding: 5%;
+	margin-top: 5%;
+	width: 100%;
+	height: 28vh;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	scrollbar-color: #221d0e rgba(227,192,162,255);
+    scrollbar-width: thin;
+	border: 3px solid;
+	border-radius: 55px;
+	border-color: black;
+	background: rgba(227,192,162,255);
+}
+
+
+.metadata::-webkit-scrollbar {
+  width: 0px;  /* width of the entire scrollbar */
+}
+
+.metadata::-webkit-scrollbar-track {
+  background: rgba(224,187,147,255); /* color of the tracking area */
+}
+
+.metadata::-webkit-scrollbar-thumb {
+  background-color: rgba(224,187,147,255);    /* color of the scroll thumb */
+}
+
+
+.article {
+	display: block;
+    margin-top: 5%;
+	width: 100%;
+	height: 75vh;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	scrollbar-color: #221d0e rgba(242,222,171,255);
+    scrollbar-width: thin;
+	border: 3px solid;
+	border-color: #2a2312;
+	border-radius: 55px;
+	background: rgba(242,222,171,255);
+    padding: 15px;
+    border-image: url('dec.jpg') 80 round;
+}
+
+
+.article::-webkit-scrollbar {
+  width: 0px;
+}
+
+.article::-webkit-scrollbar-track {
+  background: rgba(242,222,171,255);        /* color of the tracking area */
+  
+}
+
+
+
+html {
+	width: 100vw;
+}

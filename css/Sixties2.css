@@ -1,0 +1,161 @@
+font-family: 'Plaster', cursive;
+font-family: 'Libre Caslon Text', serif;
+font-family: 'Modak', cursive;
+font-family: 'Righteous', cursive;
+
+/*stuff for the navbar*/
+
+/*don't know why: if you remove this it makes a big gap between the nav bar and the start of the content*/
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/*don't know why: if you remove this it makes a big gap between the nav bar and the start of the content*/
+header {
+	text-align: center;
+	position: fixed;
+	width: 100%
+}
+/*this keeps the content from sitting on top of the navbar. Probably a better way to do it in bootstrap*/
+.row {
+	padding-top: 4%;
+	width: 100vw;
+}
+/*stuff for the content of the page below the navbar*/
+.col {
+	margin: 100 0 100 0;
+}
+
+/*body tag contains navbar so this also changes the font there and as the default for anything not otherwise specificed*/
+body {
+	color: black;
+	text-align: justify;
+	font-family: 'Libre Caslon Text';
+}
+h1 {
+	color: black;
+	font-family: "Plaster";
+	text-align: left;
+}
+
+.subtitle {
+	font-weight: bold;
+	font-family: Righteous;
+}
+/*I used h2 for all section titles within the articles*/
+h2 {
+	color: black;
+	font-family: "Teko";
+	text-align: left;
+	font-size: 150%;
+}
+/*I used h1 as the overall title and subtitle for any subtitle of that title*/
+h1 {
+	color: black;
+	font-family: "Plaster";
+	text-align: left;
+	font-size: 150%;
+}
+
+p {
+	margin-bottom: 0%;
+}
+div.article {
+	text-indent: 5%;
+}
+h2 {
+	text-indent: 0%;
+	margin-bottom: 0%;
+	margin-top: 2%;
+}
+
+/*figure formating*/
+figure {
+	float: left; 
+	margin: 0% 5% 0% 5%;
+	margin-left: 0%;
+	margin-right: 0%;
+	text-indent: 0%;
+	
+}
+figcaption {
+	font-family: Teko;
+	font-size: 70%;
+	font-weight: bold;
+	text-indent: 0%;
+}
+
+img {
+    filter: grayscale(100%);
+	max-width: 100%;
+}
+
+iframe {
+	filter:grayscale(100%);
+	width: 100%    !important;
+	height: auto   !important;
+	text-align: left;
+	display: inline;
+}
+/*hyperlinks*/
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+/*metadata top box formatting*/
+.metadata {
+    display: block;
+    padding: 5%;
+	margin-top: 5%;
+	padding-left: 2%;
+	padding-right: 2%;
+	width: 100%;
+	height: 25vh;
+	overflow-y: scroll;
+	border: 5px solid black;
+}
+.metadata::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+.metadata::-webkit-scrollbar-track {
+  background: black;        /* color of the tracking area */
+}
+.metadata::-webkit-scrollbar-thumb {
+  background-color: black;    /* color of the scroll thumb */
+}
+
+/*article box formatting*/
+.article {
+	display: block;
+    margin-top: 5%;
+	padding-top: 3%;
+	padding-right: 5%;
+	padding-left: 5%;
+	width: 100%;
+	height: 75vh;
+	overflow-y: scroll;
+	border: 5px solid black;
+	font-size: 80%;
+}
+
+.article::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+.article::-webkit-scrollbar-track {
+  background: black;        /* color of the tracking area */
+}
+.article::-webkit-scrollbar-thumb {
+  background-color: black;    /* color of the scroll thumb */
+}
+
+/*uncomment this line to see it without the red border around the columns. The border shows how the whole thing extends past the viewport, idk why and also show thes the scroll bar area I want to get rid of
+.col {
+	border: 5px solid red;
+	padding-left: 0%;
+}*/
+html {
+	width: 100vw;
+}
