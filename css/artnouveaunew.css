@@ -1,26 +1,21 @@
 @font-face {
   font-family: 'Edda outline';
-  src: url('edda_outline.ttf');
+  src: url('..\fonts\edda_outline.ttf');
 }
 
 @font-face {
   font-family: 'Edda filled';
-  src: url('edda_filled.otf');
+  src: url('..\imgs\edda_filled.otf');
 }
 
 @font-face {
   font-family: 'Tarocco Roman';
-  src: url('Tarocco Roman.ttf');
-}
-
-@font-face {
-  font-family: 'Davys';
-  src: url('Davys.ttf');
+  src: url('..\imgs\Tarocco Roman.ttf');
 }
 
 @font-face {
   font-family: 'Floral';
-  src: url('Floralcaps.ttf');
+  src: url('..\imgs\Floralcaps.ttf');
 } 
 
 .navbar-brand {
@@ -233,7 +228,7 @@ a:active {
 	border-radius: 55px;
 	background: rgba(242,222,171,255);
     padding: 15px;
-    border-image: url('dec.jpg') 80 round;
+    border-image: 80 round;
 }
 
 
