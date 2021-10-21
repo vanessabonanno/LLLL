@@ -1,21 +1,21 @@
 @font-face {
   font-family: 'Edda outline';
-  src: url('fonts/edda_outline.ttf');
+  src: url('fonts\edda_outline.ttf');
 }
 
 @font-face {
   font-family: 'Edda filled';
-  src: url('fonts/edda_filled.otf');
+  src: url('fonts\edda_filled.otf');
 }
 
 @font-face {
   font-family: 'Tarocco Roman';
-  src: url('fonts/Tarocco Roman.ttf');
+  src: url('fonts\Tarocco Roman.ttf');
 }
 
 @font-face {
   font-family: 'Floral';
-  src: url('fonts/Floralcaps.ttf');
+  src: url('fonts\Floralcaps.ttf');
 } 
 
 .navbar-brand {
@@ -82,7 +82,7 @@ body {
 	text-align: justify;
 	font-family: 'Tarocco Roman';
 	background-color: rgba(241, 197, 172, 0.3);
-	background-image: url('imgs/latosx.jpg'), url('imgs/latodx.jpg');
+	background-image: url('imgs\latosx.jpg'), url('imgs\latodx.jpg');
 	background-position: left bottom, right bottom;
 	background-size: 10%, 10%;
     background-repeat: no-repeat, no-repeat;
