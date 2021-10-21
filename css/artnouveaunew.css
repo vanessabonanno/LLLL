@@ -138,7 +138,6 @@ figcaption {
 img {
     filter: sepia(1);
 	max-width: 100%;
-	border-radius: 5px;
 }
 
 /* I DON'T KNOW IF YOU USED THOSE BUT IN CASE
