@@ -68,35 +68,13 @@ iframe {
 }
 
 a {
-	color: black;
-	text-decoration: none;
-}
-a:link {
-  color: #265301;
-}
-
-a:visited {
-  color: #437A16;
-}
-
-a:focus {
-  border-bottom: 1px solid;
-  background: #BAE498;
-}
-
-a:hover {
-  border-bottom: 1px solid;
-  background: #CDFEAA;
-}
-
-a:active {
-  background: #265301;
-  color: #CDFEAA;
+color: black;
+text-decoration: none;
 }
 
 .metadata {
-    display: block;
-    padding: 1%;
+   	display: block;
+   	padding: 1%;
 	padding-top: 10%;
 	padding-right: 15%;
 	padding-left: 2%;
