@@ -84,10 +84,10 @@ a {
 	height: 25vh;
 	overflow-y: scroll;
 	overflow-x: hidden;
-	background: src="parchment.jpg";
+	background: url('imgs/parchment.jpg');
 	background-position: center;
 	border-left: 50px solid;
-	border-image: url(border.jpg) 75 round;
+	border-image: url(imgs/border.jpg') 75 round;
 }
 
 .metadata::-webkit-scrollbar {
@@ -95,7 +95,7 @@ a {
 }
 
 .metadata::-webkit-scrollbar-track {
-  background: url("http://cdn.shopify.com/s/files/1/0761/7621/products/Gold-silver-guilding-leaf-foil_grande.jpg?v=1452009352");        /* color of the tracking area */
+  background: url('imgs/gold_leaf.jpg');        /* color of the tracking area */
 }
 
 .metadata::-webkit-scrollbar-thumb {
@@ -123,7 +123,7 @@ a {
 	background: url(parchment.jpg);
 	background-position: center;
 	border-left: 50px solid;
-	border-image: src="border.jpg" 50 round;
+	border-image: url('imgs/border.jpg') 50 round;
 }
 
 .article::-webkit-scrollbar {
@@ -131,7 +131,7 @@ a {
 }
 
 .article::-webkit-scrollbar-track {
-  background: src="gold_leaf.jpg"; /*("http://cdn.shopify.com/s/files/1/0761/7621/products/Gold-silver-guilding-leaf-foil_grande.jpg?v=1452009352"); color of the tracking area */
+  background: url('imgs/gold_leaf.jpg'); /*color of the tracking area */
 }
 
 .article::-webkit-scrollbar-thumb {
