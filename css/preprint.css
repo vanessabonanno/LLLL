@@ -87,7 +87,7 @@ a {
 	background: url('imgs/parchment.jpg');
 	background-position: center;
 	border-left: 50px solid;
-	border-image: url(imgs/border.jpg') 75 round;
+	border-image: url('imgs/border.jpg') 75 round;
 }
 
 .metadata::-webkit-scrollbar {
@@ -143,8 +143,8 @@ a {
 
 .row {
 	padding: 3%;
-	
 }
+
 p
 {
   margin:0;
