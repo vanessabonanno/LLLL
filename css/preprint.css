@@ -1,6 +1,5 @@
 font-family: 'Uncial Antiqua', cursive;
 
-
 .row:after {
   content: "";
   display: table;
@@ -111,7 +110,7 @@ a {
 
 .article {
 	display: block;
-    margin-top: 5%;
+    	margin-top: 5%;
 	padding-top: 10%;
 	padding-right: 15%;
 	padding-left: 2%;
@@ -120,7 +119,7 @@ a {
 	height: 75vh;
 	overflow-y: scroll;
 	overflow-x: hidden;
-	background: url(parchment.jpg);
+	background: url('imgs/parchment.jpg');
 	background-position: center;
 	border-left: 50px solid;
 	border-image: url('imgs/border.jpg') 50 round;
@@ -149,23 +148,12 @@ p
 {
   margin:0;
   padding:0;
-  /*this is the problem line. Without it, you can get the special capital. With it, no*/
   display: inline;  
 }
 
-div
-{
+div{
   margin:0;
   padding:0;
-}
-
-.article p::first-letter {
-  
-  padding: 0 .3rem;
-  margin: 0 .3rem 0 0;
-  border: 2px solid;
-  border-radius: 8px;
-  font-family: "Uncial Antiqua";
 }
 
 body{
