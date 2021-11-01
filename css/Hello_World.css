@@ -1,6 +1,9 @@
 @font-face {
   font-family: 'ibm';
-  src: url('fonts/IBM_BIOS-2y.woff');
+  src: url('fonts/IBM_BIOS-2y.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 }
 
 /*@font-face {
