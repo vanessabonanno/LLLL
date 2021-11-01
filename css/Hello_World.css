@@ -1,12 +1,19 @@
 @font-face {
   font-family: 'IMB';
-  src: url('IBM.ttf');
+  src: url('Web437_IBM_CGA-2y.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
+.vga8 {
+  font-family: 'Verite 8x16', 'IBM VGA 8x16', monospace;
+  font-size: 16px;
+  line-height: 16px;
+}
 
-@font-face {
+/*@font-face {
   font-family: "IBM Plex Mono";
-}
+}*/
 
 
 .navbar-brand {
