@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'ibm';
-  src: url('fonts/IBM_BIOS-2y.woff') format('woff');
+  font-family: 'IMB BIOS 2x';
+  src: url('fonts/Web437_IBM_BIOS-2x.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -12,15 +12,15 @@
 
 
 .navbar-brand {
-	font-family: 'ibm';
+	font-family: 'IMB BIOS 2x';
 }
 
 .nav-link {
-	font-family: 'ibm';
+	font-family: 'IMB BIOS 2x';
 }
 
 .dropdown-item {
-	font-family: 'ibm';	
+	font-family: 'IMB BIOS 2x';	
 }
 
 nav {
