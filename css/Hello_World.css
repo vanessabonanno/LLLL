@@ -4,6 +4,11 @@
   font-weight: normal;
   font-style: normal;
 }
+
+.vga8 {
+  font-family: 'Verite 8x16', 'IMB BIOS 2x', monospace;
+  font-size: 16px;
+  line-height: 16px;
 }
 
 /*@font-face {
