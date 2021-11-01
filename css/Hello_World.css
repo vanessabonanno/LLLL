@@ -4,9 +4,15 @@
   src: url('fonts/IBM.ttf');
 }
 
+@font-face {
+  font-family: 'Floral';
+  src: url('fonts/Floralcaps.ttf');
+} 
+
+
 
 .navbar-brand {
-	font-family: 'ibm';
+	font-family: 'Floral';
 }
 
 .nav-link {
