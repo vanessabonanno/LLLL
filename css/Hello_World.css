@@ -1,0 +1,214 @@
+@font-face {
+  font-family: 'ibm';
+  src: url('IBM.ttf');
+}
+
+
+.navbar-brand {
+	font-family: 'ibm';
+}
+
+.nav-link {
+	font-family: 'ibm';
+}
+
+.dropdown-item {
+	font-family: 'ibm';	
+}
+
+nav {
+  border-bottom: 4px solid black;
+  color: #FFFFFF !important
+  }
+
+
+.navbar-text{
+  color: #FFFFFF !important
+  }
+
+.navbar{
+      background-color: #0033FF !important;
+}
+
+ 
+/*body tag contains navbar so this also changes the font there and as the default for anything not otherwise specificed*/
+body {
+	text-align: initial;
+	font-family: 'ibm';
+	background-color:#202020; 
+}
+h1 {
+	text-transform: uppercase;
+	color: #7FFF00;
+	font-family: "ibm";
+	text-align: initial;
+}
+
+
+.subtitle {
+	color: #7FFF00;
+	font-family: "ibm";
+	font-size: 70%;
+}
+
+h2 {
+	color: #7FFF00;
+	font-family: "ibm";
+	text-align: left;
+	font-size: 130%;
+}
+
+h1 {
+	color: #7FFF00;
+	font-family: "ibm";
+	text-align: left;
+	font-size: 130%;
+}
+
+p {
+	color: #7FFF00;
+	margin-bottom: 0%;
+}
+
+p.meta { 
+	font-size:60%;
+}
+
+p.info{ 
+	font-size:60%;
+}
+
+div.article {
+	color: #7FFF00;
+	text-indent: initial;
+}
+h2 {
+	text-indent: initial;
+	margin-bottom: 0%;
+	margin-top: 2%;
+}
+
+q {
+	color: #7FFF00;
+	font-family: "ibm2";
+	font-size: 40%;
+	padding-top: 30%;
+	padding-right: 5%;
+	padding-left: 5%;
+	padding-bottom:30%; 
+}	
+
+/*figure formating*/
+figure {
+	float: left; 
+	margin: 0% 5% 0% 5%;
+	margin-left: 0%;
+	margin-right: 0%;
+	text-indent: initial;
+	border: 5px #7FFF00;
+	border-style: inset;
+	
+}
+figcaption {
+	color: #7FFF00;
+	font-family: ibm;
+	font-size: 60%;
+	text-indent: initial;
+}
+
+img {
+    /*filter: still browsing;*/
+	max-width: 100%;
+}
+
+q {
+	font-family: ibm;
+	color: #7FFF00;
+}
+
+footer {
+	color: #7FFF00;
+	font-size: 10%;
+	
+}
+iframe {
+	width: 100%    !important;
+	height: auto   !important;
+	text-align: left;
+	display: inline;
+}
+
+/*{
+	cursor: url(pixil-frame-0.png), auto;
+
+/*hyperlinks*/
+
+a {
+	color: #7FFF00;
+	text-decoration: none;
+}
+a:visited {
+	color: #7FFF00; 
+	text-decoration: none;
+}
+
+a:hover {
+	color:#7FFF00;
+	text-decoration: none;
+}
+
+a:active {
+	color:#7FFF00;
+	text-decoration: none;
+}
+
+/*metadata top box formatting*/
+.metadata {
+    display: block;
+    padding: 2%;
+	margin-top: 10%;
+	padding-left: 2%;
+	padding-right: 2%;
+	width: 100%;
+	height: 30vh;
+	overflow-y: scroll;
+	border: 10px #A9A9A9;
+	border-style: outset;
+};
+	border-style: outset;
+}
+.metadata::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+.metadata::-webkit-scrollbar-track {
+  background: #7FFF00;        /* color of the tracking area */
+}
+.metadata::-webkit-scrollbar-thumb {
+  background-color: #7FFF00;    /* color of the scroll thumb */
+}
+
+/*article box formatting*/
+.article {
+	display: block;
+    margin-top: 5%;
+	padding-top: 2%;
+	padding-right: 2%;
+	padding-left: 2%;
+	width: 100%;
+	height: 60vh;
+	overflow-y: scroll;
+	border: 5px #A9A9A9;
+	font-size: 70%;
+	border-style: outset;
+}
+
+.article::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+.article::-webkit-scrollbar-track {
+  background:  #A9A9A9;        /* color of the tracking area */
+}
+.article::-webkit-scrollbar-thumb {
+  background-color:  #A9A9A9;    /* color of the scroll thumb */
+  width: 12px;
+}
