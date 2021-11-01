@@ -1,0 +1,187 @@
+@font-face {
+font-family: "Uncial Antiqua", cursive;
+}
+
+.navbar-brand {
+	font-family: 'Arial';
+}
+
+.nav-link {
+	font-family: 'Arial';
+}
+
+.dropdown-item {
+	font-family: 'Arial';
+	
+}
+
+body {
+	color: black;
+	text-align: left;
+	font-family: "Uncial Antiqua";
+	cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='75' height='90' viewport='0 0 100 100' style='fill:black;font-size:60px;'><text y='50%'>☜</text></svg>") 16 0,auto;
+}
+h1 {
+	color: #1b294b;
+	font-family: 'Uncial Antiqua';
+	text-align: left;
+	display: inline;
+	font-size: 150%;
+}
+h2 {
+	color: #8b0000;
+	font-family: 'Uncial Antiqua';
+	text-align: left;
+	font-size: 120%;
+	display: inline;
+}
+
+figure {
+	float: left; 
+	display: inline;
+	margin-bottom: 1%;
+}
+figcaption {
+	font-family: 'Uncial Antiqua';
+	font-size: 70%;
+	font-weight: bold;
+	text-align: left;
+}
+
+
+iframe {
+	width: 100%    !important;
+	height: auto   !important;
+	text-align: left;
+	display: inline;
+	border-style:solid;
+	border-color: #ff0000 #00ff00 #0000ff rgb(250,0,255);
+	border-top: 4px solid #2B6199;
+	border-bottom: 4px solid #2B6199;
+	border-left: 4px solid #8b0000;
+	border-right: 4px solid #8b0000;
+	outline: 2px solid black;
+	
+}
+
+img {
+  max-width: 100%;
+  border-style: solid;
+  border-top: 4px solid #2B6199;
+  border-bottom: 4px solid #2B6199;
+  border-left: 4px solid #8b0000;
+  border-right: 4px solid #8b0000;
+  outline: 2px solid black;
+
+}
+
+
+
+a { 
+	color: black;
+	text-decoration: none;
+}
+
+a:visited {
+	color: black; 
+	text-decoration: none;
+}
+
+a:hover {
+	color: black; 
+	text-decoration: none;
+}
+
+a:active {
+	color: black; 
+	text-decoration: none;
+}
+.metadata {
+   	display: block;
+   	padding: 1%;
+	padding-top: 10%;
+	padding-right: 15%;
+	padding-left: 2%;
+	margin-top: 1%;
+	width: 100%;
+	height: 25vh;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	background: url('imgs/parchment.jpg');
+	background-position: center;
+	border-left: 50px solid;
+	border-image: url('imgs/border.jpg') 75 round;
+	scrollbar-color: #D4AF37;
+	scrollbar-width: thin;
+}
+
+.metadata::-webkit-scrollbar {
+  width: 1px;               /* width of the entire scrollbar */
+}
+
+.metadata::-webkit-scrollbar-track {
+  background: url('imgs/gold_leaf.jpg');        /* color of the tracking area */
+}
+
+.metadata::-webkit-scrollbar-thumb {
+  background-color: none;    /* color of the scroll thumb */
+  border-radius: 25px;        /*roundness of the scroll thumb */
+}
+
+.subtitle {
+	font-weight: bold;
+	font-family: 'Uncial Antiqua';
+	display: inline;
+}
+
+.article {
+	display: block;
+    margin-top: 5%;
+	padding-top: 10%;
+	padding-right: 15%;
+	padding-left: 2%;
+	padding-bottom: 200px;
+	width: 100%;
+	height: 75vh;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	background: url('imgs/parchment.jpg');
+	background-position: center;
+	border-left: 50px solid;
+	border-image: url('imgs/border.jpg') 50 round;
+}
+
+.article::-webkit-scrollbar {
+  width: 1px;               /* width of the entire scrollbar */
+}
+
+.article::-webkit-scrollbar-track {
+  background: url('imgs/gold_leaf.jpg'); /*color of the tracking area */
+}
+
+.article::-webkit-scrollbar-thumb {
+  background-color: #2B6199;     /*color of the scroll thumb. Color is Lapis Lazuli */
+  background-color: none;
+  border-radius: 20px;*/       /* roundness of the scroll thumb */
+  border: 2px solid #2B6199;  /* creates padding around scroll thumb */
+}
+
+.row {
+	padding: 3%;
+	background: #1b294b;
+	border: 5px solid #555;
+	color: black;
+	font-family: "Uncial Antiqua"
+}
+
+p
+{
+  margin:0;
+  padding:0;
+  display: inline;  
+}
+
+div{
+  margin:0;
+  padding:0;
+}
