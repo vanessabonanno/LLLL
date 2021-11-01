@@ -1,8 +1,6 @@
 @font-face {
   font-family: 'IMB';
-  src: url('IBM.ttf')format('ttf');
-  font-weight: normal;
-  font-style: normal;
+  src: url('IBM.ttf'
 }
 /*.vga8 {
   font-family: 'Verite 8x16', 'IMB', monospace;
