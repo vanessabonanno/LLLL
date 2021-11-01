@@ -41,13 +41,13 @@ nav {
 /*body tag contains navbar so this also changes the font there and as the default for anything not otherwise specificed*/
 body {
 	text-align: initial;
-	font-family: 'ibm';
+	font-family: 'Floral';
 	background-color:#202020; 
 }
 h1 {
 	text-transform: uppercase;
 	color: #7FFF00;
-	font-family: "ibm";
+	font-family: "Floral";
 	text-align: initial;
 }
 
