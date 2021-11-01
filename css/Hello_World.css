@@ -1,6 +1,7 @@
 @font-face {
   font-family: 'ibm';
-  src: url('IBM.ttf');
+  /*src: url('IBM.ttf');*/
+  src: url('fonts/IBM.ttf');
 }
 
 
