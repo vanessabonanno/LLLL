@@ -1,6 +1,9 @@
 @font-face {
   font-family: 'ibm';
   src: url('fonts/IBM.ttf');
+  -webkit-font-smoothing: antialiased;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
 }
 
 @font-face {
