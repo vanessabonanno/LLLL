@@ -11,6 +11,14 @@
   line-height: 16px;
 }
 
+.mda-scaled {
+  font-family: 'IBM MDA', monospace;
+  font-size: 14px;
+  line-height: 14px;
+  transform: scaleX(0.6667);
+}
+
+
 /*@font-face {
   font-family: "IBM Plex Mono";
 }*/
