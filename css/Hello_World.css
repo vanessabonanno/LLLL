@@ -1,13 +1,8 @@
 @font-face {
-  font-family: 'IMB BIOS 2x';
-  src: url('fonts/Web437_IBM_BIOS-2x.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
+  font-family: 'IMB';
+  src: url('Flexi_IBM_VGA_True.ttf');
 }
 
-.vga8 {
-  font-family: 'Verite 8x16', 'IMB BIOS 2x', monospace;
-}
 
 /*@font-face {
   font-family: "IBM Plex Mono";
@@ -15,15 +10,15 @@
 
 
 .navbar-brand {
-	font-family: 'IMB BIOS 2x';
+	font-family: 'IMB';
 }
 
 .nav-link {
-	font-family: 'IMB BIOS 2x';
+	font-family: 'IMB';
 }
 
 .dropdown-item {
-	font-family: 'IMB BIOS 2x';	
+	font-family: 'IMB';	
 }
 
 nav {
@@ -44,33 +39,33 @@ nav {
 /*body tag contains navbar so this also changes the font there and as the default for anything not otherwise specificed*/
 body {
 	text-align: initial;
-	font-family: 'IMB BIOS 2x';
+	font-family: 'IMB';
 	background-color:#202020; 
 }
 h1 {
 	text-transform: uppercase;
 	color: #7FFF00;
-	font-family: "IMB BIOS 2x";
+	font-family: "IMB";
 	text-align: initial;
 }
 
 
 .subtitle {
 	color: #7FFF00;
-	font-family: "IMB BIOS 2x";
+	font-family: "IMB";
 	font-size: 70%;
 }
 
 h2 {
 	color: #7FFF00;
-	font-family: "IMB BIOS 2x";
+	font-family: "IMB";
 	text-align: left;
 	font-size: 130%;
 }
 
 h1 {
 	color: #7FFF00;
-	font-family: "IMB BIOS 2x";
+	font-family: "IMB";
 	text-align: left;
 	font-size: 130%;
 }
@@ -100,7 +95,7 @@ h2 {
 
 q {
 	color: #7FFF00;
-	font-family: "IMB BIOS 2x";
+	font-family: "IMB";
 	font-size: 40%;
 	padding-top: 30%;
 	padding-right: 5%;
@@ -121,7 +116,7 @@ figure {
 }
 figcaption {
 	color: #7FFF00;
-	font-family: IMB BIOS 2x;
+	font-family: "IMB";
 	font-size: 60%;
 	text-indent: initial;
 }
@@ -132,7 +127,7 @@ img {
 }
 
 q {
-	font-family: IMB BIOS 2x;
+	font-family: "IMB";
 	color: #7FFF00;
 }
 
