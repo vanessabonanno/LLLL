@@ -14,10 +14,27 @@
 	
 	<!-- JQuery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<script>
+	
+	<script>
 		$(document).ready(function(){
 		  $("#mormons").click(function(){
 			$("#div1").load("Mormons/mormons.html");
+		  });
+		});
+	</script>
+	
+	<script>
+		$(document).ready(function(){
+		  $("#pets").click(function(){
+			$("#div1").load("Pets/pets.html");
+		  });
+		});
+	</script>
+	
+	<script>
+		$(document).ready(function(){
+		  $("#vh").click(function(){
+			$("#div1").load("");
 		  });
 		});
 	</script>
@@ -62,13 +79,14 @@
 
 
 	<body>
-				                  
-		 <a class="nav-item nav-link" id="btn1" href="#" id="mormons">Mormons</a>
-         	 <a class="nav-item nav-link" id="btn2" href="#" id="pets">Pets</a>
-         	 <a class="nav-item nav-link" id="btn3" href="#" id="vh">VHEM</a>
+
 		
 		<div class="navbar-nav mx-auto articles" id="div1">
-		</div>
+          <a class="nav-item nav-link" id="btn1" href="#" id="mormons">Mormons</a>
+          <a class="nav-item nav-link" id="btn2" href="#" id="pets">Pets</a>
+          <a class="nav-item nav-link" id="btn3" href="#" id="vh">VHEM</a>
+        </div>
+		
 		
 		<nav class="navbar fixed-bottom navbar-expand-lg navbar-light bg-light">
 		  <div class="collapse navbar-collapse" id="navbarNavAltMarkup icons">
