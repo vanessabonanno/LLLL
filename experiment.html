@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#div1").load("demo_test.txt");
+  });
+});
+</script>
+</head>
+<body>
+
+<div id="div1"><h2>Let jQuery AJAX Change This Text</h2></div>
+
+<button>Get External Content</button>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+<!--
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+			  $("p").click(function(){
+				$(this).hide();
+			  });
+			});
+		</script>
+		
+		<script>
+			$(document).ready(function(){
+			  $("p").click(function(){
+				$(this).hide();
+			  });
+			});
+		</script>
+
+		
+		
+	</head>
+	<body>
+
+		<p>If you click on me, I will disappear.</p>
+		<p>Click me away!</p>
+		<p>Click me too!</p>
+		
+		<a class="nav-item nav-link" id="btn6" href="#">TLS</a>
+		
+		
+		<div id="content">
+		</div>
+		
+		
+		
+		<script>
+		  $(document).ready(function(){
+			$("#btn6").click(function(){
+			$("#content").load("demo_test.txt");
+			  
+			});
+		  });
+		</script> 
+	</body>
+</html>
+-->
