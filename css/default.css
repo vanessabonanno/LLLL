@@ -37,9 +37,6 @@ h2 {
 	color: black;
 	font-family: 'Mont B';
 	text-align: left;
-	padding-top: 3%;
-	padding-right: 5%;
-	padding-left: 5%;
 }
 
 .article > h2 {
@@ -89,12 +86,10 @@ figcaption {
 }
 
 img {
-    filter: grayscale(100%);
 	max-width: 100%;
 }
 
-/* I DON'T KNOW IF YOU USED THOSE BUT IN CASE
-ADD THEM!!! */
+
 blockquote {
 	padding-top: 3%;
 	padding-right: 5%;
@@ -109,13 +104,11 @@ h5 {
 /*********/
 
 iframe {
-	filter: grayscale(100%);
 	width: 100%    !important;
 	height: auto   !important;
 	text-align: left;
 	display: inline;
 }
-
 
 /*metadata top box formatting*/
 .metadata {
@@ -128,20 +121,6 @@ iframe {
 	overflow-x: hidden;
 }
 
-
-.metadata::-webkit-scrollbar {
-  width: 0px;  /* width of the entire scrollbar */
-}
-
-.metadata::-webkit-scrollbar-track {
-  background: rgba(224,187,147,255); /* color of the tracking area */
-}
-
-.metadata::-webkit-scrollbar-thumb {
-  background-color: rgba(224,187,147,255);    /* color of the scroll thumb */
-}
-
-
 .article {
 	display: block;
     margin-top: 5%;
@@ -151,8 +130,6 @@ iframe {
 	overflow-x: hidden;
 	
 }
-
-
 
 html {
 	width: 100vw;
