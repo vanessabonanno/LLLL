@@ -15,29 +15,6 @@
 	<!-- JQuery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	
-	<script>
-		$(document).ready(function(){
-		  $("#mormons").click(function(){
-			$("#div1").load("Mormons/mormons.html");
-		  });
-		});
-	</script>
-	
-	<script>
-		$(document).ready(function(){
-		  $("#pets").click(function(){
-			$("#div1").load("Pets/pets.html");
-		  });
-		});
-	</script>
-	
-	<script>
-		$(document).ready(function(){
-		  $("#vh").click(function(){
-			$("#div1").load("");
-		  });
-		});
-	</script>
 	
 	  <!-- script da experiment.html -->
 	<script>
@@ -89,12 +66,9 @@
 	  
 	  <div id="div1"><h2>Let jQuery AJAX Change This Text</h2></div>
 
-	  <button id="button1">Get External Content</button>
-	  
-	
-		<div id="div1"><h2>PRIMA</h2></div>
 	  
 		<div class="navbar-nav mx-auto articles">
+		  <button id="button1">Mormons</button>
 		  <a class="nav-item nav-link" id="btn1" href="#" id="mormons">Mormons</a>
 		  <a class="nav-item nav-link" id="btn2" href="#" id="pets">Pets</a>
 		  <a class="nav-item nav-link" id="btn3" href="#" id="vh">VHEM</a>
