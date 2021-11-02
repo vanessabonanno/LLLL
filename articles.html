@@ -12,7 +12,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script>
 		$(document).ready(function(){
-		  $("button").click(function(){
+		  $("#mormons").click(function(){
 			$("#div1").load("Mormons/mormons.html");
 		  });
 		});
@@ -59,9 +59,12 @@
 
 	<body>
 
-		<div id="div1"><h2>Let jQuery AJAX Change This Text</h2></div>
+		<div id="div1">
+			<button><a class="dropdown-item" id="mormons">Mormons</a></button>
+			<button><a class="dropdown-item">Pets</a></button>
+			<button><a class="dropdown-item">VHEM</a></button>
+		</div>
 
-		<button>Get External Content</button>
 
 	</body>
 
