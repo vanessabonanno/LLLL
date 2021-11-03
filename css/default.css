@@ -128,6 +128,20 @@ iframe {
 	
 }
 
+.navbar-brand {
+	font-family: 'Mont R';
+}
+
+.nav-link {
+	font-family: 'Mont R';
+}
+
+.dropdown-item {
+	font-family: 'Mont R';
+	
+}
+
+
 html {
 	width: 100vw;
 }
