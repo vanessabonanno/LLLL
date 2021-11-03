@@ -3,7 +3,7 @@
 		<!-- Required meta tags -->
 		<title>Mormons</title>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1 maximum scale=1">
 		
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,8 +15,11 @@
 	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 	  
 	<!-- My css --> 
-	  
 	  <link rel="stylesheet" type="text/css" href="..\css\sixties.css"> 
+	  
+	  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	  <script src="../javascript.js"></script>
+	  
 	</head>
 
 	<body>
@@ -24,7 +27,7 @@
 	<header>	
 	  <nav class="navbar navbar-expand-lg">
 		<div class="container-fluid">
-			<a class="navbar-brand" href="#">LLLL</a>
+			<a class="navbar-brand" href="../index.html">LLLL</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -36,14 +39,14 @@
 	        <li class="nav-item dropdown">
 	          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Issues</a>
 	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown" id="dropdownmenuissues">
-	          	<li><a class="dropdown-item" href="Mormons/MormonsTogether.html">Mormons</a></li>
-				<li><a class="dropdown-item" href="Pets/">Pets</a></li>
-				<li><a class="dropdown-item" href="3/">Denise</a></li>
+	          	<li><a class="dropdown-item" href="../Mormons/mormons.html">Mormons</a></li>
+				<li><a class="dropdown-item" href="../Pets/Pets.html">Pets</a></li>
+				<li><a class="dropdown-item" href="../VHEMT/VoluntaryHumanExtinctionMovement.html">VoluntaryHumanExinctionsMovement/</a></li>
 	          </ul>
 	        </li>
-	       	
+			
 	        <li class="nav-item">
-	          <a class="nav-link" href="documentation.html" tabindex="-1" aria-disabled="true">Documentation</a>
+	          <a class="nav-link" href="../documentation.html" tabindex="-1" aria-disabled="true">Documentation</a>
 	        </li>
 			<li class="nav-item">
 	          <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modaldisclaimer">About us</a>
@@ -63,35 +66,97 @@
 
 		
 		<!-- articles -->
-		<div class="container">
+		<!--<div class="container">-->
 		
 		  <div class="row">
-			<!-- This is a place holder for the index panel
-			<p class="deco">
-			G---------G B---------B D---------D</p>-->
+	
+	<!-- sidebar metadata viewer [Bootstrap] -->
+	
+		<div class="col" id="metatdata viewer">		
+		<div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingOne">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        Articles
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+				
+		<input type="checkbox" id="mormons_money" name="mormons_money" value="mormons_money" onclick="myFunction('Mormons_and_Money')">
+			<label for="mormons_money">Mormons and Money</label><br>		
+		<input type="checkbox" id="startups" name="startups" value="startups" onclick="myFunction('Mormon Startups')">
+			<label for="startups">Utah's Startup Success</label><br>
+		<input type="checkbox" id="hoffman" name="hoffman" value="hoffman" onclick="myFunction('Hoffman')">
+			<label for="hoffman">Mark Hoffman</label>
+		</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+		Editorial Metadata
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+		<input type="checkbox" name="author" value="author" onclick="myFunction('author')">
+			<label for="author">Author</label><br>
+		<input type="checkbox" name="date" value="date" onclick="myFunction('date')">
+			<label for="date">Date</label><br>
+		<input type="checkbox" name="source" value="source" onclick="myFunction('source')">
+			<label for="source">Source</label><br>
+		<input type="checkbox" name="license" value="license" onclick="myFunction('license')">
+			<label for="license">License</label><br>
+		<input type="checkbox" name="other" value="other" onclick="myFunction('other')">
+			<label for="other">Other</label>
+		</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+        Content Metadata
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+		<input type="checkbox" id="people" name="people" value="people">
+			<label for="people">People</label><br>
+		<input type="checkbox" id="places" name="places" value="places">
+			<label for="places">Places</label><br>
+		<input type="checkbox" id="orgs" name="orgs" value="orgs">
+			<label for="orgs">Organizations</label><br>
+		<input type="checkbox" id="concepts" name="concepts" value="concepts">
+			<label for="concepts">Concepts</label></div>
+    </div>
+  </div>
+</div>	
+</div>
+			
+			
+			
+			
 			<!--Article 1-->
 			
-			<div class="col" id="Mormons and Money">
+			<div class="col" id="Mormons_and_Money">
 					<!--Article 1's basic metadata-->
 					<div class="metadata">	
 						
 						<h1 data-src="https://theconversation.com/mormons-and-money-an-unorthodox-and-messy-history-of-church-finances-129132" class="title"><span class="mention concept" about="Mormonism" data-sort="Mormonism" data-label="Mormonism">Mormons</span> and money:</h1> <span class="subtitle">An unorthodox and messy history of church finances</span>
 						
-						<p><date>December 20, 2019 7.07pm GMT</date></p>
+						<p id="date">December 20, 2019 7.07pm GMT</p>
 						
-						<p>Author<p>
-							<p><span class="mention person" about="JohnTurner" data-sort="TurnerJohn" data-label="John Turner">John Turner</span></p>
-							<p>Professor of American Religion, <span class="mention org" about="GeorgeMasonUniversity" data-sort="GeorgeMasonUniversity" data-label="George Mason University">George Mason University</span></p>
+						<p id="author"><a href="https://theconversation.com/profiles/john-turner-916401" id="author"><span class="mention person" about="JohnTurner" data-sort="TurnerJohn" data-label="John Turner">John Turner</span></a>, Professor of American Religion, <span class="mention org" about="GeorgeMasonUniversity" data-sort="GeorgeMasonUniversity" data-label="George Mason University">George Mason University</span></p>
 
-						<p>Disclosure statement</p>
-							<span class="mention person" about="JohnTurner">John Turner</span> does not work for, consult, own shares in or receive funding from any company or organisation that would benefit from this article, and has disclosed no relevant affiliations beyond their academic appointment.
+						<p id="other">
+							<span class="mention person" about="JohnTurner">John Turner</span> does not work for, consult, own shares in or receive funding from any company or organisation that would benefit from this article, and has disclosed no relevant affiliations beyond their academic appointment.<br>
+							Partners: <a href="https://theconversation.com/uk/partners">View all partners</a></p>
 
-						<p>Partners</p>
-							<span class="mention org" about="TheConversationUK" data-sort="ConversationUK" data-label="The Conversation UK">The Conversation UK</span> receives funding from these organisations <a href="https://theconversation.com/uk/partners">View the full list</a> </p>
-
-						<p>CC BY ND</p>
-							<p>We believe in the free flow of information
+						<p id="license">CC BY ND<br>
+							We believe in the free flow of information
 							Republish our articles for free, online or in print, under Creative Commons licence.</p>
+						<p id="source"> <a href="https://theconversation.com/mormons-and-money-an-unorthodox-and-messy-history-of-church-finances-129132">Source</a>
 						<figure>
 							<img src="imgs\mormons1\img1.jpg">
 							<figcaption>There was something fishy about this $3 bill. <span class="mention org" about="EverettHistorical" data-sort="EverettHistorical" data-label="Everett Historical">Everett Historical</span>/Shutterstock.com</figcaption>
@@ -201,7 +266,7 @@
 
 						<p><span class="mention person" about="MittRomney">Romney</span>’s perspective makes some historical sense, given that the most obvious problem in <span class="mention place" about="Kirtland">Kirtland</span>, <span class="mention place" about="Ohio">Ohio</span>, was that <span class="mention person" about="JosephSmith">Joseph Smith<span>’s financial stewardship was decidedly unwise. At least today’s church leaders earn good returns on their investments.</p>
 
-						<p>[ Deep knowledge, daily. Sign up for The Conversation’s newsletter. ]</p>
+						<p>[ Deep knowledge, daily. <a href="https://theconversation.com/us/newsletters/the-daily-newsletter-3?utm_campaign=newsletter-text&utm_content=deepknowledge&utm_medium=inline-link&utm_source=TCUS">Sign up for <span class="mention org" about="TheConversationUK" data-sort="ConversationUK" data-label="The Conversation UK">The Conversation</span>’s newsletter.</a> ]</p>
 				</div>
 			</div>
 		<!--Article 2's basic metadata and content in two separate boxes stacked in one column-->
