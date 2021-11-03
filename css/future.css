@@ -1,18 +1,18 @@
 @font-face {
   font-family: 'pirulen rg';
-  src: url('pirulen rg.otf');
+  src: url('fonts/pirulen rg.otf');
 }
 
 
 
 @font-face {
   font-family: 'Mont R';
-  src: url('Montserrat-Regular.ttf');
+  src: url('fonts/Montserrat-Regular.ttf');
 }
 
 @font-face {
   font-family: 'Mont B';
-  src: url('Montserrat-Bold.ttf');
+  src: url('fonts/Montserrat-Bold.ttf');
 }
 
 .navbar {
@@ -86,12 +86,12 @@ h2 {
 
 
 body {
-	cursor: url(arrow.cur),auto;
+	cursor: url('imgs/arrow.cur'),auto;
 	color: #262A1C;
 	text-align: justify;
 	font-family: '';
 	background-color: white;
-	background-image: url('lofoten.jpg');
+	background-image: url('imgs/lofoten.jpg');
 	filter: grayscale(50%);
 	background-position: 50% 20%;
 	background-size: 100%;
@@ -189,7 +189,7 @@ blockquote {
 }
 
 .twitter-tweet tw-align-center {
-	cursor: url(arrow.cur),auto;
+	cursor: url('imgs/arrow.cur'),auto;
 }
 
 h5 {
@@ -223,7 +223,7 @@ ul {
 /*hyperlinks*/
 
 a { 
-	cursor: url(link.cur),auto;
+	cursor: url('imgs/link.cur'),auto;
 	color: #DBD4D6; 
 	font-family: 'Mont R';
 	
