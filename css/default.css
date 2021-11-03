@@ -18,7 +18,7 @@
   src: url('fonts/Montserrat-Italic.ttf');
 } 
 
-
+/*
 h1 {
 	display: block;
 	color: black;
@@ -65,11 +65,11 @@ p {
 	padding-right: 5%;
 	padding-left: 5%;
 	}
+*/
 
 
 
-
-/*figure formating*/
+/*figure formating
 figure {
 	float: left; 
 	margin: 5% 0% 5% 0%;
@@ -80,13 +80,13 @@ figcaption {
 	font-family: 'Mont I';
 	font-size: 70%;
 	padding-top: 3%;
-}
+}*/
 
 img {
 	max-width: 100%;
 }
 
-
+/*
 blockquote {
 	padding-top: 3%;
 	padding-right: 5%;
@@ -97,7 +97,7 @@ h5 {
 	padding-top: 3%;
 	padding-right: 5%;
 	padding-left: 5%;
-}
+} */
 /*********/
 
 iframe {
