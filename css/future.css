@@ -161,7 +161,7 @@ blockquote {
 }
 
 .twitter-tweet tw-align-center {
-	cursor: url(arrow.cur),auto;
+	cursor: url(imgs/arrow.cur),auto;
 }
 
 h5 {
@@ -195,7 +195,7 @@ ul {
 /*hyperlinks*/
 
 a { 
-	cursor: url(link.cur),auto;
+	cursor: url(imgs/link.cur),auto;
 	color: #DBD4D6; 
 	font-family: 'Mont R';
 	
