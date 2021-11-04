@@ -2,25 +2,20 @@
 font-family: "Uncial Antiqua", cursive;
 }
 
-.navbar-brand {
-	font-family: 'Arial';
-}
-
-.nav-link {
-	font-family: 'Arial';
-}
-
-.dropdown-item {
-	font-family: 'Arial';
-	
+#metadata_viewer {
+	cursor: auto !important;
+	cursor: default !important;
 }
 
 body {
 	color: black;
 	text-align: left;
 	font-family: "Uncial Antiqua";
-	cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='75' height='90' viewport='0 0 100 100' style='fill:black;font-size:60px;'><text y='50%'>☜</text></svg>") 16 0,auto;
+	
 }
+
+
+
 h1 {
 	color: #1b294b;
 	font-family: 'Uncial Antiqua';
@@ -113,6 +108,7 @@ a:active {
 	border-image: url('imgs/border.jpg') 75 round;
 	scrollbar-color: #D4AF37;
 	scrollbar-width: thin;
+	cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='75' height='90' viewport='0 0 100 100' style='fill:black;font-size:60px;'><text y='50%'>☜</text></svg>") 16 0,auto;
 }
 
 .metadata::-webkit-scrollbar {
@@ -149,6 +145,7 @@ a:active {
 	background-position: center;
 	border-left: 50px solid;
 	border-image: url('imgs/border.jpg') 50 round;
+	cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='75' height='90' viewport='0 0 100 100' style='fill:black;font-size:60px;'><text y='50%'>☜</text></svg>") 16 0,auto;
 }
 
 .article::-webkit-scrollbar {
