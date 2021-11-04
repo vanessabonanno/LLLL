@@ -43,58 +43,49 @@
   </head>
 	
   <body>
-	<header id="header">	
-	  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-	    <div class="container-fluid">
-		<a class="navbar-brand" href="#">LLLL</a>
-		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		    
-		<div id="navSupportedContent" class="collapse navbar-collapse">
-		    <ul class="navbar-nac mr-auto"> <!-- 1: Menu on the left -->
-			<li class="nav-item">
-			  <a class="nav-link active" aria-current="page" href="homepage.html">Home</a>
-			</li>
-			<li class="nav-item dropdown">
-			  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Issues</a>
-			  <ul class="dropdown-menu" aria-labelledby="navbarDropdown" id="dropdownmenuissues">
-				<li><a class="dropdown-item" id="btn1" href="#">Mormons</a></li>
-				<li><a class="dropdown-item" id="btn2" href="#">Pets</a></li>
-				<li><a class="dropdown-item" id="btn3" href="#">VHEMT</a></li>
-			  </ul>
-			</li>
-
-			<li class="nav-item dropdown">
-			  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Themes</a>
-			  <ul class="dropdown-menu" aria-labelledby="navbarDropdown" id="dropdownmenuissues">
-				<li><a class="dropdown-item" id="btn1" href="#">Mormons</a></li>
-				<li><a class="dropdown-item" id="btn2" href="#">Pets</a></li>
-				<li><a class="dropdown-item" id="btn3" href="#">VHEMT</a></li>
-			  </ul>
-			</li>
-
-			<li class="nav-item">
-			  <a class="nav-link" href="documentation.html" tabindex="-1" aria-disabled="true">Documentation</a>
-			</li>
+	
+	<header id="header">
+	    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+		  <div class="container-fluid">
+		  <a class="navbar-brand" href="#">LLLL</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			  <ul class="navbar-nav mr-auto">
 				<li class="nav-item">
-			  <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modaldisclaimer">About us</a>
-			</li>			    
-		    </ul>
-		    <ul class="navbar-nac ms-auto" id="themes css"> <!-- 2: Menu (for css) on the right -->
-			    <li class="nav-item"><a class="nav-item nav-link" id="btn11" href="#"  onclick="setStyleSheet('css/default.css')">Default</a></li>
-			    <li class="nav-item"><a class="nav-item nav-link" id="btn7" href="#"  onclick="setStyleSheet('css/preprint.css')">Pre print</a></li>
-			    <li class="nav-item"><a class="nav-item nav-link" id="btn8" href="#"  onclick="setStyleSheet('css/artnouveaunovember.css')">Art Nouveau</a></li>
-			    <li class="nav-item"><a class="nav-item nav-link" id="btn9" href="#"  onclick="setStyleSheet('css/sixties.css')">Sixties</a></li>
-			    <li class="nav-item"><a class="nav-item nav-link" id="btn11" href="#"  onclick="setStyleSheet('css/')">Another</a></li>
+					<a class="nav-link active" aria-current="page" href="homepage.html">Home</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Issues</a>
+					<ul class="dropdown-menu" aria-labelledby="navbarDropdown" id="dropdownmenuissues">
+						<li><a class="dropdown-item" id="btn1" href="#">Mormons</a></li>
+						<li><a class="dropdown-item" id="btn2" href="#">Pets</a></li>
+						<li><a class="dropdown-item" id="btn3" href="#">VHEMT</a></li>
+					</ul>
+				</li>
+				<li class="nav-item">
+					  <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modaldisclaimer">Disclaimer</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="documentation.htm" tabindex="-1" aria-disabled="true">Documentation</a>
+				</li>
+			  </ul>
+		    </div>
+		    </div>
+		     <div class="contained ms-auto" >
+			  <ul class="navbar-nav ms-auto" id="stylesglasses">
+				<li class="nav-item"><a class="nav-item nav-link" id="btn11" href="#"  onclick="setStyleSheet('css/default.css')">Default</a></li>
+			    <li class="nav-item"><a class="nav-item nav-link" id="btn7" href="#"  onclick="setStyleSheet('css/preprint.css')">Pre print</a></li>				<li class="nav-item"></li>
+			    <li class="nav-item"><a class="nav-item nav-link" id="btn8" href="#"  onclick="setStyleSheet('css/artnouveaunovember.css')">Art Nouveau</a></li>				<li class="nav-item"></li>
+				<li class="nav-item"><a class="nav-item nav-link" id="btn9" href="#"  onclick="setStyleSheet('css/sixties.css')">Sixties</a></li>
+				<li class="nav-item"><a class="nav-item nav-link" id="btn13" href="#"  onclick="setStyleSheet('css/')">Another</a></li>
 			    <li class="nav-item"><a class="nav-item nav-link" id="btn10" href="#"  onclick="setStyleSheet('css/Hello_World.css')">Terminal</a></li>
 			    <li class="nav-item"><a class="nav-item nav-link" id="btn12" href="#"  onclick="setStyleSheet('css/future.css')">Future</a></li>
-		    </ul>
-		</div>    
-	    </div>
-	  </nav>
-	</header>
-	  
+			  </ul>
+			</div>
+	    </nav>
+	</header>	  
 	
 	<div id="div1">
 	  
