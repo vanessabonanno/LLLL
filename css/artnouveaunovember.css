@@ -18,8 +18,19 @@
   src: url('fonts/Floralcaps.ttf');
 } 
 
+@font-face {
+  font-family: 'D';
+  src: url('fonts/Davys.ttf');
+} 
 
+@font-face {
+  font-family: 'Mont R';
+  src: url('fonts/Montserrat-Regular.ttf');
+}
 
+header{
+	font-family: 'Mont R';
+}
 
 h1 {
 	display:block;
@@ -82,7 +93,7 @@ body {
 	background-color: rgba(241, 197, 172, 0.3);
 	background-image: url('imgs/latosx.jpg'), url('imgs/latodx.jpg');
 	background-position: left bottom, right bottom;
-	background-size: 10%, 10%;
+	background-size: 130px, 130px;
     background-repeat: no-repeat, no-repeat;
     background-attachment: fixed, fixed;
 }
@@ -110,6 +121,15 @@ p {
 	}
 
 
+
+.article p::after {
+	font-family: 'D';
+	content: " -----";
+	content: " -----";
+	font-size: 130%;
+	
+	}
+
 #cap {
   font-size: 60px;
   font-family: 'Floral';
@@ -136,8 +156,6 @@ figcaption {
 	font-family: 'Tarocco Roman';
 	font-size: 70%;
 	padding-top: 3%;
-	padding-right: 5%;
-	padding-left: 5%;
 }
 
 img {
@@ -197,12 +215,12 @@ iframe {
 	height: 28vh;
 	overflow-y: scroll;
 	overflow-x: hidden;
-	scrollbar-color: #221d0e rgba(227,192,162,255);
+	scrollbar-color: #221d0e #dcc5a1;
     scrollbar-width: thin;
 	border: 3px solid;
 	border-radius: 55px;
 	border-color: black;
-	background: rgba(227,192,162,255);
+	background: #dcc5a1;
 }
 
 
@@ -223,15 +241,15 @@ iframe {
 	display: block;
     margin-top: 5%;
 	width: 100%;
-	height: 75vh;
+	height: 65vh;
 	overflow-y: scroll;
 	overflow-x: hidden;
-	scrollbar-color: #221d0e rgba(242,222,171,255);
+	scrollbar-color: #221d0e #F2DEAB;
     scrollbar-width: thin;
 	border: 3px solid;
 	border-color: #2a2312;
 	border-radius: 55px;
-	background: rgba(242,222,171,255);
+	background: #F2DEAB;
     padding: 15px;
     border-image: 80 round;
 }
