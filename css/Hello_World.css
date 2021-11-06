@@ -138,6 +138,9 @@ figcaption {
 
 img {
     /*filter: still browsing;*/
+	filter: sepia(9%) brightness(83%) hue-rotate(194deg) saturate(743%) invert(3%);
+	webkit-filter: sepia(9%) brightness(83%) hue-rotate(194deg) saturate(743%) invert(3%);
+	moz-filter: sepia(9%) brightness(83%) hue-rotate(194deg) saturate(743%) invert(3%);
 	max-width: 100%;
 }
 
