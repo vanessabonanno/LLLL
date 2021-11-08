@@ -170,14 +170,14 @@ a:active {
   border: 2px solid #2B6199;  /* creates padding around scroll thumb */
 }
 
-/*
-#articlerow {
-	padding: 3%;
+
+#art {
 	background: #1b294b;
 	border: 5px solid #555;
 	color: black;
-	font-family: "Uncial Antiqua"
-} */
+	font-family: "Uncial Antiqua";
+	padding: 8px;
+} 
 
 
 
