@@ -24,6 +24,7 @@ h1 {
 	
 }
 
+
 .subtitle {
 	color: #DBD4D6;
 	font-family: 'pirulen rg';
@@ -84,7 +85,17 @@ p {
 	padding-left: 2%;
 }
 
-
+q {
+	color: #A69398;
+	text-align: justify;
+	font-family: 'Mont R';
+	font-weight: bold;
+	font-size: 80%;
+	line-height: 1.2;
+	display: inline-block;
+	padding-right: 2%;
+	padding-left: 2%;
+}
 
 /*figure formating*/
 figure {
@@ -101,7 +112,6 @@ figcaption {
 	text-align: justify;
 	font-size: 50%;
 	padding-top: 6%;
-	padding-left: 2%;
 	
 }
 
