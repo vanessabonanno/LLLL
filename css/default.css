@@ -18,87 +18,11 @@
   src: url('fonts/Montserrat-Italic.ttf');
 } 
 
-/*
-h1 {
-	display: block;
-	color: black;
-	font-family: 'Mont B';
-	text-align: left;
-}
-
-
-.subtitle {
-	color: black;
-	font-family: 'Mont B';
-	text-align: left;
-}
-
-h2 {
-	color: black;
-	font-family: 'Mont B';
-	text-align: left;
-}
-
-.article > h2 {
-	color: black;
-	font-family: 'Mont B';
-	text-align: justify;
-	padding-top: 3%;
-	padding-right: 5%;
-	padding-left: 5%;
-	font-size: 20px;
-}
-
-
-body {
-	background-color: white;
-}
-
-
-p {
-	color: black;
-	text-align: justify;
-	text-justify: inter-word;
-	font-family: 'Mont R';
-	line-height: 1.5;
-	display: inline-block;
-	padding-right: 5%;
-	padding-left: 5%;
-	}
-*/
-
-
-
-/*figure formating
-figure {
-	float: left; 
-	margin: 5% 0% 5% 0%;
-	padding-top: 3%;
-}
-
-figcaption {
-	font-family: 'Mont I';
-	font-size: 70%;
-	padding-top: 3%;
-}*/
 
 img {
 	max-width: 100%;
 }
 
-/*
-blockquote {
-	padding-top: 3%;
-	padding-right: 5%;
-	padding-left: 5%;
-}
-
-h5 {
-	padding-top: 3%;
-	padding-right: 5%;
-	padding-left: 5%;
-} */
-/*********/
 
 iframe {
 	width: 100%    !important;
@@ -113,19 +37,21 @@ iframe {
     padding: 5%;
 	margin-top: 5%;
 	width: 100%;
-	height: 28vh;
+	height: 25vh;
 	overflow-y: scroll;
 	overflow-x: hidden;
+	border: 1px solid green;
 }
 
 .article {
 	display: block;
+	padding: 5%;
     margin-top: 5%;
 	width: 100%;
-	height: 75vh;
+	height: 48vh;
 	overflow-y: scroll;
 	overflow-x: hidden;
-	
+	border: 1px solid green;
 }
 
 .navbar-brand {
@@ -142,6 +68,30 @@ iframe {
 }
 
 
-html {
-	width: 100vw;
+/* Style for the navbar section */
+
+#header img {
+  max-width: 100%;
+  border-style: none;
+  outline: none;
+  filter: none;
+}
+
+#header img:hover {
+  max-width: 100%;
+  border-style: none;
+  outline: none;
+  -ms-transform: scale(1.15); /* IE 9 */
+  -webkit-transform: scale(1.15); /* Safari 3-8 */
+  transform: scale(1.11);
+  filter:opacity(50%);
+}
+
+#header {
+	font-family: 'Mont R';
+}
+
+#bar-header {
+	width: 100%;
+    height: 70px;
 }
