@@ -2,16 +2,21 @@
 font-family: "Uncial Antiqua", cursive;
 }
 
+@font-face {
+  font-family: 'Mont R';
+  src: url('fonts/Montserrat-Regular.ttf');
+}
+
 #metadata_viewer {
 	cursor: auto !important;
 	cursor: default !important;
 }
 
+
 body {
 	color: black;
 	text-align: left;
 	font-family: "Uncial Antiqua";
-	
 }
 
 
@@ -23,6 +28,7 @@ h1 {
 	display: inline;
 	font-size: 150%;
 }
+
 h2 {
 	color: #8b0000;
 	font-family: 'Uncial Antiqua';
@@ -36,6 +42,7 @@ figure {
 	display: inline;
 	margin-bottom: 1%;
 }
+
 figcaption {
 	font-family: 'Uncial Antiqua';
 	font-size: 70%;
@@ -56,7 +63,6 @@ iframe {
 	border-left: 4px solid #8b0000;
 	border-right: 4px solid #8b0000;
 	outline: 2px solid black;
-	
 }
 
 img {
@@ -67,9 +73,7 @@ img {
   border-left: 4px solid #8b0000;
   border-right: 4px solid #8b0000;
   outline: 2px solid black;
-
 }
-
 
 
 a { 
@@ -91,6 +95,7 @@ a:active {
 	color: black; 
 	text-decoration: none;
 }
+
 .metadata {
    	display: block;
    	padding: 1%;
@@ -106,7 +111,7 @@ a:active {
 	background-position: center;
 	border-left: 50px solid;
 	border-image: url('imgs/border.jpg') 75 round;
-	scrollbar-color: #D4AF37;
+	scrollbar-color: #D4AF37 #D4AF37;
 	scrollbar-width: thin;
 	cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='75' height='90' viewport='0 0 100 100' style='fill:black;font-size:60px;'><text y='50%'>☜</text></svg>") 16 0,auto;
 }
@@ -138,9 +143,11 @@ a:active {
 	padding-left: 2%;
 	padding-bottom: 200px;
 	width: 100%;
-	height: 65vh;
+	height: 50vh;
 	overflow-y: scroll;
 	overflow-x: hidden;
+	scrollbar-color: #D4AF37 #D4AF37;
+	scrollbar-width: thin;
 	background: url('imgs/parchment.jpg');
 	background-position: center;
 	border-left: 50px solid;
@@ -159,26 +166,49 @@ a:active {
 .article::-webkit-scrollbar-thumb {
   background-color: #2B6199;     /*color of the scroll thumb. Color is Lapis Lazuli */
   background-color: none;
-  border-radius: 20px;*/       /* roundness of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
   border: 2px solid #2B6199;  /* creates padding around scroll thumb */
 }
 
+/*
 #articlerow {
 	padding: 3%;
 	background: #1b294b;
 	border: 5px solid #555;
 	color: black;
 	font-family: "Uncial Antiqua"
+} */
+
+
+
+/* Style for the navbar section */
+
+#header img {
+  max-width: 100%;
+  border-style: none;
+  outline: none;
+  filter: none;
 }
 
-p
-{
-  margin:0;
-  padding:0;
-  display: inline;  
+#header img:hover {
+  max-width: 100%;
+  border-style: none;
+  outline: none;
+  -ms-transform: scale(1.15); /* IE 9 */
+  -webkit-transform: scale(1.15); /* Safari 3-8 */
+  transform: scale(1.11);
+  filter:opacity(50%);
 }
 
-div{
-  margin:0;
-  padding:0;
+#header {
+	font-family: 'Mont R';
 }
+
+#bar-header {
+	width: 100%;
+    height: 70px;
+}
+
+
+
+
