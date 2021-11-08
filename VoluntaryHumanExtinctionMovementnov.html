@@ -4,21 +4,25 @@
 		<!-- Required meta tags -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Uncial+Antiqua&family=Libre+Caslon+Text&family=Modak&family=Plaster&family=Righteous&family=Teko:wght@700&display=swap" rel="stylesheet">
-		
+		 
+
+
 		<title>LLLL Voluntary Human Extinction Movement</title>
 	
 	<!--Bootstrap CSS-->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	  
 	
-	<!--My CSS-->
-	<link id="style" rel="stylesheet" type="text/css" href="css\default.css"/> 
+	<!-- starting css --> 
+    <link id="style" rel="stylesheet" type="text/css" href="css\default.css"/> 
 	</head>
-
-	<body>		
+	
+	
+	<body>
+	<!--Insert code for navbar here-->	
 	  <header id="header">
 	    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
 		  <div class="container-fluid">
@@ -64,24 +68,89 @@
 			</div>
 		   </div>
 	    </nav>
-	</header>	<!-- -->
-		
+	  </header>	
+	
 		
 	<div id="bar-header" class="container mt-5"> <!-- leave empty -->
 		<div class="row mt-5">
 		</div>
-	</div>	
+	</div> 
+	
+<!--This is everything below the navbar-->
 		
-	<!-- Articles -->
-	<div class="container"> 
+	  <div class="container" id="art">
 
-			<div class="row" id="articlerow">
-				<!-- This is a place holder for the index panel-->
+		<div class="row">
+			
+		  <!-- sidebar metadata viewer [Bootstrap] -->
+		  <!-- need to investigate "fieldset" element-->
+			<div class="col" id="metadata viewer">		
+			
+				<div class="accordion accordion-flush" id="accordionFlushExample">
+				
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="flush-headingOne">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne"> Articles </button>
+						</h2>
+						<div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+							<div class="accordion-body">		
+								<input type="checkbox" id="mormons_money" name="mormons_money" value="mormons_money" onclick="myFunction('Mormons_and_Money')">
+									<label for="mormons_money">Mormons and Money</label><br>		
+								<input type="checkbox" id="startups" name="startups" value="startups" onclick="myFunction('Mormon Startups')">
+									<label for="startups">Utah's Startup Success</label><br>
+								<input type="checkbox" id="hoffman" name="hoffman" value="hoffman" onclick="myFunction('Hoffman')">
+									<label for="hoffman">Mark Hoffman</label><br>
+								<input type="checkbox" name="subheadings" value="subheadings" onclick="test1()">
+									<label for="subheadings">Get Subheadings</label>
+										<div id="subheadings"></div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="flush-headingTwo">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo"> Editorial Metadata</button>
+						</h2>
+						<div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+							<div class="accordion-body">
+								<input type="checkbox" name="author" value="author" onclick="myFunction('author')">
+									<label for="author">Author</label><br>
+								<input type="checkbox" name="date" value="date" onclick="myFunction('date')">
+									<label for="date">Date</label><br>
+								<input type="checkbox" name="source" value="source" onclick="myFunction('source')">
+									<label for="source">Source</label><br>
+								<input type="checkbox" name="license" value="license" onclick="myFunction('license')">
+									<label for="license">License</label><br>
+								<input type="checkbox" name="other" value="other" onclick="myFunction('other')">
+									<label for="other">Other</label><br>
+
+							</div>
+						</div>
+					</div>
+					
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="flush-headingThree">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree"> Content Metadata</button>
+						</h2>
+						<div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+						  <div class="accordion-body">
+							<input type="checkbox" id="people" name="people" value="people">
+								<label for="people">People</label><br>
+							<input type="checkbox" id="places" name="places" value="places">
+								<label for="places">Places</label><br>
+							<input type="checkbox" id="orgs" name="orgs" value="orgs">
+								<label for="orgs">Organizations</label><br>
+							<input type="checkbox" id="concepts" name="concepts" value="concepts">
+								<label for="concepts">Concepts</label></div>
+						</div>
+					</div>
+				</div>	
+			</div>		
+		  			
 			
 			<!--Article 1 metadata-->
-				<div class="col" id="VHEMT's experiences">
-					
-					<div class="metadata">	
+			<div class="col" id="VHEMT's experiences">	
+				<div class="metadata">	
 						
 						<h1 data-src="https://www.theguardian.com/world/2018/jun/20/give-up-having-children-couples-save-planet-climate-crisis" class="title">Would you give up having children to save the planet? Meet the couples who have</h1> <span class="subtitle">The environmental toll of having even one child is enormous - 58.6 tonnes of carbon each year. So is going <span class="key" about="child-free">child-free</span> the answer to our <span class="key" about="environmental issues">climate crisis</span>?</span>
 						
@@ -91,20 +160,20 @@
 							<span class="mention person" about="Amy Fleming" data-sort="Amy Fleming" data-label="Amy Fleming">Amy Fleming</span></p>
 							
 						<figure>
-							<img class="img" src="VHEMT\img\Art 1\1.jpeg">
+							<img class="img" src="img\Art 1\1.jpeg">
 							<figcaption> ‘We can talk about <span class="key" about="environmental issues">emissions</span> and <span class="key" about="environmental issues">climate change</span>, but talking about population gets such an emotional reaction from people.’ Illustration: <span class="mention person" about="Petra Stefankova" data-sort="Petra Stefankova" data-label="Petra Stefankova">Petra Stefankova</span></figcaption>
 						</figure>
-					</div>
+				</div>
 			<!--Article 1 content-->			
 				<div class="article">
-					<p><span class="mention person" about="Gwynn Mackellen" data-sort="Gwynn Mackellen" data-label="Gwynn Mackellen"> Gwynn Mackellen</span> was 26 when she decided to get sterilised. It took the recycling consultant, who is based in <span class="mention place" about="California" data-sort="California" data-label="California">California</span> five years to find an appropriate doctor under the public health plan she was on, but she was determined. In 2012, she succeeded. “I always knew I didn’t want kids, for <span class="key" about="environmental issues">environmental reasons</span>,” she says.</p>
+					<p><span class="mention person" about="Gwynn Mackellen" data-sort="Gwynn Mackellen" data-label="Gwynn Mackellen"> <span id="cap">G</span>wynn Mackellen</span> was 26 when she decided to get sterilised. It took the recycling consultant, who is based in <span class="mention place" about="California" data-sort="California" data-label="California">California</span> five years to find an appropriate doctor under the public health plan she was on, but she was determined. In 2012, she succeeded. “I always knew I didn’t want kids, for <span class="key" about="environmental issues">environmental reasons</span>,” she says.</p>
 
 					<p>“I work in the waste industry, and our waste is the downstream of people. It’s not people being bad; it’s just the effects of people.” Just as it’s not only bad people <span class="key" about="environmental issues">deforesting</span>, she says: “The trees are being cut down on our behalf. <span class="key" about="environmental issues">Plastic waste</span> is being dumped and minerals are being mined not because of bad people, but because of people. Having fewer of us, there will be less of those effects.”</p>
 
 					<p><span class="mention person" about="Gwynn Mackellen" data-sort="Gwynn Mackellen" data-label="Gwynn Mackellen">Mackellen</span> identifies as an <span class="key" about="anti-natalism">antinatalist</span>, a philosophical movement based around the tenet that it’s cruel to bring sentient lives, doomed to suffering and to causing suffering, into the world. “Or at least I think our culture is very <span class="key" about="pro-natalism">pro-natalist</span> and it’s to our detriment. I would like to see us <span class="key" about="reproductive freedom">voluntarily reduce our population</span>.” But cultural pressures, she says, drive people to <span class="key" about="procreation">have children</span> by celebrating <span class="key" about="procreation">childbearing</span> without acknowledging the consequences for themselves and the planet.</p>
 					
 					<figure>
-						<img class="img" src="VHEMT\img\Art 1\2.jpeg">
+						<img class="img" src="img\Art 1\2.jpeg">
 						<figcaption><span class="mention person" data-sort="Gwynn Mackellen" data-label="Gwynn Mackellen">Gwynn Mackellen</span>, who was sterilised at the age of 26. Photograph: <span class="mention person" data-sort="Ingrid Beesley" data-label="Ingrid Beesley">Ingrid Beesley</span></figcaption>
 					</figure>
 
@@ -113,7 +182,7 @@
 					<p>The UK-based organisation <a href="https://www.populationmatters.org/?gclid=CjwKCAjw06LZBRBNEiwA2vgMVUJpAqts9A5_RcN_D46na7I3zzvvCzLO8zxZO1umGIihonV4YVqgQRoCzEcQAvD_BwE"><span class="mention org" about="Population Matters" data-sort="Population Matters" data-label="Population Matters">Population Matters</span></a> wouldn’t call for <span class="key" about="human extinction">human extinction</span>– even in jest – but it does campaign against <span class="key" about="overpopulation">population growth</span> which, it says, contributes to <span class="key" about="environmental issues">environmental degradation</span>, <span class="key" about="environmental issues">resource depletion</span>, poverty and inequality. To its list of influential patrons, which already includes <span class="mention person" about="David Attenborough" data-sort="David Attenborough" data-label="David Attenborough"> David Attenborough</span>, <span class="mention person" about="Chris Packham" data-sort="Chris Packham" data-label="Chris Packham">Chris Packham</span>, <span class="mention person" about="Lionel Shriver" data-sort="Lionel Shriver" data-label="Lionel Shriver">Lionel Shriver</span> and the primatologist <a href="https://www.theguardian.com/lifeandstyle/2017/nov/14/primatologist-jane-goodall-tarzan-married-the-wrong-jane"><span class="mention person" about="Jane Goodall" data-sort="Jane Goodall" data-label="Jane Goodall">Jane Goodall</span></a>, it has recently added the racing driver and environmental activist<a href="https://www.theguardian.com/women-in-leadership/2016/apr/08/nascar-female-driver-leilani-munter-racing-extinction-vegan-environment"><span class="mention person" about="Leilani Münter" data-sort="Leilani Münter" data-label="Leilani Münter"> Leilani Münter</span></a>. She’s an eloquent positive-thinker. “Never underestimate a vegan hippy chick with a race car,” is how she describes herself <a href="http://www.leilani.green">online</a>.</p>
 
 					<figure>
-						<img class="img" src="VHEMT\img\Art 1\3.jpeg">
+						<img class="img" src="img\Art 1\3.jpeg">
 						<figcaption>Racing driver and environmental activist <span class="mention person" about="Leilani Münter" data-sort="Leilani Münter" data-label="Leilani Münter">Leilani Münter</span>: ‘My husband and I are <span class="key" about="child-free">child-free</span> by <span class="key" about="reproductive freedom">choice</span>.’ Photograph: <span class="mention person" about="Scott R LePage" data-sort="Scott R LePage" data-label="Scott R LePage"> Scott R LePage</span></figcaption>
 					</figure>
 
@@ -134,7 +203,7 @@
 					<p>This view is shared by <span class="mention person" about="Emma Olif" data-sort="Emma Olif" data-label="Emma Olif">Emma Olif</span>, a board member of <span class="mention org" about="Population Matters" data-sort="Population Matters" data-label="Population Matters">Population Matters</span> who lives off-grid in a caravan, travelling between rural <span class="mention place" about="England" data-sort="England" data-label="England">England</span> and <span class="mention place" about="Spain" data-sort="Spain" data-label="Spain">Spain</span>. “People have got very narrow-minded about what it means to be meaningful as a person,” she says. “We have so much opportunity these days to do important things and <span class="key" about="procreation">be pregnant</span> with more than children. We can be pregnant with ideas and dreams and revolution.”</p>
 
 					<figure>
-						<img class="img" src="VHEMT\img\Art 1\4.jpeg">
+						<img class="img" src="img\Art 1\4.jpeg">
 						<figcaption><span class="mention person" about="Emma Olif" data-sort="Emma Olif" data-label="Emma Olif">Emma Olif</span>: ‘I’ve got four siblings; my genes are fine.’ Photograph: <span class="mention person" about="Rebecca Hosking" data-sort="Rebecca Hosking" data-label="Rebecca Hosking">Rebecca Hosking</span></figcaption>
 					</figure>
 
@@ -153,7 +222,7 @@
 					<p><span class="mention person" about="Alex Smith" data-sort="Alex Smith" data-label="Alex Smith">Alex Smith</span>, a software developer in <span class="mention place" about="Suffolk" data-sort="Suffolk" data-label="Suffolk">Suffolk</span>, decided as a child not to <span class="key" about="procreate">create</span> any new humans. His wife didn’t want children, either, but throughout their 15 years together, he says, “we’ve revisited it on a regular basis, checking we both still feel the same, and we’ve never changed our minds.” At 41, he’s in a <span class="key" about="child-free">child-free</span> minority, as most of his friends have started families. “My impression is that having a family is just instinctive and natural and most people don’t think about the impact.” He would never tell anyone not to do it, but if the subject comes up in conversation, he’ll politely suggest considering having only one child. “We need to reverse this <span class="key" about="overpopulation">population [growth]</span> and that’s certainly one way to do it.”</p>
 
 					<figure>
-						<img class="img" src="VHEMT\img\Art 1\5.jpeg">
+						<img class="img" src="img\Art 1\5.jpeg">
 						<figcaption><span class="mention person" about="Angela Cortal" data-sort="Angela Cortal" data-label="Angela Cortal">Angela</span> and <span class="mention person" about="Xavi Cortal" data-sort="Xavi Cortal" data-label="Xavi Cortal">Xavi Cortal</span>: ‘We decided to go with a rescue dog instead of a kid.’ Photograph: Courtesy of <span class="mention person" about="Angela Cortal" data-sort="Angela Cortal" data-label="Angela Cortal">Angela</span> and Xavi Cortel</figcaption>
 					</figure>
 
@@ -192,7 +261,7 @@
 						<p class="info"><span class="mention person" about="Tood May" data-sort="Tood May" data-label="Tood May">Mr. May</span> is a professor of philosophy at <span class="mention org" about="Clemson University" data-sort="Clemson University" data-label="Clemson University">Clemson University</span>.</p>
 
 					<figure>
-						<img class="img" src="">
+						<img class="img" src="img\Art 2\1.jpeg">
 						<figcaption>An overgrown lot along Highway 13 near the town of <span class="mention place" about="Haleyville"> Haleyville</span>,<span class="mention place" about="Alabama"> Ala</span>. Credit: <span class="mention person" about="William Widmer" data-sort="William Widmer" data-label="William Widmer">William Widmer</span> for <span class="mention org" about="The New York Times" data-sort="The New York Times" data-label="The New York Times"> The New York Times</figcaption>
 					</figure>
 
@@ -201,78 +270,79 @@
 				</div>
 			
 			<!--Article 2 content-->
-			<div class="article">
+				<div class="article">
 
-			<p>There are stirrings of discussion these days in philosophical circles about <a href="https://dotearth.blogs.nytimes.com/2015/07/15/varied-views-dark-light-in-between-of-earths-anthropocene-age/?mtrref=undefined&gwh=E3F9E4D3571DE47779A2CFF6DDEBE74B&gwt=pay&assetType=PAYWALL">the prospect of <span class="key" about="human extinction" data-sort="human extinction" data-label="human extinction"> human extinction</span></a>. This should not be surprising, given the increasingly threatening predations of <span class="mention concept" about="environmental issues">climate change</span>. In reflecting on this question, I want to suggest an answer to a single question, one that hardly covers the whole philosophical territory but is an important aspect of it. Would <span class="key" about="human extinction" data-sort="human extinction" data-label="human extinction">human extinction</span> be a tragedy?</p>
+				<p><span id="cap">T</span>here are stirrings of discussion these days in philosophical circles about <a href="https://dotearth.blogs.nytimes.com/2015/07/15/varied-views-dark-light-in-between-of-earths-anthropocene-age/?mtrref=undefined&gwh=E3F9E4D3571DE47779A2CFF6DDEBE74B&gwt=pay&assetType=PAYWALL">the prospect of <span class="key" about="human extinction" data-sort="human extinction" data-label="human extinction"> human extinction</span></a>. This should not be surprising, given the increasingly threatening predations of <span class="mention concept" about="environmental issues">climate change</span>. In reflecting on this question, I want to suggest an answer to a single question, one that hardly covers the whole philosophical territory but is an important aspect of it. Would <span class="key" about="human extinction" data-sort="human extinction" data-label="human extinction">human extinction</span> be a tragedy?</p>
 
-			<p>To get a bead on this question, let me distinguish it from a couple of other related questions. I’m not asking whether the experience of humans coming to an end would be a bad thing. (In these pages, <a href="https://opinionator.blogs.nytimes.com/2013/09/21/the-importance-of-the-afterlife-seriously/?mtrref=undefined&gwh=5768148232E07E23BDC73FC021F7F37F&gwt=pay&assetType=PAYWALL#more-149307"> <span class="mention person" about="Samuel Scheffler" data-sort="Samuel Scheffler" data-label="Samuel Scheffler">Samuel Scheffler</span> has given us</a> an important reason to think that it would be.) I am also not asking whether <span class="key" about="Humanity">human beings</span> as a species deserve to die out. That is an important question, but would involve different considerations. Those questions, and others like them, need to be addressed if we are to come to a full moral assessment of the prospect of our demise. Yet what I am asking here is simply whether it would be a tragedy if <span class="key" about="human extinction">the planet no longer contained <span class="key" about="Humanity">human beings</span>. And the answer I am going to give might seem puzzling at first. I want to suggest, at least tentatively, both that it would be a tragedy and that it might just be a good thing.</p>
+				<p>To get a bead on this question, let me distinguish it from a couple of other related questions. I’m not asking whether the experience of humans coming to an end would be a bad thing. (In these pages, <a href="https://opinionator.blogs.nytimes.com/2013/09/21/the-importance-of-the-afterlife-seriously/?mtrref=undefined&gwh=5768148232E07E23BDC73FC021F7F37F&gwt=pay&assetType=PAYWALL#more-149307"> <span class="mention person" about="Samuel Scheffler" data-sort="Samuel Scheffler" data-label="Samuel Scheffler">Samuel Scheffler</span> has given us</a> an important reason to think that it would be.) I am also not asking whether <span class="key" about="Humanity">human beings</span> as a species deserve to die out. That is an important question, but would involve different considerations. Those questions, and others like them, need to be addressed if we are to come to a full moral assessment of the prospect of our demise. Yet what I am asking here is simply whether it would be a tragedy if <span class="key" about="human extinction">the planet no longer contained <span class="key" about="Humanity">human beings</span>. And the answer I am going to give might seem puzzling at first. I want to suggest, at least tentatively, both that it would be a tragedy and that it might just be a good thing.</p>
 
-			<p>To make that claim less puzzling, let me say a word about tragedy. In theater, the tragic character is often someone who commits a wrong, usually a significant one, but with whom we feel sympathy in their descent. Here <span class="mention person" about="Sophocles" data-sort="Sophocles" data-label="Sophocles"> Sophocles</span>’s <span class="mention person" about="Oedipus" data-sort="Oedipus" data-label="Oedipus">Oedipus</span>, <span class="mention person" about="Shakespeare" data-sort="Shakespeare" data-label="Shakespeare">Shakespeare</span>’s <span class="mention person" about="King Lear" data-sort="King Lear" data-label="King Lear"> Lear</span>, and <span class="mention person" about="Arthur Miller" data-sort="Arthur Miller" data-label="Arthur Miller">Arthur Miller</span>’s <span class="mention person" about="Willy Loman" data-sort="Willy Loman" data-label="Willy Loman">Willy Loman</span> might stand as examples. In this case, the tragic character is <span class="mention concept" about="Humanity"> humanity</span>. It is <span class="key" about="Humanity">humanity</span> that is committing a wrong, a wrong whose elimination would likely require the <span class="key" about="human extinction">elimination of the species</span>, but with whom we might be sympathetic nonetheless for reasons I discuss in a moment.</p>
+				<p>To make that claim less puzzling, let me say a word about tragedy. In theater, the tragic character is often someone who commits a wrong, usually a significant one, but with whom we feel sympathy in their descent. Here <span class="mention person" about="Sophocles" data-sort="Sophocles" data-label="Sophocles"> Sophocles</span>’s <span class="mention person" about="Oedipus" data-sort="Oedipus" data-label="Oedipus">Oedipus</span>, <span class="mention person" about="Shakespeare" data-sort="Shakespeare" data-label="Shakespeare">Shakespeare</span>’s <span class="mention person" about="King Lear" data-sort="King Lear" data-label="King Lear"> Lear</span>, and <span class="mention person" about="Arthur Miller" data-sort="Arthur Miller" data-label="Arthur Miller">Arthur Miller</span>’s <span class="mention person" about="Willy Loman" data-sort="Willy Loman" data-label="Willy Loman">Willy Loman</span> might stand as examples. In this case, the tragic character is <span class="mention concept" about="Humanity"> humanity</span>. It is <span class="key" about="Humanity">humanity</span> that is committing a wrong, a wrong whose elimination would likely require the <span class="key" about="human extinction">elimination of the species</span>, but with whom we might be sympathetic nonetheless for reasons I discuss in a moment.</p>
 
-			<p>To make that case, let me start with a claim that I think will be at once depressing and, upon reflection, uncontroversial. <span class="key" abou="Humanity"> Human beings</span> are <span class="key" about="environmental issues">destroying large parts of the inhabitable earth</span> and causing unimaginable <span class="key" about="animal suffering">suffering to many of the animals</span> that inhabit it. This is happening through at least three means. First, human contribution to <span class="key" about="environmental issues">climate change</span> is devastating ecosystems, as the recent <a href="https://www.nytimes.com/interactive/2018/11/15/climate/yellowstone-global-warming.html?mtrref=undefined&gwh=898A4C4CE4FC27F102125939B59EA32F&gwt=pay&assetType=PAYWALL">article on <span class="mention place" about="Yellowstone Park">Yellowstone Park</span></a> in <span class="mention org" about="The New York Times">The Times</span> exemplifies. Second,<span class="key" about="overpopulation">increasing human population</span> is <span class="key" about="environmental issues">encroaching on ecosystems</span> that would otherwise be intact. Third, factory farming fosters the creation of millions upon millions of animals for whom it offers nothing but <span class="key" about="animal suffering">suffering</span> and misery before <span class="key" about="animal suffering">slaughtering</span> them in often barbaric ways. There is no reason to think that those practices are going to diminish any time soon. Quite the opposite.</p>
+				<p>To make that case, let me start with a claim that I think will be at once depressing and, upon reflection, uncontroversial. <span class="key" abou="Humanity"> Human beings</span> are <span class="key" about="environmental issues">destroying large parts of the inhabitable earth</span> and causing unimaginable <span class="key" about="animal suffering">suffering to many of the animals</span> that inhabit it. This is happening through at least three means. First, human contribution to <span class="key" about="environmental issues">climate change</span> is devastating ecosystems, as the recent <a href="https://www.nytimes.com/interactive/2018/11/15/climate/yellowstone-global-warming.html?mtrref=undefined&gwh=898A4C4CE4FC27F102125939B59EA32F&gwt=pay&assetType=PAYWALL">article on <span class="mention place" about="Yellowstone Park">Yellowstone Park</span></a> in <span class="mention org" about="The New York Times">The Times</span> exemplifies. Second,<span class="key" about="overpopulation">increasing human population</span> is <span class="key" about="environmental issues">encroaching on ecosystems</span> that would otherwise be intact. Third, factory farming fosters the creation of millions upon millions of animals for whom it offers nothing but <span class="key" about="animal suffering">suffering</span> and misery before <span class="key" about="animal suffering">slaughtering</span> them in often barbaric ways. There is no reason to think that those practices are going to diminish any time soon. Quite the opposite.</p>
 
-			<p> <span class="key" about="Humanity">Humanity</span>, then, is the source of <span class="key" about="animal suffering">devastation of the lives of conscious animals</span> on a scale that is difficult to comprehend.</p>
+				<p> <span class="key" about="Humanity">Humanity</span>, then, is the source of <span class="key" about="animal suffering">devastation of the lives of conscious animals</span> on a scale that is difficult to comprehend.</p>
 
-			<p>To be sure, nature itself is hardly a Valhalla of peace and harmony. Animals kill other animals regularly, often in ways that we (although not they) would consider cruel. But there is no other creature in nature whose predatory behavior is remotely as deep or as widespread as the behavior we display toward what the philosopher <span class="mention person" about="Christine Korsgaard" data-sort="Christine Korsgaard" data-label="Christine Korsgaard">Christine Korsgaard</span> aptly calls “our fellow creatures” in a sensitive <a href="https://www.nytimes.com/interactive/2018/11/15/climate/yellowstone-global-warming.html?mtrref=undefined&gwh=898A4C4CE4FC27F102125939B59EA32F&gwt=pay&assetType=PAYWALL">book</a> of the same name.</p>
+				<p>To be sure, nature itself is hardly a Valhalla of peace and harmony. Animals kill other animals regularly, often in ways that we (although not they) would consider cruel. But there is no other creature in nature whose predatory behavior is remotely as deep or as widespread as the behavior we display toward what the philosopher <span class="mention person" about="Christine Korsgaard" data-sort="Christine Korsgaard" data-label="Christine Korsgaard">Christine Korsgaard</span> aptly calls “our fellow creatures” in a sensitive <a href="https://www.nytimes.com/interactive/2018/11/15/climate/yellowstone-global-warming.html?mtrref=undefined&gwh=898A4C4CE4FC27F102125939B59EA32F&gwt=pay&assetType=PAYWALL">book</a> of the same name.</p>
 
-			<p>If this were all to the story there would be no tragedy. <span class="mention concept" about="Human Extinction">The elimination of the human species</span> would be a good thing, full stop. But there is more to the story. <span class="key" about="Humanity">Human beings</span> bring things to the planet that other animals cannot. For example, we bring an advanced level of reason that can experience wonder at the world in a way that is foreign to most if not all other animals. We create art of various kinds: literature, music and painting among them. We engage in sciences that seek to understand the universe and our place in it. Were <span class="key" about="Humanity">our species</span> to go <span class="key" about="extinction">extinct</span>, all of that would be lost.</p>
+				<p>If this were all to the story there would be no tragedy. <span class="mention concept" about="Human Extinction">The elimination of the human species</span> would be a good thing, full stop. But there is more to the story. <span class="key" about="Humanity">Human beings</span> bring things to the planet that other animals cannot. For example, we bring an advanced level of reason that can experience wonder at the world in a way that is foreign to most if not all other animals. We create art of various kinds: literature, music and painting among them. We engage in sciences that seek to understand the universe and our place in it. Were <span class="key" about="Humanity">our species</span> to go <span class="key" about="extinction">extinct</span>, all of that would be lost.</p>
 
-			<p>Now there might be those on the more jaded side who would argue that if we went <span class="key" about="extinction">extinct</span> there would be no loss, because there would be no one for whom it would be a loss not to have access to those things. I think this objection misunderstands our relation to these practices. We appreciate and often participate in such practices because we believe they are good to be involved in, because we find them to be worthwhile. It is the goodness of the practices and the experiences that draw us. Therefore, it would be a loss to the world if those practices and experiences ceased to <span class="key" about="existence">exist</span>.</p>
+				<p>Now there might be those on the more jaded side who would argue that if we went <span class="key" about="extinction">extinct</span> there would be no loss, because there would be no one for whom it would be a loss not to have access to those things. I think this objection misunderstands our relation to these practices. We appreciate and often participate in such practices because we believe they are good to be involved in, because we find them to be worthwhile. It is the goodness of the practices and the experiences that draw us. Therefore, it would be a loss to the world if those practices and experiences ceased to <span class="key" about="existence">exist</span>.</p>
 
-			<p>One could press the objection here by saying that it would only be a loss from a human viewpoint, and that that viewpoint would no longer exist if we went <span class="key" about="extinction">extinct</span>. This is true. But this entire set of reflections is taking place from a human viewpoint. We cannot ask the questions we are asking here without situating them within the human practice of philosophy. Even to ask the question of whether it would be a tragedy if <span class="key" about="human extinction">humans were to disappear from the face of the planet</span> requires a normative framework that is restricted to <span class="key" about="Humanity">human beings</span>.</p>
+				<p>One could press the objection here by saying that it would only be a loss from a human viewpoint, and that that viewpoint would no longer exist if we went <span class="key" about="extinction">extinct</span>. This is true. But this entire set of reflections is taking place from a human viewpoint. We cannot ask the questions we are asking here without situating them within the human practice of philosophy. Even to ask the question of whether it would be a tragedy if <span class="key" about="human extinction">humans were to disappear from the face of the planet</span> requires a normative framework that is restricted to <span class="key" about="Humanity">human beings</span>.</p>
 
-			<p>Let’s turn, then, and take the question from the other side, the side of those who think that <span class="key" about="human extinction"> human extinction</span> would be both a tragedy and overall a bad thing. Doesn’t the <span class="key" about="existence"> existence</span> of those practices outweigh the harm we bring to the <span class="key" about="environmental issues">environment</span> and the <span class="key" about="animal suffering">animals</span> within it? Don’t they justify the continued <span class="key" about="existence"> existence</span> of <span class="key" about="Humanity">our species</span>, even granting the <span class="key" about="animal suffering">suffering</span> we bring to so many nonhuman lives?</p>
+				<p>Let’s turn, then, and take the question from the other side, the side of those who think that <span class="key" about="human extinction"> human extinction</span> would be both a tragedy and overall a bad thing. Doesn’t the <span class="key" about="existence"> existence</span> of those practices outweigh the harm we bring to the <span class="key" about="environmental issues">environment</span> and the <span class="key" about="animal suffering">animals</span> within it? Don’t they justify the continued <span class="key" about="existence"> existence</span> of <span class="key" about="Humanity">our species</span>, even granting the <span class="key" about="animal suffering">suffering</span> we bring to so many nonhuman lives?</p>
 
-			<p>To address that question, let us ask another one. How many human lives would it be worth sacrificing to preserve the <span class="key" about="existence">existence</span> of <span class="mention person" about="Shakespeare" data-sort="Shakespeare" data-label="Shakespeare">Shakespeare</span>’s works? If we were required to engage in human sacrifice in order to save his works from eradication, how many humans would be too many? For my own part, I think the answer is one. One human life would be too many (or, to prevent quibbling, one innocent human life), at least to my mind. Whatever the number, though, it is going to be quite low.</p>
+				<p>To address that question, let us ask another one. How many human lives would it be worth sacrificing to preserve the <span class="key" about="existence">existence</span> of <span class="mention person" about="Shakespeare" data-sort="Shakespeare" data-label="Shakespeare">Shakespeare</span>’s works? If we were required to engage in human sacrifice in order to save his works from eradication, how many humans would be too many? For my own part, I think the answer is one. One human life would be too many (or, to prevent quibbling, one innocent human life), at least to my mind. Whatever the number, though, it is going to be quite low.</p>
 
-			<p>Or suppose a terrorist planted a bomb in the <span class="mention org" about="Museum Louvre">Louvre</span> and the first responders had to choose between saving several people in the museum and saving the art. How many of us would seriously consider saving the art?</p>
+				<p>Or suppose a terrorist planted a bomb in the <span class="mention org" about="Museum Louvre">Louvre</span> and the first responders had to choose between saving several people in the museum and saving the art. How many of us would seriously consider saving the art?</p>
 
-			<p>So, then, how much <span class="key" about="animal suffering">suffering and death of nonhuman life</span> would we be willing to countenance to save <span class="Shakespeare" about="Shakespeare" data-sort="Shakespeare" data-label="Shakespeare">Shakespeare</span>, our sciences and so forth? Unless we believe there is such a profound moral gap between the status of human and nonhuman animals, whatever reasonable answer we come up with will be well surpassed by the <span class="key" about="animal suffering">harm and suffering we inflict upon animals</span>. There is just too much <span class="key" about="animal suffering">torment wreaked upon too many animals</span> and too certain a prospect that this is going to continue and probably increase; it would overwhelm anything we might place on the other side of the ledger. Moreover, those among us who believe that there is such a gap should perhaps become more familiar with the richness of lives of many of our conscious fellow creatures. Our own science is revealing that richness to us, ironically giving us a reason to eliminate it along with our own continued <span class="key" about="existence">existence</span>.</p>
+				<p>So, then, how much <span class="key" about="animal suffering">suffering and death of nonhuman life</span> would we be willing to countenance to save <span class="Shakespeare" about="Shakespeare" data-sort="Shakespeare" data-label="Shakespeare">Shakespeare</span>, our sciences and so forth? Unless we believe there is such a profound moral gap between the status of human and nonhuman animals, whatever reasonable answer we come up with will be well surpassed by the <span class="key" about="animal suffering">harm and suffering we inflict upon animals</span>. There is just too much <span class="key" about="animal suffering">torment wreaked upon too many animals</span> and too certain a prospect that this is going to continue and probably increase; it would overwhelm anything we might place on the other side of the ledger. Moreover, those among us who believe that there is such a gap should perhaps become more familiar with the richness of lives of many of our conscious fellow creatures. Our own science is revealing that richness to us, ironically giving us a reason to eliminate it along with our own continued <span class="key" about="existence">existence</span>.</p>
 
-			<p>One might ask here whether, given this view, it would also be a good thing for those of us who are currently here to end our lives in order to prevent further <span class="key" about="animal suffering">animal suffering</span>. Although I do not have a final answer to this question, we should recognize that the case of future humans is very different from the case of currently <span class="key" about="existence">existing</span> humans. To demand of currently <span class="key" about="existence">existing</span> humans that they should end their lives would introduce significant suffering among those who have much to lose by dying. In contrast, preventing future humans from <span class="key" about="existence">existing</span> does not introduce such suffering, since those human beings will not <span class="key" about="existence">exist</span> and therefore not have lives to sacrifice. The two situations, then, are not analogous.</p>
+				<p>One might ask here whether, given this view, it would also be a good thing for those of us who are currently here to end our lives in order to prevent further <span class="key" about="animal suffering">animal suffering</span>. Although I do not have a final answer to this question, we should recognize that the case of future humans is very different from the case of currently <span class="key" about="existence">existing</span> humans. To demand of currently <span class="key" about="existence">existing</span> humans that they should end their lives would introduce significant suffering among those who have much to lose by dying. In contrast, preventing future humans from <span class="key" about="existence">existing</span> does not introduce such suffering, since those human beings will not <span class="key" about="existence">exist</span> and therefore not have lives to sacrifice. The two situations, then, are not analogous.</p>
 
-			<p>It may well be, then, that <span class="key" about="human extinction">the extinction of humanity</span> would make the world better off and yet would be a tragedy. I don’t want to say this for sure, since the issue is quite complex. But it certainly seems a live possibility, and that by itself disturbs me.</p>
+				<p>It may well be, then, that <span class="key" about="human extinction">the extinction of humanity</span> would make the world better off and yet would be a tragedy. I don’t want to say this for sure, since the issue is quite complex. But it certainly seems a live possibility, and that by itself disturbs me.</p>
 
-			<p>There is one more tragic aspect to all of this. In many dramatic tragedies, the suffering of the protagonist is brought about through his or her own actions. It is <span class="mention person" about="Oedipus" data-sort="Oedipus" data-label="Oedipus">Oedipus</span>’s killing of his father that starts the train of events that leads to his tragic realization; and it is <span class="mention person" about="King Lear" data-sort="King Lear" data-label="King Lear">Lear</span>’s highhandedness toward his daughter <span class="mention person" about="Cordelia" data-sort="Cordelia" data-label="Cordelia">Cordelia</span> that leads to his demise. It may also turn out that it is through our own actions that we <span class="key" about="humanity">human beings</span> bring about our <span class="key" about="human extinction">extinction</span>, or at least something near it, contributing through our practices to our own tragic end.</p>
+				<p>There is one more tragic aspect to all of this. In many dramatic tragedies, the suffering of the protagonist is brought about through his or her own actions. It is <span class="mention person" about="Oedipus" data-sort="Oedipus" data-label="Oedipus">Oedipus</span>’s killing of his father that starts the train of events that leads to his tragic realization; and it is <span class="mention person" about="King Lear" data-sort="King Lear" data-label="King Lear">Lear</span>’s highhandedness toward his daughter <span class="mention person" about="Cordelia" data-sort="Cordelia" data-label="Cordelia">Cordelia</span> that leads to his demise. It may also turn out that it is through our own actions that we <span class="key" about="humanity">human beings</span> bring about our <span class="key" about="human extinction">extinction</span>, or at least something near it, contributing through our practices to our own tragic end.</p>
 
-			<footer>
-			<p><span class="mention person" about="Tood May" data-sort="Tood May" data-label="Tood May">Todd May</span> is a professor of philosophy at <span class="mention org" about="Clemson University"> Clemson University</span> and the author of, most recently, <a href="https://press.uchicago.edu/ucp/books/book/chicago/F/bo25468985.html">“A Fragile Life: Accepting Our Vulnerability.”</a> He is a philosophical adviser for the television show, “The Good Place.” (https://twitter.com/nbcthegoodplace)</p>
-			
-			<p>Now in print: <a href="https://www.thestonereader.com">“Modern Ethics in 77 Arguments,”</a> and <a href="https://www.thestonereader.com">“The Stone Reader: Modern Philosophy in 133 Arguments,”</a> with essays from the series, edited by <span class="mention person" about="Peter Catapano" data-sort="Peter Catapano" data-label="Peter Catapano">Peter Catapano</span> and <span class="mention person" about="Simon Critchley" data-sort="Simon Critchley" data-label="Simon Critchley"> Simon Critchley</span>, published by <span class="mention org" about="Liveright Books">Liveright Books.</span></p>
+				<footer>
+				<p><span class="mention person" about="Tood May" data-sort="Tood May" data-label="Tood May">Todd May</span> is a professor of philosophy at <span class="mention org" about="Clemson University"> Clemson University</span> and the author of, most recently, <a href="https://press.uchicago.edu/ucp/books/book/chicago/F/bo25468985.html">“A Fragile Life: Accepting Our Vulnerability.”</a> He is a philosophical adviser for the television show, “The Good Place.” (https://twitter.com/nbcthegoodplace)</p>
+				
+				<p>Now in print: <a href="https://www.thestonereader.com">“Modern Ethics in 77 Arguments,”</a> and <a href="https://www.thestonereader.com">“The Stone Reader: Modern Philosophy in 133 Arguments,”</a> with essays from the series, edited by <span class="mention person" about="Peter Catapano" data-sort="Peter Catapano" data-label="Peter Catapano">Peter Catapano</span> and <span class="mention person" about="Simon Critchley" data-sort="Simon Critchley" data-label="Simon Critchley"> Simon Critchley</span>, published by <span class="mention org" about="Liveright Books">Liveright Books.</span></p>
 
-			<p>Follow <span class="mention org" about="The New York Tood"> The New York Times</span> Opinion section on <a href="https://www.facebook.com/nytopinion">Facebook</a>, <a href="https://twitter.com/NYTOpinion">Twitter (@NYTopinion)</a> and <a href="https://www.instagram.com/nytopinion/">Instagram</a>.</p>
-			</footer>
-		</div>
-	</div>
+				<p>Follow <span class="mention org" about="The New York Tood"> The New York Times</span> Opinion section on <a href="https://www.facebook.com/nytopinion">Facebook</a>, <a href="https://twitter.com/NYTOpinion">Twitter (@NYTopinion)</a> and <a href="https://www.instagram.com/nytopinion/">Instagram</a>.</p>
+				</footer>
+			  </div>
+			</div>
 	
 
 			<!--Article 3 basic metadata-->
 			<div class="col" id="VHEMT and Politics">
 				<div class="metadata">
-					<h1 data-src="https://www.inverse.com/article/14056-the-voluntary-human-extinction-movement-is-both-anti-republican-and-anti-death"><span class="mention concept" about="VHEMT"> The Voluntary Human Extinction Movement</span> is both anti-<span class="mention concept" about="Republican Party">republican</span> and anti-death</h1>
-					<p class="subtitle">By supporting reproductive freedom and gender equality, <span class="mention person" about="Bernie Sanders" data-sort="Bernie Sanders" data-label="Bernie Sanders">Bernie</span> and <span class="mention person" about="Hilary Clinton" data-sort="Hilary Clinton" data-label="Hilary Clinton">Hillary</span> are preventing destruction by <span class="key" about="overpopulation">overpopulation</span>.</p>
-					
-					<p class="meta"><date>Nov. 11, 2016 7:09 PM</date></p>
-							
-					<p class="meta">Author
-						<span class="mention person" about="Yasmin Tayag" data-sort="Yasmin Tayag" data-label="Yasmin Tayag">Yasmin Tayag</span></p>
-					
-					<figure>
-							<img class="img" src="">
-					</figure>						
+				<h1 data-src="https://www.inverse.com/article/14056-the-voluntary-human-extinction-movement-is-both-anti-republican-and-anti-death"><span class="mention concept" about="VHEMT"> The Voluntary Human Extinction Movement</span> is both anti-<span class="mention concept" about="Republican Party">republican</span> and anti-death</h1>
+				<p class="subtitle">By supporting reproductive freedom and gender equality, <span class="mention person" about="Bernie Sanders" data-sort="Bernie Sanders" data-label="Bernie Sanders">Bernie</span> and <span class="mention person" about="Hilary Clinton" data-sort="Hilary Clinton" data-label="Hilary Clinton">Hillary</span> are preventing destruction by <span class="key" about="overpopulation">overpopulation</span>.</p>
+				
+				<p class="meta"><date>Nov. 11, 2016 7:09 PM</date></p>
+						
+				<p class="meta">Author
+					<span class="mention person" about="Yasmin Tayag" data-sort="Yasmin Tayag" data-label="Yasmin Tayag">Yasmin Tayag</span></p>
+				
+				<figure>
+						<img class="img" src="img\Art 3\1.jpeg">
+					</figure>
+					</p>
 				</div>
 			
 			<!--Article 3 content-->
 				<div class="article">
 
-					<p>They will know us by the trail of our dead: Humans have spent roughly 60,000 years causing mass <span class="key" about="extinctions">extinctions</span> and we’re only getting better at it. Though the environmental movement is as big as it’s ever been, human <span class="key" about="environmental issues">ecological destruction</span> has become compulsive to the point that it’s taken as almost a given that the Anthropocene will necessitate the terraformation of Mars. But not everyone is ready to give up on this planet. <span class="mention person" about="Les Knight" data-sort="Les Knight" data-label="Les Knight">Les Knight</span>, leader of the <a href="http://www.vhemt.org"><span class="mention org" about="VHEMT">Voluntary Human Extinction Movement</span></a> (because the acronym is <span class="mention org" about="VHEMT">Voluntary Human Extinction Movement VHEMT</span>, the movement goes by “Vehement”) has what is essentially a political solution: He wants mankind to agree on a set of policies designed to end <span class="key" about="Humanity">mankind.</p>
+					<p><span id="cap">T</span>hey will know us by the trail of our dead: Humans have spent roughly 60,000 years causing mass <span class="key" about="extinctions">extinctions</span> and we’re only getting better at it. Though the environmental movement is as big as it’s ever been, human <span class="key" about="environmental issues">ecological destruction</span> has become compulsive to the point that it’s taken as almost a given that the Anthropocene will necessitate the terraformation of Mars. But not everyone is ready to give up on this planet. <span class="mention person" about="Les Knight" data-sort="Les Knight" data-label="Les Knight">Les Knight</span>, leader of the <a href="http://www.vhemt.org"><span class="mention org" about="VHEMT">Voluntary Human Extinction Movement</span></a> (because the acronym is <span class="mention org" about="VHEMT">Voluntary Human Extinction Movement VHEMT</span>, the movement goes by “Vehement”) has what is essentially a political solution: He wants mankind to agree on a set of policies designed to end <span class="key" about="Humanity">mankind.</p>
 
 					<p>Let’s be clear: Genocide is not one of those policies. Knight isn’t <span class="key" about="anti-human">anti-human</span> so much as he’s <span class="key" about="anti-natalism">anti-procreation</span>. We insist on <span class="key" about="procreation">having children</span> because we believe that’s what we’re hard-wired to do, but <span class="mention person" about="Les Knight" data-sort="Les Knight" data-lable="Les Knight">Knight</span> argues that this is a selfish mistake. And, yeah, he’s got thoughts on the 2016 election. <span class="mention org" about="VHEMT">VHEMT</span> is not going to be endorsing a specific candidate, because that’s pretty self defeating when you want <span class="key" about="human extinction">the human race to disappear</span>. But that doesn’t mean <span class="mention person" about="Les Knight" data-sort="Les Knight" data-lable="Les Knight">Knight</span> is neutral. Think of mating as an act of <span class="mention concept" about="capitalism">capitalism</span> and you’ll start to get a sense of — and maybe sympathize with — his world view.</p>
 
 					<p><span class="mention person" about="Les Knight" data-sort="Les Knight" data-lable="Les Knight">Knight</span> spoke to <span class="mention org" about="Inverse">Inverse</span> about the ecosystem, the horrors of <span class="mention person" about="Carly Fiorina" data-sort="Carly Fiorina" data-lable="Carly Fiorina">Carly Fiorina, and why you won’t get any <span class="mention org" about="Facebook">Facebook</span> likes for posting about your vasectomy.</p>
 
 					<figure>
-						<img class="img" src="">
+						<img class="img" src="img\Art 3\2.jpeg">
 						<figcaption>The aftermath of airports. A World Without People</figcaption>
 					</figure>
 
@@ -289,7 +359,7 @@
 					<p>Yes, that’s right. First, we want to eliminate unwanted and unintended pregnancies, and then we want to encourage people not to want that in the first place. There are many other ways of spending one’s lifetime.</p>
 
 					<figure>
-						<img class="img"> src="">
+						<img class="img"> src="img\Art 3\3.jpeg">
 					</figure>
 
 					<p><b>Certain presidential candidates might make it a lot easier to do the former. Which candidate is <span class="key" about="VHEMT">VHEMT</span> behind?</b></p>
@@ -297,7 +367,7 @@
 					<p>Rather than looking at candidates, I look at policy. The policy of the candidate is what really matters. <span class="mention person" about="Jill Stein" data-sort="Jill Stein" data-label="Jill Stein">Jill Stein</span> of the <span class="mention org" about="Gree Party">Green Party</span> and both <span class="mention org" about="Democratic Party">Democratic</span> candidates have expressed support for <span class="key" about="reproductive freedom">reproductive freedom</span>, including the right to choose. They also encourage <span class="key" about="gender equality">gender equality</span>, which is very important in addition to <span class="key" about="reproductive freedom">reproductive freedom</span>. It actually goes hand in hand. Without <span class="key" about="gender equality">gender equality</span>, there’s rarely <span class="key" about="reproductive freedom">reproductive freedom</span>. There are politicians who are actively trying to remove <span class="key" about="reproductive freedom">reproductive freedom</span> by eliminating funding, and they’re also trying to eliminate the results of their meddling with peoples’ <span class="key" about="reproductive freedom">reproductive freedom</span>. For example, in <span class="mention place" about="New Jersey">New Jersey</span>, Governor <span class="mention person" about="Chris Christie" data-sort="Chris Christie" data-label="Chris Christie">Chris Christie</span> eliminated all family planning funding in 2010. They also are staunchly opposed to <span class="mention concept" about="abortion">abortion</span>. These two things, they really haven’t put them together. The way to prevent <span class="mention concept" about="abortion">abortions</span> is to prevent unwanted conceptions: Almost all <span class="key" about="abortion">abortions</span> are the result of unwanted conceptions, so it’s hard to understand what it is unless somebody wants to think they just want to control women. I don’t know how somebody could get into the position of governor if that’s their main mission.</p>
 
 					<figure>
-						<img class="img" src="">
+						<img class="img" src="img\Art 3\4.jpeg">
 						<figcaption>The aftermath of <span class="mention place" about="Miami">Miami</span>. A World Without People</figcaption>
 					</figure>
 
@@ -310,7 +380,7 @@
 					<p>I don’t know who could be against <span class="key" about="reproductive freedom">planning their parenthood</span>. I think something so important as bringing a new life into the world should be planned. But rather than eliminating the traditional view of family, I think we need to expand it so that it includes other definitions of family. There’s an expression — “love makes a family” — and I think it’s true. Not unconventional families, not just adoption, but fostering, step-parenting, people getting together and calling it a family. People really need a sense of belonging. It’s really essential to our well-being, to belong to a community. That’s part of the reason a lot of people <span class="key" about="procreation">procreate</span>. If you want to be a part of a community, you’ll get a lot of likes on <span class="mention org" about="Facebook">Facebook</span> for it too! Get pregnant, show your ultrasound, and you’ll get nothing but approval, no matter what your circumstances are. People will say “congratulations!” Whereas if you announced getting sterilized, I don’t know if you’ll get that many likes.</p>
 
 					<figure>
-						<img class="img" src="">
+						<img class="img" src="img\Art 3\5.jpeg">
 					</figure>
 
 					<p><b>How is <span class="mention org" about="VHEMT">VHEMT</span> different from <span class="mention place" about="China">China</span>’s two-child policy?</b></p>
@@ -334,23 +404,21 @@
 					<p>It’s true. We’re the only species to ever consider our own <span class="key" about="reproductive freedom">voluntary</span> <span class="key" about="extinction">extinction</span>. Or needs to.</p>
 
 				</div>
-			</div>	
-		   </div>  <!-- end of <div class="row"> -->
-		</div>   <!-- <div class="container"> -->
+			</div>
+		  </div>   <!-- end of <div class="row"> -->
+	  </div>	<!-- <div class="container"> -->
 		
-			
-		 <!-- Script to change different css styles -->	  	
+		<!-- Script to change different css styles -->	  
 		<script>
 		  function setStyleSheet(url){	
 			var stylesheet = document.getElementById("style");
 			stylesheet.setAttribute('href', url);
 		  }	  
-		</script>	
-			
-				
-		<!-- [Bootstrap] Option 1: Bootstrap Bundle with Popper -->
-     		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+		</script>
+	
+	  <!-- [Bootstrap] Option 1: Bootstrap Bundle with Popper -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 		
-		</body>
+	</body>
 		
 </html>
