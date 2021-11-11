@@ -16,6 +16,7 @@ body {
 	font-family: 'Libre Caslon Text';
 	background-color: white;
 }
+
 h1 {
 	color: black;
 	font-family: "Plaster";
@@ -49,6 +50,25 @@ h1 {
 p {
 	margin-bottom: 0%;
 }
+
+
+
+blockquote {
+	padding-top: 3%;
+	padding-right: 5%;
+	padding-left: 5%;
+}
+
+
+h5 {
+	color: black;
+	font-family: 'Libre Caslon Text';
+	text-align: left;
+	font-size: 100%;
+	font-weight: bold;
+}
+
+
 
 /**/
 div.article {
@@ -185,3 +205,21 @@ a:active {
     height: 70px;
 }
 
+
+/* Style for the accordion (metadata) */
+
+
+.accordion h2  {
+	font-family: 'Mont R';
+}
+
+.accordion label {
+	font-family: 'Mont R';
+}
+
+
+/* "art" container of articles and metadata */
+
+#art {
+	width: 98%;
+} 
