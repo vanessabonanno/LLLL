@@ -54,6 +54,13 @@ iframe {
 	border: 1px solid green;
 }
 
+
+blockquote {
+	padding-top: 3%;
+	padding-right: 5%;
+	padding-left: 5%;
+}
+
 .navbar-brand {
 	font-family: 'Mont R';
 }
@@ -95,3 +102,23 @@ iframe {
 	width: 100%;
     height: 70px;
 }
+
+
+/* Style for the accordion (metadata) */
+
+
+.accordion h2  {
+	font-family: 'Mont R';
+}
+
+.accordion label {
+	font-family: 'Mont R';
+}
+
+
+
+/* "art" container of articles and metadata */
+
+#art {
+	width: 98%;
+} 
