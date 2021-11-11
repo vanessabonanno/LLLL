@@ -10,6 +10,11 @@
 }
 
 
+@font-face {
+  font-family: 'Mont B';
+  src: url('fonts/Montserrat-Bold.ttf');
+}
+
 
 h1 {
 	display:block;
@@ -32,7 +37,7 @@ h1 {
 	padding-top: 2%;
 	padding-right: 2%;
 	padding-left: 2%;
-	text-align: justify;
+	text-align: center;
 }
 
 
@@ -56,7 +61,6 @@ h2 {
 	padding-top: 4%;
 	padding-right: 5%;
 	padding-left: 5%;
-	padding-bottom: 0;
 	font-size: 80%;
 }
 
@@ -65,6 +69,7 @@ body {
 	cursor: url(imgs/arrow.cur),auto;
 	color: #262A1C;
 	text-align: justify;
+	text-justify: inter-word;
 	background-color: white;
 	background-image: url('imgs/fjords.jpg');
 	background-position: 50% 99%;
@@ -76,7 +81,8 @@ body {
 
 p {
 	color: #A69398;
-	text-align: justify;
+	text-align: left;
+	
 	font-family: 'Mont R';
 	font-size: 80%;
 	line-height: 1.2;
@@ -88,6 +94,7 @@ p {
 q {
 	color: #A69398;
 	text-align: justify;
+	text-justify: inter-word;
 	font-family: 'Mont R';
 	font-weight: bold;
 	font-size: 80%;
@@ -110,6 +117,7 @@ figcaption {
 	font-family: 'Mont R';
 	color: #A69398;
 	text-align: justify;
+	text-justify: inter-word;
 	font-size: 50%;
 	padding-top: 6%;
 	
@@ -131,9 +139,6 @@ img:hover {
 }
 
 
-
-/* I DON'T KNOW IF YOU USED THOSE BUT IN CASE
-ADD THEM!!! */
 blockquote {
 	font-family: 'Mont R';
 	padding-top: 3%;
@@ -149,6 +154,7 @@ blockquote {
 h5 {
 	font-family: 'Mont B';
 	text-align: justify;
+	text-justify: inter-word;
 	font-size: 80%; 
 	color: #A69398;
 	padding-right: 2%;
@@ -360,3 +366,21 @@ a:active {
     height: 70px;
 }
 
+
+/* Style for the accordion (metadata) */
+
+
+.accordion h2  {
+	font-family: 'Mont R';
+}
+
+.accordion label {
+	font-family: 'Mont R';
+}
+
+
+/* "art" container of articles and metadata */
+
+#art {
+	width: 98%;
+} 
