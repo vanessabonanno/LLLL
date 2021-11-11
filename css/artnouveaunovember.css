@@ -43,14 +43,15 @@ h1 {
 .subtitle {
 	color: #221d0e;
 	font-family: 'Edda filled';
-	text-align: left;
 	font-weight: bold;
 	word-spacing: -1px;
 	padding-top: 2%;
 	padding-right: 5%;
 	padding-left: 5%;
-	text-align: justify;
+	text-align: left;
+	word-spacing: 2px;
 }
+
 /*I used h2 for all section titles within the articles*/
 h2 {
 	color: #221d0e;
@@ -70,19 +71,29 @@ h2 {
 	padding-top: 4%;
 	padding-right: 5%;
 	padding-left: 5%;
-	padding-bottom: 0;
-	font-size: 20px;
+	font-size: 18px;
 }
 
 
+/*body {
+	color: #262A1C;
+	text-align: justify;
+	font-family: 'Tarocco Roman';
+	background-color: rgba(241, 197, 172, 0.3);
+	background-image: url('latosx.jpg'), url('latodx.jpg');
+	background-position: left bottom, right bottom;
+	background-size: 10%, 10%;
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: fixed, fixed;
+} */
 
 body {
 	background-color: rgba(241, 197, 172, 0.3);
 	background-image: url('imgs/latosx.jpg'), url('imgs/latodx.jpg');
 	background-position: left bottom, right bottom;
 	background-size: 130px, 130px;
-        background-repeat: no-repeat, no-repeat;
-        background-attachment: fixed, fixed;
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: fixed, fixed;
 }
 
 
@@ -97,24 +108,14 @@ p {
 	color: #262A1C;
 	text-align: justify;
 	text-justify: inter-word;
+	
 	font-family: 'Tarocco Roman';
-	line-height: 1.5;
+	line-height: 1.2;
 	display: inline-block;
 	padding-right: 5%;
 	padding-left: 5%;
 	}
 	
-q {
-	color: #262A1C;
-	text-align: justify;
-	text-justify: inter-word;
-	font-family: 'Tarocco Roman';
-	font-weight: bold;
-	line-height: 1.5;
-	display: inline-block;
-	padding-right: 5%;
-	padding-left: 5%;
-	}
 
 
 
@@ -122,7 +123,7 @@ q {
 	font-family: 'D';
 	content: " -----";
 	content: " -----";
-	font-size: 130%;
+	font-size: 110%;
 	}
 
 #cap {
@@ -158,8 +159,7 @@ img {
 	max-width: 100%;
 }
 
-/* I DON'T KNOW IF YOU USED THOSE BUT IN CASE
-ADD THEM!!! */
+
 blockquote {
 	padding-top: 3%;
 	padding-right: 5%;
@@ -207,7 +207,7 @@ iframe {
     padding: 5%;
 	margin-top: 5%;
 	width: 100%;
-	height: 27vh;
+	height: 25vh;
 	overflow-y: scroll;
 	overflow-x: hidden;
 	scrollbar-color: #221d0e #dcc5a1;
@@ -289,3 +289,21 @@ iframe {
 }
 
 
+
+/* Style for the accordion (metadata) */
+
+
+.accordion h2  {
+	font-family: 'Mont R';
+}
+
+.accordion label {
+	font-family: 'Mont R';
+}
+
+
+/* "art" container of articles and metadata */
+
+#art {
+	width: 98%;
+} 
