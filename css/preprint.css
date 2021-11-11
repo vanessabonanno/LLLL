@@ -7,18 +7,20 @@ font-family: "Uncial Antiqua", cursive;
   src: url('fonts/Montserrat-Regular.ttf');
 }
 
+
 #metadata_viewer {
 	cursor: auto !important;
 	cursor: default !important;
 }
 
 
+/*
 body {
 	color: black;
 	text-align: left;
 	font-family: "Uncial Antiqua";
 }
-
+*/
 
 
 h1 {
@@ -29,6 +31,7 @@ h1 {
 	font-size: 150%;
 }
 
+
 h2 {
 	color: #8b0000;
 	font-family: 'Uncial Antiqua';
@@ -36,6 +39,25 @@ h2 {
 	font-size: 120%;
 	display: inline;
 }
+
+p {
+	color: black;
+	text-align: left;
+	font-family: "Uncial Antiqua";
+}
+
+
+h5 {	
+	font-size: 100%;
+}
+
+
+blockquote {
+	padding-top: 3%;
+	padding-right: 5%;
+	padding-left: 5%;
+}
+
 
 figure {
 	float: left; 
@@ -64,6 +86,7 @@ iframe {
 	border-right: 4px solid #8b0000;
 	outline: 2px solid black;
 }
+
 
 img {
   max-width: 100%;
@@ -96,15 +119,17 @@ a:active {
 	text-decoration: none;
 }
 
+
+
 .metadata {
    	display: block;
-   	padding: 1%;
+   	padding: 1%; 
 	padding-top: 10%;
 	padding-right: 15%;
 	padding-left: 2%;
-	margin-top: 1%;
-	width: 100%;
-	height: 25vh;
+	margin-top: 1%; 
+	width: 100%; 
+	height: 22vh;
 	overflow-y: scroll;
 	overflow-x: hidden;
 	background: url('imgs/parchment.jpg');
@@ -112,21 +137,23 @@ a:active {
 	border-left: 50px solid;
 	border-image: url('imgs/border.jpg') 75 round;
 	scrollbar-color: #D4AF37 #D4AF37;
-	scrollbar-width: thin;
+	scrollbar-width: thin; 
 	cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='75' height='90' viewport='0 0 100 100' style='fill:black;font-size:60px;'><text y='50%'>☜</text></svg>") 16 0,auto;
 }
 
+
 .metadata::-webkit-scrollbar {
-  width: 1px;               /* width of the entire scrollbar */
+  width: 1px;               
 }
+
 
 .metadata::-webkit-scrollbar-track {
-  background: url('imgs/gold_leaf.jpg');        /* color of the tracking area */
-}
+  background: url('imgs/gold_leaf.jpg');      
+} 
 
 .metadata::-webkit-scrollbar-thumb {
-  background-color: none;    /* color of the scroll thumb */
-  border-radius: 25px;        /*roundness of the scroll thumb */
+  background-color: none;    
+  border-radius: 25px;         
 }
 
 .subtitle {
@@ -134,6 +161,8 @@ a:active {
 	font-family: 'Uncial Antiqua';
 	display: inline;
 }
+
+
 
 .article {
 	display: block;
@@ -154,6 +183,7 @@ a:active {
 	border-image: url('imgs/border.jpg') 50 round;
 	cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='75' height='90' viewport='0 0 100 100' style='fill:black;font-size:60px;'><text y='50%'>☜</text></svg>") 16 0,auto;
 }
+
 
 .article::-webkit-scrollbar {
   width: 1px;               /* width of the entire scrollbar */
@@ -177,7 +207,9 @@ a:active {
 	color: black;
 	font-family: "Uncial Antiqua";
 	padding: 8px;
+	width: 98%;
 } 
+
 
 
 
@@ -210,5 +242,15 @@ a:active {
 }
 
 
+/* Style for the accordion (metadata) */
+
+
+.accordion h2  {
+	font-family: 'Mont R';
+}
+
+.accordion label {
+	font-family: 'Mont R';
+}
 
 
