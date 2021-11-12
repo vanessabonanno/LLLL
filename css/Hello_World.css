@@ -218,7 +218,7 @@ iframe {
 	height: 30vh;
 	overflow-y: scroll;
 	border: 10px #7FFF00;
-	border-style: dashed;
+	border-style: solid;
 	scrollbar-color: #7FFF00 #7FFF00;
     scrollbar-width: thin;
 }
