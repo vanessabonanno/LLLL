@@ -32,9 +32,7 @@
 			</button>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			  <ul class="navbar-nav mr-auto">
-				<li class="nav-item">
-					<a class="nav-link active" aria-current="page" href="homepage.html">Home</a>
-				</li>
+				
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Issues</a>
 					<ul class="dropdown-menu" aria-labelledby="navbarDropdown" id="dropdownmenuissues">
@@ -44,7 +42,7 @@
 					</ul>
 				</li>
 				<li class="nav-item">
-					  <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modaldisclaimer">Disclaimer</a>
+					  <a class="nav-link" href="disclaimer.html" data-bs-toggle="modal" data-bs-target="#modaldisclaimer">Disclaimer</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="documentation.html" tabindex="-1" aria-disabled="true">Documentation</a>
@@ -55,15 +53,15 @@
 				</li>
 			  </ul>
 			  <ul class="navbar-nav ms-auto">
-				<li class="nav-item"><a class="nav-link" id="btn11" href="#" onclick="setStyleSheet('css/default.css')">Default</a></li>
-			    <li class="nav-item"><a class="nav-link" id="btn7" href="#" onclick="setStyleSheet('css/preprint.css')"><img alt="Pre print" src="icons/manuscript.png" width="70"></a></li>
+				<li class="nav-item"><a class="nav-link" id="btn11" href="#" onclick="setStyleSheet('css/default.css')"><img alt="Default" src="icons/ww.png" width="70" height="70"></a></li>
+			    <li class="nav-item"><a class="nav-link" id="btn7" href="#" onclick="setStyleSheet('css/preprint.css')"><img alt="Pre print" src="icons/m.png" width="70" height="70"></a></li>
 				<li class="nav-item"></li>
-			    <li class="nav-item"><a class="nav-link" id="btn8" href="#"  onclick="setStyleSheet('css/artnouveaunovember.css')"><img alt="Art Nouveau" src="icons/artn.png" width="70"></a></li>			
+			    <li class="nav-item"><a class="nav-link" id="btn8" href="#"  onclick="setStyleSheet('css/artnouveaunovember.css')"><img alt="Art Nouveau" src="icons/an.png" width="70" height="70"></a></li>			
 				<li class="nav-item"></li>
-				<li class="nav-item"><a class="nav-link" id="btn9" href="#"  onclick="setStyleSheet('css/sixties.css')">Sixties</a></li>
-				<li class="nav-item"><a class="nav-link" id="btn13" href="#"  onclick="setStyleSheet('css/')">Another</a></li>
-			    <li class="nav-item"><a class="nav-link" id="btn10" href="#"  onclick="setStyleSheet('css/Hello_World.css')"><img alt="Terminal" src="icons/terminal.png" width="70"></a></li>
-			    <li class="nav-item"><a class="nav-link" id="btn12" href="#"  onclick="setStyleSheet('css/future.css')">Future</a></li>
+				<li class="nav-item"><a class="nav-link" id="btn9" href="#"  onclick="setStyleSheet('css/sixties.css')"><img alt="Sixties" src="icons/ww.png" width="70" height="70"></a></li>
+				<li class="nav-item"><a class="nav-link" id="btn13" href="#"  onclick="setStyleSheet('css/HW.css')"><img alt="Another" src="icons/ww.png" width="70" height="70"></a></li>
+			    <li class="nav-item"><a class="nav-link" id="btn10" href="#"  onclick="setStyleSheet('css/Hello_World.css')"><img alt="Terminal" src="icons/t.png" width="70" height="70"></a></li>
+			    <li class="nav-item"><a class="nav-link" id="btn12" href="#"  onclick="setStyleSheet('css/future.css')"><img alt="Future" src="icons/f.png" width="70" height="70"></a></li>
 			  </ul>
 			</div>
 		   </div>
@@ -78,13 +76,12 @@
 	
 <!--This is everything below the navbar-->
 		
-	  <div class="container-xxl" id="art">
-
+	<div class="container-fluid" id="art">
 		<div class="row">
 			
 		  <!-- sidebar metadata viewer [Bootstrap] -->
 		  <!-- need to investigate "fieldset" element-->
-			<div class="col" id="metadata viewer">		
+			<div class="col-2" id="metadata viewer">		
 			
 				<div class="accordion accordion-flush" id="accordionFlushExample">
 				
