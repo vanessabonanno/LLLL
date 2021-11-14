@@ -98,6 +98,7 @@ blockquote {
 	font-family: 'Mont R';
 }
 
+
 #bar-header {
 	width: 100%;
     height: 70px;
@@ -113,6 +114,7 @@ blockquote {
 
 .accordion label {
 	font-family: 'Mont R';
+	font-size: 10px;
 }
 
 
