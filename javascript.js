@@ -174,9 +174,9 @@ function myFunction5(id, id2, class_id) {
 		if (col1.style.display === "block") {
 			sub = document.getElementById('col1').getElementsByClassName(class_id);
 		}
-		if (col3.style.display === "block") {
-			sub += document.getElementById('col2').getElementsByClassName(class_id);
-		}
+		//if (col3.style.display === "block") {
+			//sub += document.getElementById('col2').getElementsByClassName(class_id);
+		//}
 		var used_labels;
 		let subtext = ""
 		for(let i = 0; i < sub.length; i++) {
