@@ -12,6 +12,9 @@ font-family: "Uncial Antiqua", cursive;
 	cursor: auto !important;
 	cursor: default !important;
 }
+.highlight {
+	color:#8b0000;
+}
 
 body {
 	color: black;

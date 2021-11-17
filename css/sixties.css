@@ -7,6 +7,14 @@ font-family: "Uncial Antiqua", cursive;
   src: url('fonts/Montserrat-Regular.ttf');
 }
 
+.highlight {
+	background-color: black;
+	color: white;
+}
+
+#metadata_viewer {
+	background-color: none !important;
+}
 
 
 /*body tag contains navbar so this also changes the font there and as the default for anything not otherwise specificed*/
