@@ -7,13 +7,14 @@ font-family: "Uncial Antiqua", cursive;
   src: url('fonts/Montserrat-Regular.ttf');
 }
 
-.highlight {
+.highlight > #art a {
 	background-color: black;
 	color: white;
 }
 
-#metadata_viewer {
-	background-color: none !important;
+#metadata_viewer > * {
+	background-color: none;
+	font-family: 'Times New Roman';
 }
 
 
@@ -116,7 +117,7 @@ iframe {
 /*hyperlinks*/
 
 #art a {
-	color: black;
+	color: inherit;
 	text-decoration: none;
 }
 
@@ -231,3 +232,8 @@ iframe {
 #art {
 	width: 98%;
 } 
+
+.highlight {
+	background-color: black !important;
+	color: white !important;
+}

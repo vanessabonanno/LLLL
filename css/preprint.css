@@ -8,11 +8,12 @@ font-family: "Uncial Antiqua", cursive;
   src: url('fonts/Montserrat-Regular.ttf');
 }
 
-#metadata_viewer {
-	cursor: auto !important;
-	cursor: default !important;
+#metadata_viewer > *{
+	cursor: auto;
+	cursor: default;
+	font-family: 'Times New Roman';
 }
-.highlight {
+.highlight{
 	color:#8b0000;
 }
 
