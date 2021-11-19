@@ -17,6 +17,14 @@
 	  <link id="style" rel="stylesheet" type="text/css" href="css\default.css"/> 
 	<!--Scripts-->
 	<script src="javascript.js"></script>
+	<script type="module">
+	{
+	
+	document.getElementById("label1").innerText = document.getElementById("title1").innerText;
+	document.getElementById("label2").innerText = document.getElementById("title2").innerText;
+	document.getElementById("label3").innerText = document.getElementById("title3").innerText;
+}
+	</script>
 	</head>
 
 	<body>	
@@ -92,14 +100,14 @@
 						</h2>
 						<div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
 							<div class="accordion-body">		
-								<input type="checkbox" id="checkbox1" name="mormons_money" value="mormons_money" onclick="myFunction3('col1', 'subs1', 'subheading1')">
-									<label for="mormons_money">Mormons and Money</label><br>	
+								<input type="checkbox" id="checkbox1" onclick="getSubheadings('col1', 'subs1', 'subheading1')">
+									<label id="label1" for="checkbox1"></label><br>	
 									<div id="subs1"></div>
-								<input type="checkbox" id="checkbox2" name="startups" value="startups" onclick="myFunction3('col2', 'subs2', 'subheading2') ">
-									<label for="startups">Utah's Startup Success</label><br>
+								<input type="checkbox" id="checkbox2"  onclick="getSubheadings('col2', 'subs2', 'subheading2') ">
+									<label id= "label2" for="checkbox2"></label><br>
 									<div id="subs2"></div>
-								<input type="checkbox" id="checkbox3" name="hoffman" value="hoffman" onclick="myFunction3('col3', 'subs3', 'subheading3')">
-									<label for="hoffman">Mark Hofmann</label><br>
+								<input type="checkbox" id="checkbox3" onclick="getSubheadings('col3', 'subs3', 'subheading3')">
+									<label id="label3" for="checkbox3"></label><br>
 									<div id="subs3"></div>
 							</div>
 						</div>
@@ -111,15 +119,15 @@
 						</h2>
 						<div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
 							<div class="accordion-body">
-								<input type="checkbox" name="author" value="author" onclick="myFunction('author')">
+								<input type="checkbox" name="author" value="author" onclick="edData('author')">
 									<label for="author">Author</label><br>
-								<input type="checkbox" name="date" value="date" onclick="myFunction('date')">
+								<input type="checkbox" name="date" value="date" onclick="edData('date')">
 									<label for="date">Date</label><br>
-								<input type="checkbox" name="source" value="source" onclick="myFunction('source')">
+								<input type="checkbox" name="source" value="source" onclick="edData('source')">
 									<label for="source">Source</label><br>
-								<input type="checkbox" name="license" value="license" onclick="myFunction('license')">
+								<input type="checkbox" name="license" value="license" onclick="edData('license')">
 									<label for="license">License</label><br>
-								<input type="checkbox" name="other" value="other" onclick="myFunction('other')">
+								<input type="checkbox" name="other" value="other" onclick="edData('other')">
 									<label for="other">Other</label><br>
 
 							</div>
@@ -132,16 +140,16 @@
 						</h2>
 						<div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
 						  <div class="accordion-body">
-							<input type="checkbox" id="people" name="people" value="people" onclick="myFunction8('metapeople', 'mention person')">
+							<input type="checkbox" id="people" name="people" value="people" onclick="getMetadata('metapeople', 'mention person')">
 								<label for="people">People</label><br>
 								<div id="metapeople"></div>
-							<input type="checkbox" id="places" name="places" value="places" onclick="myFunction8('metaplaces', 'mention place')">
+							<input type="checkbox" id="places" name="places" value="places" onclick="getMetadata('metaplaces', 'mention place')">
 								<label for="places">Places</label><br>
 								<div id="metaplaces"></div>
-							<input type="checkbox" id="orgs" name="orgs" value="orgs" onclick="myFunction8('metaorgs', 'mention org')">
+							<input type="checkbox" id="orgs" name="orgs" value="orgs" onclick="getMetadata('metaorgs', 'mention org')">
 								<label for="orgs">Organizations</label><br>
 								<div id="metaorgs"></div>
-							<input type="checkbox" id="concepts" name="concepts" value="concepts" onclick="myFunction8('metaconcepts', 'mention concept')">
+							<input type="checkbox" id="concepts" name="concepts" value="concepts" onclick="getMetadata('metaconcepts', 'mention concept')">
 								<label for="concepts">Concepts</label></div>
 								<div id="metaconcepts"></div>
 						</div>
@@ -156,7 +164,7 @@
 					<!--Article 1's basic metadata-->
 				<div class="metadata">	
 					
-					<h1 data-src="https://theconversation.com/mormons-and-money-an-unorthodox-and-messy-history-of-church-finances-129132" class="title"><span class="mention concept" about="Mormonism" data-sort="Mormonism" data-label="Mormonism" url="https://en.wikipedia.org/wiki/Mormonism">Mormons</span> and <span class="mention concept" about="money" data-sort="money" data-label="money" url="https://en.wikipedia.org/wiki/Money">money</span>:</h1> <span class="subtitle">An unorthodox and messy history of church <span class="mention concept" about="finance" data-sort="finance" data-label="finance" url="https://en.wikipedia.org/wiki/Finance">finances</span></span>
+					<h1 data-src="https://theconversation.com/mormons-and-money-an-unorthodox-and-messy-history-of-church-finances-129132" class="title"><span id="title1"><span class="mention concept" about="Mormonism" data-sort="Mormonism" data-label="Mormonism" url="https://en.wikipedia.org/wiki/Mormonism">Mormons</span> and <span class="mention concept" about="money" data-sort="money" data-label="money" url="https://en.wikipedia.org/wiki/Money">money</span></span>:</h1> <span class="subtitle">An unorthodox and messy history of church <span class="mention concept" about="finance" data-sort="finance" data-label="finance" url="https://en.wikipedia.org/wiki/Finance">finances</span></span>
 						
 					<p id="date">December 20, 2019 7.07pm GMT</p>
 						
@@ -290,7 +298,7 @@
 		<!--Article 2's basic metadata and content in two separate boxes stacked in one column-->
 			<div class="col" id="col2">
 				<div class="metadata">
-					<h1 data-src=https://thenextweb.com/news/whats-the-secret-to-utahs-startup-success-mormon-missionaries>What’s the secret to <span class="mention place" about="Utah" data-sort="Utah" data-label="Utah" url="https://en.wikipedia.org/wiki/Utah">Utah</span>’s <span class="mention concept" about="startup" data-sort="startup" data-label="startup" url="https://en.wikipedia.org/wiki/Startup_company">startup</span> success? <span class="mention concept" about="Mormonism" data-sort="Mormonism" data-label="Mormonism" url="https://en.wikipedia.org/wiki/Mormonism">Mormon</span> <span class="mention concept" about="missionary" data-sort="missionary" data-label="missionary" url="https://en.wikipedia.org/wiki/Missionary">missionaries</span></h1>
+					<h1 data-src=https://thenextweb.com/news/whats-the-secret-to-utahs-startup-success-mormon-missionaries class="title"><span id="title2">What’s the secret to <span class="mention place" about="Utah" data-sort="Utah" data-label="Utah" url="https://en.wikipedia.org/wiki/Utah">Utah</span>’s <span class="mention concept" about="startup" data-sort="startup" data-label="startup" url="https://en.wikipedia.org/wiki/Startup_company">startup</span> success?</span> <span class="mention concept" about="Mormonism" data-sort="Mormonism" data-label="Mormonism" url="https://en.wikipedia.org/wiki/Mormonism">Mormon</span> <span class="mention concept" about="missionary" data-sort="missionary" data-label="missionary" url="https://en.wikipedia.org/wiki/Missionary">missionaries</span></h1>
 					<p class="subtitle">The skills obtained by <span class="mention org" about="LDS" data-sort="LDS" data-label="Church of Jessus Christ of Latter-day Saints" url="https://en.wikipedia.org/wiki/The_Church_of_Jesus_Christ_of_Latter-day_Saints">LDS</span> <span class="mention concept" about="missionary">missionaries</span> during their years of service can apply to the <span class="mention concept" about="startup">startup world</span></p>
 					<figure>
 						<img src="Mormons\imgs\mormons2\img1.jpg">
@@ -316,9 +324,9 @@
 							<img src="Mormons\imgs\mormons2\img2.jpg">
 						</figure>
 
-						<p>Despite that relative obscurity, <span class="mention place" about="Utah">Utah</span> has produced some astounding success stories. The most well-known is arguably the <span class="mention place" about="Farmington" data-sort="Farmington" data-label="Farmington" url="https://en.wikipedia.org/wiki/Farmington,_Utah">Farmington</span>-based <span class="mention org" about="Pluralsight" data-sort="Pluralsight" data-label="Pluralsight" url="https://en.wikipedia.org/wiki/Pluralsight"><a href="https://www.pluralsight.com/">Pluralsight</a></span>, which runs a training platform designed for technology professionals. Last year <a href="https://www.cnbc.com/2018/05/17/pluralsight-ps-ipo-stock-starts-trading-on-nasdaq.html">it went public</a>, raising <span class="mention concept" about="money" data-sort="money" data-label="money" url="https://en.wikipedia.org/wiki/Money">$310.5 million</span> and cementing the company’s rightful place in “unicorn” territory.</p>
+						<p>Despite that relative obscurity, <span class="mention place" about="Utah">Utah</span> has produced some astounding success stories. The most well-known is arguably the <span class="mention place" about="Farmington" data-sort="Farmington" data-label="Farmington" url="https://en.wikipedia.org/wiki/Farmington,_Utah">Farmington</span>-based <a href="https://www.pluralsight.com/"><span class="mention org" about="Pluralsight" data-sort="Pluralsight" data-label="Pluralsight" url="https://en.wikipedia.org/wiki/Pluralsight">Pluralsight</span></a>, which runs a training platform designed for technology professionals. Last year <a href="https://www.cnbc.com/2018/05/17/pluralsight-ps-ipo-stock-starts-trading-on-nasdaq.html">it went public</a>, raising <span class="mention concept" about="money" data-sort="money" data-label="money" url="https://en.wikipedia.org/wiki/Money">$310.5 million</span> and cementing the company’s rightful place in “unicorn” territory.</p>
 
-						<p>Beyond <span class="mention org" about="Pluralsight">Pluralsight</span>, there’s at least three other unicorn-level technology companies operating within the state of <span class="mention place" about="Utah">Utah</span>. The customer experience firm <span class="mention org" about="Qualtrics" data-sort="Qualtrics" data-label="Qualtrics" url="https://en.wikipedia.org/wiki/Qualtrics"><a href="https://www.qualtrics.com/">Qualtrics</a></span>, for example, was acquired by <span class="mention org" about="SAP" data-sort="SAP" data-label="SAP" url="https://en.wikipedia.org/wiki/SAP">SAP</span> in 2018 <a href="https://news.sap.com/2019/01/sap-completes-qualtrics-acquisition/">for a cool <span class="mention concept" about="money">$8 billion</span></a>. Another <span class="mention concept" about="startup">startup</span>, <span class="mention org" about="Domo" data-sort="Domo" data-label="Domo" url="https://en.wikipedia.org/wiki/Domo_(company)">Domo</span>, creates cloud analytics software and was valued at <span class="mention concept" about="money">$2 billion</span> when it went public last year. <span class="mention org" about="InsideSales" data-sort="InsideSales" data-label="InsideSales" url="https://en.everybodywiki.com/InsideSales.com"><a href="https://www.InsideSales.com">InsideSales</a></span> is also believed to be worth <span class="mention concept" about="money">over a billion dollars</span>, although the precise figure isn’t exactly known.</p>
+						<p>Beyond <span class="mention org" about="Pluralsight">Pluralsight</span>, there’s at least three other unicorn-level technology companies operating within the state of <span class="mention place" about="Utah">Utah</span>. The customer experience firm <a href="https://www.qualtrics.com/"><span class="mention org" about="Qualtrics" data-sort="Qualtrics" data-label="Qualtrics" url="https://en.wikipedia.org/wiki/Qualtrics">Qualtrics</span></a>, for example, was acquired by <span class="mention org" about="SAP" data-sort="SAP" data-label="SAP" url="https://en.wikipedia.org/wiki/SAP">SAP</span> in 2018 <a href="https://news.sap.com/2019/01/sap-completes-qualtrics-acquisition/">for a cool <span class="mention concept" about="money">$8 billion</span></a>. Another <span class="mention concept" about="startup">startup</span>, <span class="mention org" about="Domo" data-sort="Domo" data-label="Domo" url="https://en.wikipedia.org/wiki/Domo_(company)">Domo</span>, creates cloud analytics software and was valued at <span class="mention concept" about="money">$2 billion</span> when it went public last year. <a href="https://www.InsideSales.com"><span class="mention org" about="InsideSales" data-sort="InsideSales" data-label="InsideSales" url="https://en.everybodywiki.com/InsideSales.com">InsideSales</span></a> is also believed to be worth <span class="mention concept" about="money">over a billion dollars</span>, although the precise figure isn’t exactly known.</p>
 
 						<p>But if you really want to measure the success of <span class="mention place" about="Utah">Utah</span>’s <span class="mention concept" about="startup">startup</span> scene, you don’t need to read <span class="mention org" about="TechCrunch" data-sort="TechCrunch" data-label="TechCrunch" url="https://en.wikipedia.org/wiki/TechCrunch">TechCrunch</span> or <span class="mention org" data-sort="WallStreetJournal" data-label="The Wall Street Journal" url="https://en.wikipedia.org/wiki/The_Wall_Street_Journal">The Wall Street Journal</span>. You just need to fly to <span class="mention place" about="SaltLakeCity">Salt Lake City</span> and look out of your window as the plane makes its descent. The picturesque mountains that surround the state’s capital are quite pockmarked with massive, high-tech office buildings that house an army of developers and assorted technologists. And a great many of these workers are returned <span class="mention concept" about="missionary">missionaries</span>.</p>
 
@@ -342,7 +350,7 @@
 					
 						<p>After a young <span class="mention concept" about="Mormonism">Mormon</span> concludes their <span class="mention concept" about="missionary">mission</span>, they began their return into secular life. Having discharged their solemn duties to their church and their God, they’re able to pursue more worldly goals, like family, education, and a career.</p>
 
-						<p>And inevitably, many find their way into local technology companies, where they become a valuable resource. As <span class="mention org" about="Pluralsight">Pluralsight</span> CEO <span class="mention person" about="Aaron Skonnard" data-sort="SkonnardAaron" data-label="AaronSkonnard" url="https://en.wikipedia.org/wiki/Aaron_Skonnard"><a href="https://twitter.com/skonnard">Aaron Skonnard</a></span> explained, much of this value derives from the experiences and skills gained during <span class="mention concept" about="missionary">missions</span>.</p>
+						<p>And inevitably, many find their way into local technology companies, where they become a valuable resource. As <span class="mention org" about="Pluralsight">Pluralsight</span> CEO <a href="https://twitter.com/skonnard"><span class="mention person" about="AaronSkonnard" data-sort="SkonnardAaron" data-label="Aaron Skonnard" url="https://en.wikipedia.org/wiki/Aaron_Skonnard">Aaron Skonnard</span></a> explained, much of this value derives from the experiences and skills gained during <span class="mention concept" about="missionary">missions</span>.</p>
 
 						<p>“I do think there’s something transformative about that experience that produces leadership qualities, selling skills, and high EQ [emotional quotient],” he told me.</p>
 
@@ -372,7 +380,7 @@
 
 						<p>And maybe it’s <span class="mention place" about="Utah">Utah</span> itself.</p>
 				
-						<p>I spoke to <span class="mention person" about="ClintBetts" data-sort="BettsClint" data-label="Clint Betts"url="https://utahvalley360.com/2016/06/09/40-40-clint-betts/"><a href="https://twitter.com/clintbetts">Clint Betts</a></span>, co-founder of the <span class="mention place"about="SiliconSlopes">Silicon Slopes</span> advocacy group, who argues that the success of the local startup scene is largely because <span class="mention place" about="Utah">Utah</span> is a good place to live.</p>
+						<p>I spoke to <a href="https://twitter.com/clintbetts"><span class="mention person" about="ClintBetts" data-sort="BettsClint" data-label="Clint Betts"url="https://utahvalley360.com/2016/06/09/40-40-clint-betts/">Clint Betts</span></a>, co-founder of the <span class="mention place"about="SiliconSlopes">Silicon Slopes</span> advocacy group, who argues that the success of the local startup scene is largely because <span class="mention place" about="Utah">Utah</span> is a good place to live.</p>
 
 						<p><span class="mention place" about="SaltLakeCity">Salt Lake City</span> has a low cost of living. It’s clean and safe. The schools are good. It’s got a reliable and affordable public transport system. If you want to start a family, you can easily afford to buy or rent a house. People are friendly. The city is surrounded by gorgeous, rugged countryside.</p>
 						
@@ -391,13 +399,13 @@
 			
 			<!--Article 3 basic metadata-->
 				<div class="metadata">
-					<h1 data-src=https://www.saltlakemagazine.com/mark-hofmann/>Why There Could Always Be Another <span class="mention person" about="MarkHofmann" data-sort="HoffmanMark" data-label="Mark Hofmann" url="https://en.wikipedia.org/wiki/Mark_Hofmann">Mark Hofmann</h1>
+					<h1 data-src=https://www.saltlakemagazine.com/mark-hofmann/ class="title" id="title3">Why There Could Always Be Another <span class="mention person" about="MarkHofmann" data-sort="HoffmanMark" data-label="Mark Hofmann" url="https://en.wikipedia.org/wiki/Mark_Hofmann">Mark Hofmann</h1>
 					<p class="subtitle">Former <span class="mention org" about="LDS" data-sort="LDS" data-label="Church of Jessus Christ of Latter-day Saints" url="https://en.wikipedia.org/wiki/The_Church_of_Jesus_Christ_of_Latter-day_Saints">LDS</span> Church Historian featured in <span class="mention org" about="Netflix" data-sort="Netflix" data-label="Netflix" url="https://en.wikipedia.org/wiki/Netflix">Netflix</span> documentary '<span class="mention concept" about="MAM" data-sort="MurderAmongtheMormons" data-label="Murder Among the Mormons" url="https://en.wikipedia.org/wiki/Murder_Among_the_Mormons">Murder Among the Mormons'</span> on <span class="mention person" about="MarkHofmann">Hoffman</span>'s lasting damage to history</p>
 					<figure>
 						<img src="Mormons\imgs\mormons3\img1.jpg">
 					</figure>
 					<p>by
-					<author><span class="mention person" about="ChristiePorter" data-sort="PorterChristie" data-label="Christie Porter" url="https://www.saltlakemagazine.com/author/christie-porter/"><a href="https://www.saltlakemagazine.com/author/christie-porter/">Christie Porter</a></span></author> <date>-March 9,2021</date>
+					<author><a href="https://www.saltlakemagazine.com/author/christie-porter/"><span class="mention person" about="ChristiePorter" data-sort="PorterChristie" data-label="Christie Porter" url="https://www.saltlakemagazine.com/author/christie-porter/">Christie Porter</span></a></author> <date>-March 9,2021</date>
 					</p>
 				</div>
 			<!--Article 3 content-->
