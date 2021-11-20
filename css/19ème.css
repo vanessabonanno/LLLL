@@ -1,0 +1,196 @@
+@font-face {
+  font-family: 'DS';
+  src: url('DSLettres.ttf');
+}
+
+@font-face {
+  font-family: 'Thorne';
+  src: url('ThorneShaded.ttf');
+}
+
+@font-face {
+  font-family: 'DS_Fette';
+  src: url('DSFetteKanzlei.ttf');
+}
+
+@font-face {
+  font-family: 'Renegade';
+  src: url('19th Century Renegade.otf');
+}
+
+@font-face {
+  font-family: 'Nolliga';
+  src: url('Nolliga-Regular.ttf');
+}
+
+
+body {
+	text-align: initial;
+	background-color:#DCDCDC;
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+h1 {
+	color: ##383b3e;
+	font-family: "Thorne";
+	text-align: initial;
+	text-align: left;
+	font-size: 130%;
+}
+
+
+.subtitle {
+	color: ##383b3e;
+	font-family: "DS";
+	font-size: 30%;
+}
+
+h2 {
+	color: #000000;
+	font-family: "Renegade";
+	text-align: left;
+	font-size: 50%;
+}
+
+
+p {
+	color: #000000;
+  margin-top: 1em ;
+  margin-bottom: 1em ;
+}
+
+p.meta { 
+	font-size:60%;
+}
+
+p.info{ 
+	font-size:60%;
+}
+
+div.article {
+	color: #000000;
+	text-indent: 10px;
+}
+h2 {
+	text-indent: initial;
+	margin-bottom: 0%;
+	margin-top: 2%;
+}
+
+blockquote {
+	font font-family:'DS_Fette';
+	 margin-top: 2em ;
+  	margin-bottom: 2em ;
+}
+
+.question {
+	font-weight: bold;
+	font-family: 'Renegade';
+}	
+
+/*figure formating*/
+figure {
+	float: left; 
+	margin: 0% 5% 0% 5%;
+	margin-left: 3%;
+	margin-right: 5%;
+	margin-top: 1em ;
+  	margin-bottom: 1em ;
+	border: 5px #000000;
+	border-style: inset;
+	
+}
+figcaption {
+	color: #000000;
+	font-family: "DS_Fette";
+	font-size: 60%;
+	text-indent: initial;
+}
+
+img {
+    filter: grayscale(80%);
+	width:100px;
+}
+
+
+footer {
+	color: #7FFF00;
+	font-size: 10%;
+	
+}
+
+iframe {
+	width: 100%    !important;
+	height: auto   !important;
+	text-align: left;
+	display: inline;
+}
+
+
+a {
+	color: ##383b3e;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #383b3e; 
+	text-decoration: none;
+}
+
+a:hover {
+	color:#383b3e;
+	text-decoration: none;
+}
+
+a:active {
+	color:#383b3e;
+	text-decoration: none;
+}
+
+/*metadata top box formatting*/
+.metadata {
+    display: block;
+    padding: 2%;
+	margin-top: 10%;
+	padding-left: 2%;
+	padding-right: 2%;
+	width: 100%;
+	height: 30vh;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	border-image: url('19eme border.jpg');
+}
+
+.metadata::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+.metadata::-webkit-scrollbar-track {
+  background: #000000;        /* color of the tracking area */
+}
+.metadata::-webkit-scrollbar-thumb {
+  background-color: #000000;    /* color of the scroll thumb */
+}
+
+/*article box formatting*/
+.article {
+	font-family: 'Nolliga';
+	display: block;
+	width: 100%;
+	height: 60vh;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	font-size: 70%;
+	border-image: url('19eme border.jpg');
+}
+
+.article::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+.article::-webkit-scrollbar-track {
+  background:  #000000;        /* color of the tracking area */
+}
+.article::-webkit-scrollbar-thumb {
+  background-color:  #000000;    /* color of the scroll thumb */
+  width: 12px;
+}
