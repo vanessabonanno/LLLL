@@ -59,14 +59,14 @@ h2 {
 	text-align: left;
 	text-transform: uppercase;
 	padding-top: 4%;
-	padding-right: 5%;
-	padding-left: 5%;
+	padding-right: 2%;
+	padding-left: 2%;
 	font-size: 80%;
 }
 
 
 body {
-	cursor: url(imgs/arrow.cur),auto;
+	cursor: url('imgs/arrow.cur'),auto;
 	color: #262A1C;
 	text-align: justify;
 	text-justify: inter-word;
@@ -82,7 +82,6 @@ body {
 p {
 	color: #A69398;
 	text-align: left;
-	
 	font-family: 'Mont R';
 	font-size: 80%;
 	line-height: 1.2;
@@ -104,6 +103,15 @@ q {
 	padding-left: 2%;
 }
 
+#art li {
+	color: #A69398;
+	text-align: left;
+	font-family: 'Mont R';
+	font-size: 80%;
+	line-height: 1.2;
+}
+
+
 /*figure formating*/
 figure {
 	float: left; 
@@ -123,7 +131,7 @@ figcaption {
 	
 }
 
-img {
+#art img {
     filter: drop-shadow(0 0 0.15rem white);
 	max-width: 100%;
 	border-radius: 5px;
@@ -132,7 +140,7 @@ img {
 
 /* to zoom imgs */
 
-img:hover {
+#art img:hover {
 	-ms-transform: scale(1.15); /* IE 9 */
     -webkit-transform: scale(1.15); /* Safari 3-8 */
     transform: scale(1.11); 
@@ -151,15 +159,7 @@ blockquote {
 	cursor: url(imgs/arrow.cur),auto;
 }
 
-h5 {
-	font-family: 'Mont B';
-	text-align: justify;
-	text-justify: inter-word;
-	font-size: 80%; 
-	color: #A69398;
-	padding-right: 2%;
-	padding-left: 2%;
-}
+
 /*********/
 
 iframe {
@@ -183,28 +183,27 @@ ul {
 
 /*hyperlinks*/
 
-a { 
+#art a { 
 	cursor: url(imgs/link.cur),auto;
 	color: #DBD4D6; 
 	font-family: 'Mont R';
-	
 	text-decoration: underline;
 }
 
-a:visited {
+#art a:visited {
 	color: white;
 	text-decoration: underline;
 }
 
 
-a:hover {
+#art a:hover {
 	color: black;
 	background-color: white;
 	text-decoration: underline;
 }
 
 
-a:active {
+#art a:active {
 	color: white;
 	text-decoration: underline;
 }
@@ -317,7 +316,7 @@ a:active {
 }
 
 
-/* Style for the navbar section */
+/* Style for the navbar section 
 
 #header a:visited {
 	color: black;
@@ -336,6 +335,15 @@ a:active {
 #header a:active {
 	color: black;
 	text-decoration: none;
+}*/
+
+
+
+/* Highlight for the metadata viewer */
+
+.highlight{
+	background-color: #cfbaae;
+	color: black;
 }
 
 
@@ -346,6 +354,7 @@ a:active {
   outline: none;
   filter: none;
 }
+
 
 #header img:hover {
   max-width: 100%;
@@ -363,7 +372,7 @@ a:active {
 
 #bar-header {
 	width: 100%;
-    height: 70px;
+    height: 58px;
 }
 
 
@@ -376,6 +385,28 @@ a:active {
 
 .accordion label {
 	font-family: 'Mont R';
+	font-size: 10px;
+}
+
+#col-2 a {
+	font-family: 'Mont R';
+	font-size: 12px;
+	color: black;
+	background-color: black;
+}
+
+#col-2 a:hover {
+	color: white;
+	background-color: black;
+	text-decoration: underline;
+}
+
+
+.accordion-collapse{
+	height: 25vh;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	background: #bcc4c0;
 }
 
 
@@ -384,3 +415,7 @@ a:active {
 #art {
 	width: 98%;
 } 
+
+.row {
+	margin-top: 1%;
+}
