@@ -25,36 +25,6 @@
 }
 
 
-/*
-
-.navbar-brand {
-	font-family: 'IMB';
-}
-
-.nav-link {
-	font-family: 'IMB';
-}
-
-.dropdown-item {
-	font-family: 'IMB';	
-}
-
-nav {
-  border-bottom: 4px solid black;
-  color: #FFFFFF !important
-  }
-
-
-.navbar-text{
-  color: #FFFFFF !important
-  }
-
-.navbar{
-      background-color: #0033FF !important;
-}
-
-*/
-
  
 /*body tag contains navbar so this also changes the font there and as the default for anything not otherwise specificed*/
 body {
@@ -175,37 +145,6 @@ iframe {
 	display: inline;
 }
 
-/*{
-	cursor: url(pixil-frame-0.png), auto;
-/*hyperlinks*/
-
-
-/* "art" container of articles and metadata */
-
-#art {
-	width: 98%;
-} 
-
-
-#art a {
-	color: #7FFF00;
-	text-decoration: none;
-}
-
-#art a:visited {
-	color: #7FFF00; 
-	text-decoration: none;
-}
-
-#art a:hover {
-	color:#7FFF00;
-	text-decoration: none;
-}
-
-#art a:active {
-	color:#7FFF00;
-	text-decoration: none;
-}
 
 /*metadata top box formatting*/
 .metadata {
@@ -220,7 +159,7 @@ iframe {
 	border: 10px #7FFF00;
 	border-style: solid;
 	border-width: medium;
-    	scrollbar-width: thin;
+    scrollbar-width: thin;
 }
 
 .metadata::-webkit-scrollbar {
@@ -288,8 +227,9 @@ iframe {
 
 #bar-header {
 	width: 100%;
-    height: 70px;
+    height: 50px;
 }
+
 
 
 /* Style for the accordion (metadata) */
@@ -301,4 +241,30 @@ iframe {
 
 .accordion label {
 	font-family: 'Mont R';
+	font-size: 10px;
 }
+
+.accordion a {
+	font-family: 'Mont R';
+	font-size: 14px;
+}
+
+.accordion-collapse{
+	height: 25vh;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+/* "art" container of articles and metadata */
+
+#art {
+	width: 98%;
+} 
+
+/* row to add some space under the navbar*/
+
+.row {
+	margin-top: 1%;
+}
+
+
