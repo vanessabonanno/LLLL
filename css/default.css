@@ -19,6 +19,10 @@
 } 
 
 
+body {
+	font-family: 'Mont R';
+}
+
 img {
 	max-width: 100%;
 }
@@ -30,6 +34,7 @@ iframe {
 	text-align: left;
 	display: inline;
 }
+
 
 /*metadata top box formatting*/
 .metadata {
@@ -75,6 +80,13 @@ blockquote {
 }
 
 
+
+
+/* Highlight for the metadata viewer */
+
+.highlight{
+	background-color: #ccff33;
+}
 /* Style for the navbar section */
 
 #header img {
@@ -98,10 +110,9 @@ blockquote {
 	font-family: 'Mont R';
 }
 
-
 #bar-header {
 	width: 100%;
-    height: 70px;
+    height: 58px;
 }
 
 
@@ -117,6 +128,17 @@ blockquote {
 	font-size: 10px;
 }
 
+.accordion a {
+	font-family: 'Mont R';
+	font-size: 12px;
+	
+}
+
+.accordion-collapse{
+	height: 25vh;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
 
 
 /* "art" container of articles and metadata */
@@ -124,3 +146,7 @@ blockquote {
 #art {
 	width: 98%;
 } 
+
+.row {
+	margin-top: 1%;
+}
