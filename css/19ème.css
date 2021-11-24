@@ -24,6 +24,11 @@
 }
 
 
+@font-face {
+  font-family: 'Mont R';
+  src: url('fonts/Montserrat-Regular.ttf');
+}
+
 body {
 	text-align: initial;
 	background-color:#DCDCDC;
@@ -101,6 +106,7 @@ figure {
 	border-style: inset;
 	
 }
+
 figcaption {
 	color: #000000;
 	font-family: "DS_Fette";
@@ -108,7 +114,7 @@ figcaption {
 	text-indent: initial;
 }
 
-img {
+#art img {
     filter: grayscale(80%);
 	width:100px;
 }
@@ -128,25 +134,27 @@ iframe {
 }
 
 
-a {
+#art a {
 	color: ##383b3e;
 	text-decoration: none;
 }
 
-a:visited {
+#art a:visited {
 	color: #383b3e; 
 	text-decoration: none;
 }
 
-a:hover {
+#art a:hover {
 	color:#383b3e;
 	text-decoration: none;
 }
 
-a:active {
+#art a:active {
 	color:#383b3e;
 	text-decoration: none;
 }
+
+
 
 /*metadata top box formatting*/
 .metadata {
@@ -156,7 +164,7 @@ a:active {
 	padding-left: 2%;
 	padding-right: 2%;
 	width: 100%;
-	height: 30vh;
+	height: 25vh;
 	overflow-y: scroll;
 	overflow-x: hidden;
 	border-image: url('img/19eme border.jpg');
@@ -177,7 +185,7 @@ a:active {
 	font-family: 'Nolliga';
 	display: block;
 	width: 100%;
-	height: 60vh;
+	height: 48vh;
 	overflow-y: scroll;
 	overflow-x: hidden;
 	font-size: 70%;
@@ -194,3 +202,74 @@ a:active {
   background-color:  #000000;    /* color of the scroll thumb */
   width: 12px;
 }
+
+
+
+
+
+/* Style for the navbar section */
+
+#header img {
+  max-width: 100%;
+  border-style: none;
+  outline: none;
+  filter: none;
+}
+
+#header img:hover {
+  max-width: 100%;
+  border-style: none;
+  outline: none;
+  -ms-transform: scale(1.15); /* IE 9 */
+  -webkit-transform: scale(1.15); /* Safari 3-8 */
+  transform: scale(1.11);
+  filter:opacity(50%);
+}
+
+#header {
+	font-family: 'Mont R';
+}
+
+
+#bar-header {
+	width: 100%;
+    height: 50px;
+}
+
+
+
+/* Style for the accordion (metadata) */
+
+
+.accordion h2  {
+	font-family: 'Mont R';
+}
+
+.accordion label {
+	font-family: 'Mont R';
+	font-size: 10px;
+}
+
+.accordion a {
+	font-family: 'Mont R';
+	font-size: 14px;
+}
+
+.accordion-collapse{
+	height: 25vh;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+/* "art" container of articles and metadata */
+
+#art {
+	width: 98%;
+} 
+
+/* row to add some space under the navbar*/
+
+.row {
+	margin-top: 1%;
+}
+
