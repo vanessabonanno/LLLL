@@ -1,12 +1,13 @@
-function edData(id, id2) {
-  var x = document.getElementById(id);
-  var y = document.getElementById(id2);
-  if (x.style.display === "block") {
-    x.style.display = "none";
-	y.style.display = "none";
-  } else {
-    x.style.display = "block";
-	y.style.display= "block";
+function edData(id) {
+  //var x = document.getElementById(id);
+  var list = document.getElementsByClassName(id);
+  for (let i=0; i < list.length; i++) {
+	  var item = list[i];
+	if (item.style.display === "block") {
+		item.style.display = "none";
+	} else {
+		item.style.display = "block";
+	}
   }
   
 }
