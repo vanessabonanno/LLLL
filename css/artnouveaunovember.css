@@ -19,8 +19,8 @@
 } 
 
 @font-face {
-  font-family: 'D';
-  src: url('fonts/Davys.ttf');
+  font-family: 'Ver';
+  src: url('fonts/Ver.ttf');
 } 
 
 @font-face {
@@ -40,19 +40,7 @@ h1 {
 }
 
 
-.subtitle {
-	color: #221d0e;
-	font-family: 'Edda filled';
-	font-weight: bold;
-	word-spacing: -1px;
-	padding-top: 2%;
-	padding-left: 8%;
-	padding-right: 8%;
-	text-align: left;
-	word-spacing: 2px;
-}
-
-/*I used h2 for all section titles within the articles*/
+/*I used h2 for all section titles within the articles
 h2 {
 	color: #221d0e;
 	font-family: 'Edda filled';
@@ -61,7 +49,8 @@ h2 {
 	padding-top: 3%;
 	padding-right: 5%;
 	padding-left: 5%;
-}
+}*/
+
 
 .article > h2 {
 	color: #221d0e;
@@ -73,7 +62,6 @@ h2 {
 	padding-left: 8%;
 	font-size: 18px;
 }
-
 
 
 body {
@@ -118,16 +106,19 @@ p {
 
 #cap {
   font-size: 60px;
-  font-family: 'Floral';
-  padding-right: 1px;
-  padding-left: 8px;
-  margin-top: -10px;
-  margin-right: 6px;
-  margin-bottom: -10px;
+  font-family: 'Edda outline';
+  margin-top: 0px;
+  margin-right: 14px;
+  margin-bottom: 0px;
   float: left;
   text-indent: 0px;
+  border: solid 2px black;
+  border-radius: 15px;
 }
 
+.one {
+	 text-indent: 0px;
+}
 
 /*figure formating*/
 figure {
@@ -142,9 +133,9 @@ figcaption {
 	font-family: 'Tarocco Roman';
 	font-size: 70%;
 	text-align: justify;
-	/*padding-top: 3%;
-	padding-left: 26%;
-	padding-right: 26%; */
+	padding-top: 3%;
+	padding-left: 30%;
+	padding-right: 30%;
 	line-height: normal;
 	justify-content: center;
 }
@@ -223,6 +214,28 @@ iframe {
 }
 
 
+.metadata p {
+	color: #262A1C;
+	text-align: justify;
+	text-justify: inter-word;
+	font-family: 'Tarocco Roman';
+	text-indent: 0px;
+	line-height: 1.2;
+	display: inline-block;
+	padding-left: 8%;
+	padding-right: 8%;
+}
+
+
+.metadata::after {
+    content: url('imgs/end.png');
+	display: block;
+	padding-left: 20%;
+	padding-right: 20%;
+}
+
+
+
 .article {
 	display: block;
     margin-top: 5%;
@@ -251,11 +264,33 @@ iframe {
 }
 
 
+
+.article::after {
+    content: url('imgs/end.png');
+	display: block;
+	padding-left: 20%;
+	padding-right: 20%;
+}
+
+
 /* Highlight for the metadata viewer */
 
 .highlight{
 	background-color: #d0e1e6;
 }
+
+
+.metadata .subtitle {
+	color: #221d0e;
+	font-family: 'Edda filled';
+	font-weight: bold;
+	padding-top: 2%;
+	padding-left: 8%;
+	padding-right: 8%;
+	text-align: left;
+	text-indent: 0px;
+}
+
 
 
 
