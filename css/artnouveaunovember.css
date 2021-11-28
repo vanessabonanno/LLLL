@@ -65,12 +65,15 @@ h2 {
 
 
 body {
-	background-color: rgba(241, 197, 172, 0.3);
-	background-image: url('imgs/latosx.jpg'), url('imgs/latodx.jpg');
-	background-position: left bottom, right bottom;
-	background-size: 130px, 130px;
+    background-image: url('imgs/latosx.jpg'), url('imgs/latodx.jpg');
+    background-position: left bottom, right bottom;
+    background-size: 130px, 130px;
     background-repeat: no-repeat, no-repeat;
     background-attachment: fixed, fixed;
+}
+
+#body {
+	background-color: rgba(241, 197, 172, 0.3);
 }
 
 
