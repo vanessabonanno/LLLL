@@ -32,6 +32,7 @@ body {
 	font-family: 'IMB';
 	background-color:#202020; 
 }
+
 h1 {
 	text-transform: uppercase;
 	color: #7FFF00;
@@ -259,7 +260,13 @@ iframe {
 
 #art {
 	width: 98%;
+	font-family: 'IMB';
+	background-color:#202020; 
+	padding: 8px;
+	width: 100%;
+	margin-top: 12px;
 } 
+
 
 /* row to add some space under the navbar*/
 
