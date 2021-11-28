@@ -36,8 +36,15 @@ body {
 	text-justify: inter-word;
 }
 
+#body {
+	text-align: initial;
+	background-color:#DCDCDC;
+	text-align: justify;
+	text-justify: inter-word;
+}
+
 h1 {
-	color: ##383b3e;
+	color: #383b3e;
 	font-family: "Thorne";
 	text-align: initial;
 	text-align: left;
@@ -46,7 +53,7 @@ h1 {
 
 
 .subtitle {
-	color: ##383b3e;
+	color: #383b3e;
 	font-family: "DS";
 	font-size: 30%;
 }
