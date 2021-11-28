@@ -68,7 +68,7 @@ iframe {
 	outline: 2px solid black;
 }
 
-img {
+#art img {
   max-width: 100%;
   border-style: solid;
   border-top: 4px solid #2B6199;
