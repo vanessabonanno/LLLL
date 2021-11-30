@@ -1,184 +1,176 @@
 @font-face {
-  font-family: 'DS';
-  src: url('DSLettres.ttf');
-}
-
-@font-face {
-  font-family: 'Thorne';
-  src: url('ThorneShaded.ttf');
-}
-
-@font-face {
-  font-family: 'DS_Fette';
-  src: url('DSFetteKanzlei.ttf');
-}
-
-@font-face {
-  font-family: 'Renegade';
-  src: url('19th Century Renegade.otf');
-}
-
-@font-face {
-  font-family: 'Nolliga';
-  src: url('Nolliga-Regular.ttf');
-}
-
-
-@font-face {
   font-family: 'Mont R';
   src: url('fonts/Montserrat-Regular.ttf');
 }
 
-body {
-	text-align: initial;
-	background-color:#DCDCDC;
-	text-align: justify;
-	text-justify: inter-word;
+@font-face {
+  font-family: 'Morris';
+  src: url('MorrisRoman-Black.ttf');
 }
 
-#body {
-	text-align: initial;
+@font-face {
+  font-family: 'ArtsCrafts';
+  src: url('DyerArtsandCrafts.ttf');
+}
+
+@font-face {
+  font-family: 'NeueZierSchrift';
+  src: url('NeueZierSchrift.ttf');
+}
+
+.highlight{
+	color:#8B0000;
+}
+
+/*text formatting*/
+
+body {
 	background-color:#DCDCDC;
 	text-align: justify;
-	text-justify: inter-word;
 }
 
 h1 {
+	color: ##383b3e;
+	font-family: "ArtsCrafts";
+	 text-align: center;
+	 font-size: 15px;
+}
+
+h2 {
 	color: #383b3e;
-	font-family: "Thorne";
-	text-align: initial;
-	text-align: left;
-	font-size: 130%;
+	font-family: "ArtsCrafts";
+	text-align: center
+	font-size: 10px;
 }
 
 
 .subtitle {
 	color: #383b3e;
-	font-family: "DS";
-	font-size: 30%;
+	font-family: "ArtsCrafts";
+	font-size: 10px;
 }
 
-h2 {
-	color: #000000;
-	font-family: "Renegade";
-	text-align: left;
-	font-size: 50%;
+#author{
+	color: #383b3e;
+	font-family: "ArtsCrafts";
+	font-size: 10px;
 }
 
+#date{
+	color: #383b3e;
+	font-family: "ArtsCrafts";
+	font-size: 10px;
+}
 
 p {
-	color: #000000;
-  margin-top: 1em ;
-  margin-bottom: 1em ;
-}
-
-p.meta { 
-	font-size:60%;
-}
-
-p.info{ 
-	font-size:60%;
-}
-
-div.article {
-	color: #000000;
-	text-indent: 10px;
-}
-h2 {
-	text-indent: initial;
-	margin-bottom: 0%;
-	margin-top: 2%;
+  margin:0;
+  padding:0;
+  display: inline;  
 }
 
 blockquote {
-	font font-family:'DS_Fette';
-	 margin-top: 2em ;
-  	margin-bottom: 2em ;
+	font font-family:'Morris';
+	margin: 1.5em 10px;
+  	padding: 0.5em 10px;
+}
+
+blockquote p {
+  display: block;
 }
 
 .question {
 	font-weight: bold;
-	font-family: 'Renegade';
+	font-family: 'Morris';
 }	
 
+#cap {
+  font-size: 60px;
+  font-family: 'NeueZierSchrift';
+  float: left;
+  padding-right: 30px; 
+}
+
+footer {
+	color: #383b3e;
+	font-size: 8px;	
+}
+
 /*figure formating*/
+
 figure {
 	float: left; 
-	margin: 0% 5% 0% 5%;
-	margin-left: 3%;
-	margin-right: 5%;
-	margin-top: 1em ;
-  	margin-bottom: 1em ;
-	border: 5px #000000;
-	border-style: inset;
-	
+	text-indent: 0%;
+	display: block;
+	margin: 1.5em 10px;
+  	padding: 0.5em 10px;
+
 }
 
 figcaption {
-	color: #000000;
-	font-family: "DS_Fette";
+	font-family: "Morris";
 	font-size: 60%;
-	text-indent: initial;
+	text-align: left;
 }
 
-#art img {
-    filter: grayscale(80%);
+img {
+    filter: sepia(70%);
 	width:100px;
-}
-
-
-footer {
-	color: #7FFF00;
-	font-size: 10%;
-	
-}
+	margin: 5% 0% 5% 0%;
+	padding-top: 3%;
+	padding-right: 5%;
+	padding-left: 5%;
+	}
 
 iframe {
+	filter:grayscale(80%);
 	width: 100%    !important;
 	height: auto   !important;
 	text-align: left;
 	display: inline;
 }
 
+/*hyperlinks*/
 
-#art a {
+a {
 	color: ##383b3e;
 	text-decoration: none;
 }
 
-#art a:visited {
+a:visited {
 	color: #383b3e; 
 	text-decoration: none;
 }
 
-#art a:hover {
+a:hover {
 	color:#383b3e;
 	text-decoration: none;
 }
 
-#art a:active {
+a:active {
 	color:#383b3e;
 	text-decoration: none;
 }
-
-
 
 /*metadata top box formatting*/
 .metadata {
-    display: block;
-    padding: 2%;
-	margin-top: 10%;
+	background-color: #FFFFFF;
+	display: block;
+    padding: 5%;
+	margin-top: 5%;
 	padding-left: 2%;
 	padding-right: 2%;
-	width: 100%;
-	height: 25vh;
+	width:100%;
+	height: 30vh;
+  	padding: 15%;
+	overflow:hidden;
 	overflow-y: scroll;
-	overflow-x: hidden;
-	border-image: url('img/19eme border.jpg');
+	overflow-x: auto;
+	border-image: url(Morris-border-metadata.png) 25% round;
+	border-width: 20px;
 }
 
 .metadata::-webkit-scrollbar {
-  width: 12px;               /* width of the entire scrollbar */
+  width: 0px;               /* width of the entire scrollbar */
 }
 .metadata::-webkit-scrollbar-track {
   background: #000000;        /* color of the tracking area */
@@ -189,30 +181,33 @@ iframe {
 
 /*article box formatting*/
 .article {
-	font-family: 'Nolliga';
+	font-family: 'Morris';
+	background-color: #FFFFFF;
 	display: block;
+    margin-top: 5%;
+	padding-top: 3%;
+	padding-right: 5%;
+	padding-left: 5%;
 	width: 100%;
-	height: 48vh;
+	height: 60vh;
+	padding: 15%;
+	text-align: justify;
 	overflow-y: scroll;
-	overflow-x: hidden;
-	font-size: 70%;
-	border-image: url('img/19eme border.jpg');
+	overflow-x: auto;
+	font-size: 12px;
+	border-image: url(Morris-border-article.png) 25% round;
+	border-width: 20px;
 }
 
 .article::-webkit-scrollbar {
-  width: 12px;               /* width of the entire scrollbar */
+  width: 0px;               /* width of the entire scrollbar */
 }
 .article::-webkit-scrollbar-track {
   background:  #000000;        /* color of the tracking area */
 }
 .article::-webkit-scrollbar-thumb {
   background-color:  #000000;    /* color of the scroll thumb */
-  width: 12px;
 }
-
-
-
-
 
 /* Style for the navbar section */
 
