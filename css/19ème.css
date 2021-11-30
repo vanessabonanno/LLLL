@@ -5,17 +5,17 @@
 
 @font-face {
   font-family: 'Morris';
-  src: url('MorrisRoman-Black.ttf');
+  src: url('fonts/MorrisRoman-Black.ttf');
 }
 
 @font-face {
   font-family: 'ArtsCrafts';
-  src: url('DyerArtsandCrafts.ttf');
+  src: url('fonts/DyerArtsandCrafts.ttf');
 }
 
 @font-face {
   font-family: 'NeueZierSchrift';
-  src: url('NeueZierSchrift.ttf');
+  src: url('fonts/NeueZierSchrift.ttf');
 }
 
 .highlight{
