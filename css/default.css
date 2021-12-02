@@ -125,9 +125,10 @@ blockquote {
 	font-family: 'Mont R';
 }
 
-.accordion label {
+.accordion .label {
 	font-family: 'Mont R';
-	font-size: 10px;
+	font-size: 12px;
+	font-weight: bold;
 }
 
 .accordion a {
