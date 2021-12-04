@@ -100,29 +100,26 @@ footer {
 figure {
 	float: left; 
 	text-indent: 0%;
-	display: block;
-	margin: 1.5em 10px;
-  	padding: 0.5em 10px;
-
+	margin: 0% 5% 0% 5%;
+	margin-left: 0%;
+	margin-right: 0%;
+	border-image: url(imgs/Morris-border-metadata.png) 25% round;
+	border-width: 30px;
+	border-style: solid;
 }
 
 figcaption {
 	font-family: "Morris";
 	font-size: 60%;
-	text-align: left;
 }
 
 img {
-    filter: /*sepia(70%);*/
-	max-width: 100%;
-	margin: 5% 0% 5% 0%;
-	padding-top: 3%;
-	padding-right: 5%;
-	padding-left: 5%;
+    filter: sepia(90%);
+	max-width: 100%
 	}
 
 iframe {
-	filter:grayscale(80%);
+	filter:sepia(90%);
 	width: 100%    !important;
 	height: auto   !important;
 	text-align: left;
