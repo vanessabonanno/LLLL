@@ -33,7 +33,7 @@ h1 {
 .subtitle {
 	color: #DBD4D6;
 	font-family: 'pirulen rg';
-	word-spacing: -3%;
+	word-spacing: 0%;
 	padding-top: 2%;
 	padding-right: 2%;
 	padding-left: 2%;
@@ -163,7 +163,6 @@ blockquote {
 /*********/
 
 iframe {
-	filter:;
 	width: 100%    !important;
 	height: auto   !important;
 	text-align: center;
@@ -183,30 +182,56 @@ ul {
 
 /*hyperlinks*/
 
-#art a { 
+.metadata a { 
 	cursor: url(imgs/link.cur),auto;
 	color: #DBD4D6; 
 	font-family: 'Mont R';
 	text-decoration: underline;
 }
 
-#art a:visited {
+.metadata a:visited {
 	color: white;
 	text-decoration: underline;
 }
 
 
-#art a:hover {
+.metadata a:hover {
 	color: black;
 	background-color: white;
 	text-decoration: underline;
 }
 
 
-#art a:active {
+.metadata a:active {
 	color: white;
 	text-decoration: underline;
 }
+
+.article a { 
+	cursor: url(imgs/link.cur),auto;
+	color: #DBD4D6; 
+	font-family: 'Mont R';
+	text-decoration: underline;
+}
+
+.article a:visited {
+	color: white;
+	text-decoration: underline;
+}
+
+
+.article a:hover {
+	color: black;
+	background-color: white;
+	text-decoration: underline;
+}
+
+
+.article a:active {
+	color: white;
+	text-decoration: underline;
+}
+
 
 
 /*metadata top box formatting*/
@@ -379,26 +404,25 @@ ul {
 /* Style for the accordion (metadata) */
 
 
-.accordion h2  {
+.accordion {
 	font-family: 'Mont R';
 }
 
-.accordion label {
+
+.accordion h2 {
 	font-family: 'Mont R';
-	font-size: 10px;
 }
 
-#col-2 a {
+.accordion .label {
 	font-family: 'Mont R';
 	font-size: 12px;
-	color: black;
-	background-color: black;
+	font-weight: bold;
 }
 
-#col-2 a:hover {
-	color: white;
-	background-color: black;
-	text-decoration: underline;
+
+.accordion a {
+	font-family: 'Mont R';
+	font-size: 12px;
 }
 
 
@@ -406,8 +430,8 @@ ul {
 	height: 25vh;
 	overflow-y: scroll;
 	overflow-x: hidden;
-	background: #bcc4c0;
 }
+
 
 
 /* "art" container of articles and metadata */
