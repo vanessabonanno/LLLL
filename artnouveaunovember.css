@@ -1,0 +1,441 @@
+@font-face {
+  font-family: 'Edda outline';
+  src: url('fonts/edda_outline.ttf');
+}
+
+@font-face {
+  font-family: 'Edda filled';
+  src: url('fonts/edda_filled.otf');
+}
+
+@font-face {
+  font-family: 'Tarocco Roman';
+  src: url('fonts/Tarocco Roman.ttf');
+}
+
+@font-face {
+  font-family: 'Floral';
+  src: url('fonts/Floralcaps.ttf');
+} 
+
+@font-face {
+  font-family: 'Ver';
+  src: url('fonts/Ver.ttf');
+} 
+
+@font-face {
+  font-family: 'Mont R';
+  src: url('fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Davys';
+  src: url('fonts/Davys.ttf');
+}
+
+
+h1 {
+	display:block;
+	color: #221d0e;
+	font-family: 'Edda outline';
+	text-align: center;
+	word-spacing: -1px;
+	letter-spacing: -1px;
+	font-size: 35px;
+	padding-left: 8%;
+	padding-right: 8%;
+}
+
+
+/*I used h2 for all section titles within the articles
+h2 {
+	color: #221d0e;
+	font-family: 'Edda filled';
+	font-weight: bold;
+	text-align: left;
+	padding-top: 3%;
+	padding-right: 5%;
+	padding-left: 5%;
+}*/
+
+
+.article > h2 {
+	color: #221d0e;
+	font-family: 'Edda filled';
+	font-weight: bold;
+	text-align: left;
+	padding-top: 4%;
+	padding-right: 8%;
+	padding-left: 8%;
+	font-size: 18px;
+}
+
+
+body {
+	background-color: rgba(241, 197, 172, 0.3);
+	background-image: url('imgs/latosx.jpg'), url('imgs/latodx.jpg');
+	background-position: left bottom, right bottom;
+	background-size: 130px, 130px;
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: fixed, fixed;
+}
+
+#body {
+	background-color: rgba(241, 197, 172, 0.3);
+}
+
+.container {
+	color: #262A1C;
+	text-align: justify;
+	font-family: 'Tarocco Roman';
+}
+
+
+p {
+	color: #262A1C;
+	text-align: justify;
+	text-justify: inter-word;
+	text-indent: 15px;
+	font-family: 'Tarocco Roman';
+	line-height: 1.2;
+	display: inline-block;
+	padding-left: 8%;
+	padding-right: 8%;
+	font-size: 16px;
+	}
+	
+.metadata li {
+	color: #262A1C;
+	text-align: justify;
+	text-justify: inter-word;
+	font-family: 'Tarocco Roman';
+	line-height: 1.2;
+	padding-left: 8%;
+	padding-right: 8%;
+	list-style-type: none;
+}
+	
+.article li {
+	color: #262A1C;
+	text-align: justify;
+	text-justify: inter-word;
+	font-family: 'Tarocco Roman';
+	line-height: 1.2;
+	padding-left: 8%;
+	padding-right: 8%;
+	 list-style-type: none;
+}
+
+
+#cap {
+  font-size: 60px;
+  font-family: 'Edda outline';
+  margin-top: 0px;
+  margin-right: 14px;
+  margin-bottom: 0px;
+  float: left;
+  text-indent: 0px;
+  border: solid 2px black;
+  border-radius: 15px;
+}
+
+.one {
+	 text-indent: 0px;
+}
+
+/*figure formating*/
+figure {
+	float: left; 
+	margin: 5% 0% 5% 0%;
+	padding-top: 3%;
+	padding-left: 8%;
+	padding-right: 8%;
+}
+
+figcaption {
+	font-family: 'Tarocco Roman';
+	font-size: 70%;
+	text-align: justify;
+	padding-top: 3%;
+	padding-left: 30%;
+	padding-right: 30%;
+	line-height: normal;
+	justify-content: center;
+}
+
+img {
+    filter: grayscale(100%);
+	max-width: 100%;
+}
+
+
+.blockquote {
+	color: #262A1C;
+	text-align: justify;
+	text-justify: inter-word;
+	font-family: 'Tarocco Roman';
+	line-height: 1.2;
+	display: inline-block;
+	padding-left: 10%;
+	padding-right: 10%;
+ }
+ 
+ 
+.blockquote::before {
+	font-family: 'Davys';
+	font-size: 30px;
+	content: "p";
+	
+ }
+
+
+.blockquote::after {
+	font-family: 'Davys';
+	font-size: 30px;
+	content: "q";
+ }
+
+
+/*********/
+
+iframe {
+	filter: grayscale(100%);
+	width: 100%    !important;
+	height: auto   !important;
+	text-align: left;
+	display: inline;
+}
+
+/*hyperlinks*/
+
+.metadata a { 
+	color: #b98a7d; 
+	font-family: 'Tarocco Roman';
+	text-decoration: none;
+}
+
+.metadata a:visited {
+	color: #b98a7d;
+	text-decoration: none;
+}
+
+.metadata a:hover {
+	color: #b98a7d;
+	text-decoration: none;
+}
+
+.metadata a:active {
+	color: #b98a7d;
+	text-decoration: none;
+}
+
+
+/*hyperlinks*/
+
+.article a { 
+	color: #b98a7d; 
+	font-family: 'Tarocco Roman';
+	text-decoration: none;
+}
+
+.article a:visited {
+	color: #b98a7d;
+	text-decoration: none;
+}
+
+.article a:hover {
+	color: #b98a7d;
+	text-decoration: none;
+}
+
+.article a:active {
+	color: #b98a7d;
+	text-decoration: none;
+}
+
+
+
+/*metadata top box formatting*/
+.metadata {
+    display: block;
+    padding: 5%;
+	margin-top: 5%;
+	width: 100%;
+	height: 25vh;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	scrollbar-color: #221d0e #dcc5a1;
+    scrollbar-width: thin;
+	border: 3px solid;
+	border-radius: 55px;
+	border-color: black;
+	background: #dcc5a1;
+}
+
+
+.metadata::-webkit-scrollbar {
+  width: 0px;  /* width of the entire scrollbar */
+}
+
+.metadata::-webkit-scrollbar-track {
+  background: rgba(224,187,147,255); /* color of the tracking area */
+}
+
+.metadata::-webkit-scrollbar-thumb {
+  background-color: rgba(224,187,147,255);    /* color of the scroll thumb */
+}
+
+
+.metadata p {
+	color: #262A1C;
+	text-align: justify;
+	text-justify: inter-word;
+	font-family: 'Tarocco Roman';
+	text-indent: 0px;
+	line-height: 1.2;
+	display: inline-block;
+	padding-left: 8%;
+	padding-right: 8%;
+}
+
+
+.metadata::after {
+    content: url('imgs/end.png');
+	display: block;
+	padding-left: 20%;
+	padding-right: 20%;
+}
+
+
+
+.article {
+	display: block;
+    margin-top: 5%;
+	width: 100%;
+	height: 48vh;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	scrollbar-color: #221d0e #F2DEAB;
+    scrollbar-width: thin;
+	border: 3px solid;
+	border-color: #2a2312;
+	border-radius: 55px;
+	background: #F2DEAB;
+    padding: 15px;
+    border-image: 80 round;
+}
+
+
+.article::-webkit-scrollbar {
+  width: 0px;
+}
+
+.article::-webkit-scrollbar-track {
+  background: rgba(242,222,171,255);        /* color of the tracking area */
+  
+}
+
+
+
+.article::after {
+    content: url('imgs/end.png');
+	display: block;
+	padding-left: 20%;
+	padding-right: 20%;
+}
+
+
+/* Highlight for the metadata viewer */
+
+.highlight{
+	background-color: #d0e1e6;
+}
+
+
+.metadata .subtitle {
+	color: #221d0e;
+	font-family: 'Edda filled';
+	font-weight: bold;
+	padding-top: 2%;
+	padding-left: 8%;
+	padding-right: 8%;
+	text-align: left;
+	text-indent: 0px;
+}
+
+
+
+
+/* Style for the navbar section */
+
+#header img {
+  max-width: 100%;
+  border-style: none;
+  outline: none;
+  filter: none;
+}
+
+#header img:hover {
+  max-width: 100%;
+  border-style: none;
+  outline: none;
+  -ms-transform: scale(1.15); /* IE 9 */
+  -webkit-transform: scale(1.15); /* Safari 3-8 */
+  transform: scale(1.11);
+  filter:opacity(50%);
+}
+
+#header {
+	font-family: 'Mont R';
+}
+
+#bar-header {
+	width: 100%;
+    height: 58px;
+}
+
+
+
+/* Style for the accordion (metadata) */
+
+
+.accordion {
+	font-family: 'Mont R';
+}
+
+.accordion .label {
+	font-family: 'Mont R';
+	font-size: 12px;
+	font-weight: bold;
+}
+
+
+.accordion a {
+	font-family: 'Mont R';
+	font-size: 12px;
+}
+
+
+.accordion-collapse{
+	height: 25vh;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+
+
+/* "art" container of articles and metadata */
+
+#art {
+	width: 98%;
+} 
+
+
+.row {
+	margin-top: 1%;
+}
+
+/* checkbox style 
+input[type='checkbox'] {
+	display: none;
+	}*/
