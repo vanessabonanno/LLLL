@@ -167,6 +167,7 @@ a:active {
 	overflow-x: auto;
 	border-image: url(imgs/Morris-border-metadata.png) 25% round;
 	border-width: 50px;
+	border-style: solid;
 }
 
 .metadata::-webkit-scrollbar {
@@ -197,6 +198,7 @@ a:active {
 	font-size: 12px;
 	border-image: url(imgs/Morris-border-article.png) 25% round;
 	border-width: 50px;
+	border-style: solid;
 }
 
 .article::-webkit-scrollbar {
