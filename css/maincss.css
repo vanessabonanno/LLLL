@@ -26,22 +26,30 @@
 
 body {
 	font-family: 'Mont R';
-	background-image: url('imgs/bg1.jpg');
+	background-image: url('imgs/bg00.png');
 	background-position: center;
-	background-size: 100%;
+	background-size: 1800px;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
 
-
+/*
 .hero-banner {
 	
-	background-color: rgba(211, 219, 217, 0.4);
+	background-color: rgba(0, 40, 43, 0.3);
+} */
+
+
+.hero-banner {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 40, 43, 0.3);
 }
 
 .hero-banner h1 {
     font-family: 'Julius';
+	color: #394C32;
 	font-size: 120px;
 	padding-top: 20%;
 	margin-bottom: 15%;
@@ -53,7 +61,6 @@ body {
     font-size: 30px;
 	margin-bottom: 18%;
 }
-
 
 
 
@@ -72,7 +79,7 @@ iframe {
 
 #bar-header {
 	width: 100%;
-    height: 35px;
+    height: 1vh;
 }
 
 #n {
@@ -135,8 +142,13 @@ iframe {
 
 
 
+.accordion {
+	padding-top: 18px;
+}
 
-
+#div1 {
+	padding-top: 18px;
+}
 
 
 
