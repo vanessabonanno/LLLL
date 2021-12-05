@@ -395,12 +395,16 @@ iframe {
 }
 
 
+.em {
+	font-style: italic;
+}
 
 /* Style for the accordion (metadata) */
 
 
 .accordion {
 	font-family: 'Mont R';
+	font-size: 12px;
 }
 
 .accordion .label {
@@ -417,7 +421,7 @@ iframe {
 
 
 .accordion-collapse{
-	height: 25vh;
+	height: 50vh;
 	overflow-y: scroll;
 	overflow-x: hidden;
 }
