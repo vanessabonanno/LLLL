@@ -32,6 +32,25 @@ body {
 	background-color: #1b294b;
 }
 
+
+/* added for Pets (bg color didn't work) */
+#body {
+	background-color: #1b294b;
+}
+
+#body img {
+  max-width: 100%;
+  height: auto;
+  border-style: solid;
+  border-top: 4px solid #2B6199;
+  border-bottom: 4px solid #2B6199;
+  border-left: 4px solid #8b0000;
+  border-right: 4px solid #8b0000;
+  outline: 2px solid black;
+}
+/******/
+
+
 /*metadata top box formatting*/
 .metadata {
 	height: 25vh;
