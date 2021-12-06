@@ -1,42 +1,59 @@
 @font-face {
-font-family: "Uncial Antiqua", cursive;
-}
-
-@font-face {
   font-family: 'Mont R';
   src: url('fonts/Montserrat-Regular.ttf');
 }
 
-.highlight > #art a {
-	background-color: black;
-	color: white;
+@font-face {
+  font-family: 'Mont B';
+  src: url('fonts/Montserrat-Bold.ttf');
 }
 
-#metadata_viewer > * {
-	background-color: none;
-	font-family: 'Times New Roman';
+@font-face {
+  font-family: 'Mont T';
+  src: url('fonts/Montserrat-ThinItalic.ttf');
 }
 
+@font-face {
+  font-family: 'Mont I';
+  src: url('fonts/Montserrat-Italic.ttf');
+} 
 
-/*body tag contains navbar so this also changes the font there and as the default for anything not otherwise specificed*/
+html {
+	width: 100%;
+	
+}
+
 body {
-	color: black;
-	text-align: justify;
-	font-family: 'Libre Caslon Text';
-	background-color: white;
+	font-family: 'Mont R';
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-shrink: 0;
 }
 
-#body {
-	color: black;
-	text-align: justify;
+/*metadata top box formatting*/
+.metadata {
+    display: block;
 	font-family: 'Libre Caslon Text';
-	background-color: white;
+	font-size: 80%;
+    padding: 5%;
+	margin-top: 0%;
+	padding-left: 2%;
+	padding-right: 2%;
+	width: 100%;
+	height: 25vh;
+	overflow-y: scroll;
+	border: 7px solid black;
+	scrollbar-width: none;
 }
-
-h1 {
-	color: black;
-	font-family: "Plaster";
-	text-align: left;
+.metadata::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+.metadata::-webkit-scrollbar-track {
+  background: black;        /* color of the tracking area */
+}
+.metadata::-webkit-scrollbar-thumb {
+  background-color: black;    /* color of the scroll thumb */
 }
 
 .subtitle {
@@ -44,7 +61,73 @@ h1 {
 	font-family: Righteous;
 }
 
-/*used h2 for all section titles within the articles*/
+h1 {
+	color: black;
+	font-family: "Plaster";
+	text-align: left;
+	font-size: 150%;
+}
+
+.question {
+	font-weight: bold;
+	font-family: Righteous;
+}
+
+.article #ad {
+    display:inline-block;
+    border-top:4px solid #000;
+	border-bottom: 4px solid #000;
+    padding:5px;
+}
+.article ul {
+	list-style-type: square;
+	margin-bottom: 0;
+}
+/* article formatting */
+.article {
+	width: 100%;
+	max-height: 55vh;
+	color: black;
+	text-align: justify;
+	font-family: 'Libre Caslon Text';
+	color: black;
+	display: block;
+    margin-top: 2%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	word-wrap: break-word;
+    overflow-wrap: break-word;
+	padding-top: 3%;
+	padding-right: 5%;
+	padding-left: 5%;
+	border: 5px solid black;
+	font-size: 80%;
+	scrollbar-color: #221d0e #221d0e;
+    scrollbar-width: thin;
+}
+
+.article::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+.article::-webkit-scrollbar-track {
+  background: black;        /* color of the tracking area */
+}
+.article::-webkit-scrollbar-thumb {
+  background-color: black;    /* color of the scroll thumb */
+}
+
+div.article {
+	text-indent: 5%;
+} 
+.long {
+	display: inline-block;
+	word-break: break-word;}
+
+blockquote {
+
+}
+
+
 h2 {
 	color: black;
 	font-family: "Teko";
@@ -55,56 +138,25 @@ h2 {
 	margin-top: 2%;
 }
 
-/*used h1 as the overall title and subtitle for any subtitle of that title*/
-h1 {
-	color: black;
-	font-family: "Plaster";
-	text-align: left;
-	font-size: 150%;
-}
 
-p {
-	margin-bottom: 0%;
-}
-
-
-
-blockquote {
-	padding-top: 3%;
-	padding-right: 5%;
-	padding-left: 5%;
-}
-
-
-h5 {
-	color: black;
-	font-family: 'Libre Caslon Text';
-	text-align: left;
-	font-size: 100%;
-	font-weight: bold;
-}
-
-
-
-/**/
-div.article {
-	text-indent: 5%;
-} 
-
-
-/*figure formating*/
 figure {
 	float: left; 
-	margin: 0% 5% 0% 5%;
-	margin-left: 0%;
-	margin-right: 0%;
-	text-indent: 0%;
+	display: table;
+	box-sizing: border-box;
+	margin-left: 0;
+	margin-right: .5em;
+	margin-left: 0em;
+	margin-bottom: 0;
+	text-indent: 0;
 }
 
 figcaption {
 	font-family: Teko;
-	font-size: 70%;
+	font-size: 90%;
 	font-weight: bold;
+	text-align: left;
+	display: table-caption;
+	caption-side: bottom;
 	text-indent: 0%;
 }
 
@@ -121,78 +173,52 @@ iframe {
 	display: inline;
 }
 
-/*hyperlinks*/
+p {
+	margin-bottom: 0%;
+}
 
-#art a {
-	color: inherit;
+a { 
+	color: black;
 	text-decoration: none;
 }
 
-#art a:visited {
+a:visited {
 	color: black; 
 	text-decoration: none;
 }
 
-#art a:hover {
+a:hover {
 	color: black; 
 	text-decoration: none;
 }
 
-#art a:active {
+a:active {
 	color: black; 
 	text-decoration: none;
 }
 
-/*metadata top box formatting*/
-.metadata {
-    display: block;
-    padding: 5%;
-	margin-top: 5%;
-	padding-left: 2%;
-	padding-right: 2%;
-	width: 100%;
-	height: 25vh;
-	overflow-y: scroll;
-	border: 3px solid black;
-	scrollbar-width: none;
-}
-.metadata::-webkit-scrollbar {
-  width: 12px;               /* width of the entire scrollbar */
-}
-.metadata::-webkit-scrollbar-track {
-  background: black;        /* color of the tracking area */
-}
-.metadata::-webkit-scrollbar-thumb {
-  background-color: black;    /* color of the scroll thumb */
+/*navbar formatting*/
+.navbar-brand {
+	font-family: 'Mont R';
 }
 
-/*article box formatting*/
-.article {
-	display: block;
-    margin-top: 5%;
-	padding-top: 3%;
-	padding-right: 5%;
-	padding-left: 5%;
-	width: 100%;
-	height: 48vh;
-	overflow-y: scroll;
-	border: 3px solid black;
-	font-size: 80%;
-	scrollbar-color: #221d0e #221d0e;
-    scrollbar-width: thin;
+.nav-link {
+	font-family: 'Mont R';
 }
 
-.article::-webkit-scrollbar {
-  width: 12px;               /* width of the entire scrollbar */
-}
-.article::-webkit-scrollbar-track {
-  background: black;        /* color of the tracking area */
-}
-.article::-webkit-scrollbar-thumb {
-  background-color: black;    /* color of the scroll thumb */
+.dropdown-item {
+	font-family: 'Mont R';
+	
 }
 
+/* Highlight for the metadata viewer */
 
+.highlight {
+	color:black;    
+	text-shadow: 1px 0 black;
+	letter-spacing:1px;
+	font-weight:bold;
+}
 /* Style for the navbar section */
 
 #header img {
@@ -218,7 +244,7 @@ iframe {
 
 #bar-header {
 	width: 100%;
-    height: 70px;
+    height: 50px;
 }
 
 
@@ -229,24 +255,32 @@ iframe {
 	font-family: 'Mont R';
 }
 
-.accordion label {
+.accordion .label {
 	font-family: 'Mont R';
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.accordion a {
+	font-family: 'Mont R';
+	font-size: 12px;
+	
+}
+
+.accordion-collapse{
+	height: 25vh;
+	overflow-y: scroll;
+	overflow-x: hidden;
 }
 
 
 /* "art" container of articles and metadata */
 
 #art {
-	width: 98%;
+	width: 100%;
+	
 } 
 
-#art p {
-	color: black;
-	text-align: justify;
-	font-family: 'Libre Caslon Text';
-}
-
-.highlight {
-	background-color: black !important;
-	color: white !important;
+.row {
+	margin-top: 1%;
 }
