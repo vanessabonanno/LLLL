@@ -32,25 +32,6 @@ body {
 	background-color: #1b294b;
 }
 
-
-/* added for Pets (bg color didn't work) */
-#body {
-	background-color: #1b294b;
-}
-
-#body img {
-  max-width: 100%;
-  height: auto;
-  border-style: solid;
-  border-top: 4px solid #2B6199;
-  border-bottom: 4px solid #2B6199;
-  border-left: 4px solid #8b0000;
-  border-right: 4px solid #8b0000;
-  outline: 2px solid black;
-}
-/******/
-
-
 /*metadata top box formatting*/
 .metadata {
 	height: 25vh;
@@ -66,11 +47,12 @@ body {
 	overflow-x: hidden;
 	background: url('imgs/parchment.jpg');
 	background-position: center;
-	border-left: 50px solid;
-	border-image: url('imgs/border.jpg') 75 round;
+	border-left: 3.1rem solid;
+	border-image: url('imgs/border4.jpg') 250 round;
 	scrollbar-color: #D4AF37 #D4AF37;
 	scrollbar-width: thin;
 	cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='75' height='90' viewport='0 0 100 100' style='fill:black;font-size:60px;'><text y='50%'>☜</text></svg>") 16 0,auto;
+	color: black;
 }
 
 .metadata::-webkit-scrollbar {
@@ -102,11 +84,12 @@ h1 {
 /* article formatting */
 .article {
 	width: 100%;
-	height: 54vh;
+	max-height: 55vh;
 	font-family: 'Uncial Antiqua';
+	color: black;
 	
 	display: block;
-    margin-top: 5%;
+    margin-top: 2%;
 	padding-top: 10%;
 	padding-right: 15%;
 	padding-left: 2%;
@@ -118,9 +101,34 @@ h1 {
 	background: url('imgs/parchment.jpg');
 	background-position: center;
 	cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='75' height='90' viewport='0 0 100 100' style='fill:black;font-size:60px;'><text y='50%'>☜</text></svg>") 16 0,auto;
-	border-left: 50px solid;
-	border-image: url('imgs/border.jpg') 50 round;
+	border-left: solid;
+	border-left-width: 3.1rem;
+	border-image: url('imgs/border4.jpg') 250 round;
+	
+	box-sizing: border-box;
+	word-wrap: break-word;
+    overflow-wrap: break-word;
 }
+.long {
+	display: inline-block;
+	word-break: break-word;}
+
+blockquote {
+	display: inline;
+}
+
+ul {
+	list-style-type: none;
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+li { 
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
 
 .article::-webkit-scrollbar {
   width: 1px;               /* width of the entire scrollbar */
@@ -138,6 +146,7 @@ h1 {
 }
 
 
+
 h2 {
 	color: #8b0000;
 	font-family: 'Uncial Antiqua';
@@ -152,6 +161,8 @@ figure {
 	margin-bottom: 1%;
 	display: table;
 	margin-right: 1%;
+	
+	box-sizing: border-box;
 }
 
 figcaption {
@@ -186,9 +197,9 @@ iframe {
 	border-left: 4px solid #8b0000;
 	border-right: 4px solid #8b0000;
 	outline: 2px solid black;
+	
+	
 }
-
-
 
 p
 {
@@ -201,7 +212,6 @@ div{
   margin:0;
   padding:0;
 }
-
 
 
 a { 
@@ -237,9 +247,6 @@ a:active {
 	font-family: 'Mont R';
 	
 }
-
-
-
 
 /* Highlight for the metadata viewer */
 
@@ -305,6 +312,7 @@ a:active {
 
 #art {
 	width: 100%;
+	
 } 
 
 .row {
