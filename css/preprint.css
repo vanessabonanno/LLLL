@@ -47,7 +47,7 @@ body {
 	overflow-x: hidden;
 	background: url('imgs/parchment.jpg');
 	background-position: center;
-	border-left: 3.1rem solid;
+	border-left: 3.8rem solid;
 	border-image: url('imgs/border4.jpg') 250 round;
 	scrollbar-color: #D4AF37 #D4AF37;
 	scrollbar-width: thin;
@@ -102,7 +102,7 @@ h1 {
 	background-position: center;
 	cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='75' height='90' viewport='0 0 100 100' style='fill:black;font-size:60px;'><text y='50%'>☜</text></svg>") 16 0,auto;
 	border-left: solid;
-	border-left-width: 3.1rem;
+	border-left-width: 3.8rem;
 	border-image: url('imgs/border4.jpg') 250 round;
 	
 	box-sizing: border-box;
