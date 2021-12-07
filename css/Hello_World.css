@@ -51,7 +51,7 @@ h1 {
   font-family: "IMB";
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid #7FFF00; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
+  white-space: normal; 
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .03em; /* Adjust as needed */
   animation: 
