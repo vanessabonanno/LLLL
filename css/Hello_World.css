@@ -53,7 +53,7 @@ h1 {
   border-right: .15em solid #7FFF00; /* The typwriter cursor */
   white-space: normal; 
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .03em; /* Adjust as needed */
+  letter-spacing:0; /* Adjust as needed */
   animation: 
     typing 3.5s steps(30, end),
     blink-caret .5s step-end infinite;
@@ -67,7 +67,7 @@ h1 {
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
-  from, to { border-color: transparent }
+  from, to { border-color: #7FFF00 }
   50% { border-color: #7FFF00 }
 }
 
@@ -81,14 +81,14 @@ h2 {
 	color: #7FFF00;
 	font-family: "IMB";
 	text-align: left;
-	font-size: 130%;
+	font-size: 80%;
 }
 
 h1 {
 	color: #7FFF00;
 	font-family: "IMB";
 	text-align: left;
-	font-size: 130%;
+	font-size: 100%;
 }
 
 p {
@@ -104,7 +104,7 @@ div.article {
 
 h2 {
 	text-indent: initial;
-	margin-bottom: 0%;
+	margin-bottom: 2%;
 	margin-top: 2%;
 }
 
@@ -119,10 +119,8 @@ blockquote {
 figure {
 	float: left; 
 	margin: 0% 5% 0% 5%;
-	margin-left: 0%;
-	margin-right: 0%;
 	text-indent: initial;
-	border: 5px #7FFF00;
+	border: 5px ;
 	border-style: inset;
 	
 }
@@ -141,15 +139,9 @@ img {
 	max-width: 100%;
 }
 
-q {
-	font-family: "IMB";
-	color: #7FFF00;
-}
-
 footer {
 	color: #7FFF00;
-	font-size: 10%;
-	
+	font-size: 5%;	
 }
 iframe {
 	width: 100%    !important;
@@ -162,8 +154,8 @@ iframe {
 /*metadata top box formatting*/
 .metadata {
     	display: block;
+	margin-top: 5%;
     	padding: 2%;
-	/* margin-top: 10%; */
 	padding-left: 2%;
 	padding-right: 2%;
 	width: 100%;
@@ -172,11 +164,11 @@ iframe {
 	border: 10px #7FFF00;
 	border-style: solid;
 	border-width: medium;
-    scrollbar-width: thin;
+    	scrollbar-width: thin;
 }
 
 .metadata::-webkit-scrollbar {
-  width: 12px;               /* width of the entire scrollbar */
+  width: 0;               /* width of the entire scrollbar */
 }
 .metadata::-webkit-scrollbar-track {
   background: #7FFF00;        /* color of the tracking area */
@@ -188,7 +180,7 @@ iframe {
 /*article box formatting*/
 .article {
 	display: block;
-    margin-top: 5%;
+    	margin-top: 5%;
 	padding-top: 2%;
 	padding-right: 2%;
 	padding-left: 2%;
@@ -213,6 +205,10 @@ iframe {
   width: 0;
 }
 
+.highlight{
+	background-color: #7FFF00;
+  	color: #202020;
+}
 
 /* Style for the navbar section */
 
