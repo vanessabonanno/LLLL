@@ -36,24 +36,20 @@ body {
     display: block;
 	font-family: 'Libre Caslon Text';
 	font-size: 80%;
-    padding: 5%;
+    padding-top: 3%;
+	padding-right: 5%;
+	padding-left: 5%;
+	padding-bottom: 3%;
 	margin-top: 0%;
-	padding-left: 2%;
-	padding-right: 2%;
 	width: 100%;
 	height: 25vh;
 	overflow-y: scroll;
-	border: 7px solid black;
+	border: solid black;
+	border-width: 5px 20px 5px 5px;
 	scrollbar-width: none;
 }
 .metadata::-webkit-scrollbar {
-  width: 12px;               /* width of the entire scrollbar */
-}
-.metadata::-webkit-scrollbar-track {
-  background: black;        /* color of the tracking area */
-}
-.metadata::-webkit-scrollbar-thumb {
-  background-color: black;    /* color of the scroll thumb */
+  display: none;
 }
 
 .subtitle {
@@ -71,6 +67,7 @@ h1 {
 .question {
 	font-weight: bold;
 	font-family: Righteous;
+	text-indent: 0;
 }
 
 .article #ad {
@@ -78,6 +75,7 @@ h1 {
     border-top:4px solid #000;
 	border-bottom: 4px solid #000;
     padding:5px;
+	width: 100%;
 }
 .article ul {
 	list-style-type: square;
@@ -85,6 +83,7 @@ h1 {
 }
 /* article formatting */
 .article {
+	display: flex;
 	width: 100%;
 	max-height: 55vh;
 	color: black;
@@ -97,24 +96,19 @@ h1 {
 	overflow-x: hidden;
 	word-wrap: break-word;
     overflow-wrap: break-word;
-	padding-top: 3%;
-	padding-right: 5%;
-	padding-left: 5%;
-	border: 5px solid black;
+	padding-top: 1em;
+	padding-right: 1em;
+	padding-left: 1em;
 	font-size: 80%;
-	scrollbar-color: #221d0e #221d0e;
-    scrollbar-width: thin;
+    scrollbar-width: none;
+	border: solid black;
+	border-width: 5px 20px 5px 5px;
+	scrollbar-width: none;
+}
+.article::-webkit-scrollbar {
+  display: none;
 }
 
-.article::-webkit-scrollbar {
-  width: 12px;               /* width of the entire scrollbar */
-}
-.article::-webkit-scrollbar-track {
-  background: black;        /* color of the tracking area */
-}
-.article::-webkit-scrollbar-thumb {
-  background-color: black;    /* color of the scroll thumb */
-}
 
 div.article {
 	text-indent: 5%;
@@ -124,7 +118,8 @@ div.article {
 	word-break: break-word;}
 
 blockquote {
-
+	padding: 0;
+	margin: 0;
 }
 
 
@@ -135,19 +130,21 @@ h2 {
 	font-size: 150%;
 	text-indent: 0%;
 	margin-bottom: 0%;
-	margin-top: 2%;
+	margin-top: .25em;
 }
-
-
+  
 figure {
 	float: left; 
 	display: table;
 	box-sizing: border-box;
 	margin-left: 0;
-	margin-right: .5em;
+	margin-right: 0em;
 	margin-left: 0em;
 	margin-bottom: 0;
 	text-indent: 0;
+}
+.article figure {
+	border-right: 5px solid white;
 }
 
 figcaption {
@@ -170,11 +167,11 @@ iframe {
 	width: 100%    !important;
 	height: auto   !important;
 	text-align: left;
-	display: inline;
+	display: block;
 }
 
 p {
-	margin-bottom: 0%;
+	margin-bottom: 0em;
 }
 
 a { 
@@ -270,7 +267,7 @@ a:active {
 }
 
 .accordion-collapse{
-	height: 49vh;
+	height: 48vh;
 	overflow-y: scroll;
 	overflow-x: hidden;
 }

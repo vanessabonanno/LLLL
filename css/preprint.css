@@ -50,7 +50,7 @@ body {
 	border-left: 3.8rem solid;
 	border-image: url('imgs/border4.jpg') 300 round;
 	scrollbar-color: #D4AF37 #D4AF37;
-	scrollbar-width: thin;
+	scrollbar-width: none;
 	cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='75' height='90' viewport='0 0 100 100' style='fill:black;font-size:60px;'><text y='50%'>☜</text></svg>") 16 0,auto;
 	color: black;
 }
@@ -96,7 +96,7 @@ h1 {
 	overflow-y: scroll;
 	overflow-x: hidden;
 	scrollbar-color: #D4AF37 #D4AF37;
-	scrollbar-width: thin;
+	scrollbar-width: none;
 	background: url('imgs/parchment.jpg');
 	background-position: center;
 	cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='75' height='90' viewport='0 0 100 100' style='fill:black;font-size:60px;'><text y='50%'>☜</text></svg>") 16 0,auto;
@@ -128,7 +128,6 @@ blockquote {
 	padding: 0;
 }
 
-
 .article::-webkit-scrollbar {
   width: 1px;               /* width of the entire scrollbar */
 }
@@ -140,7 +139,6 @@ blockquote {
 .article::-webkit-scrollbar-thumb {
   background-color: none;
   border-radius: 20px;    /* roundness of the scroll thumb */
-  border: 2px solid #2B6199;  /* creates padding around scroll thumb */
 }
 
 
@@ -159,7 +157,6 @@ figure {
 	margin-bottom: 1%;
 	display: table;
 	margin-right: 1%;
-	
 	box-sizing: border-box;
 }
 
@@ -176,22 +173,22 @@ img{
   max-width: 100%;
   height: auto;
   border-style: solid;
-  border-top: 4px solid #2B6199;
-  border-bottom: 4px solid #2B6199;
+  border-top: 4px solid #1434A4;
+  border-bottom: 4px solid #1434A4;
   border-left: 4px solid #8b0000;
   border-right: 4px solid #8b0000;
   outline: 2px solid black;
 }
 
 iframe {
-	max-width: 100%    !important;
-	height: auto   !important;
+	max-width: 100%;
+	height: auto;
 	text-align: left;
 	display: inline;
 	border-style:solid;
 	border-color: #ff0000 #00ff00 #0000ff rgb(250,0,255);
-	border-top: 4px solid #2B6199;
-	border-bottom: 4px solid #2B6199;
+	border-top: 4px solid #1434A4;
+	border-bottom: 4px solid #1434A4;
 	border-left: 4px solid #8b0000;
 	border-right: 4px solid #8b0000;
 	outline: 2px solid black;
@@ -313,6 +310,7 @@ a:active {
 
 #art {
 	width: 100%;
+	background-color: #1b294b;
 	
 } 
 
