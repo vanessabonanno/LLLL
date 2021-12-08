@@ -111,6 +111,9 @@ blockquote {
 	padding-left: 5%;
 }
 
+.long {
+	display: inline-block;
+	word-break: break-word;}
 
 /*figure formating*/
 figure {
@@ -297,5 +300,3 @@ a:active {
 .row {
 	margin-top: 1%;
 }
-
-
