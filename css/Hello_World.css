@@ -5,7 +5,6 @@
   font-style: normal;
 }
 
-
 @font-face {
   font-family: 'Mont R';
   src: url('fonts/Montserrat-Regular.ttf');
@@ -24,19 +23,18 @@
   transform: scaleX(0.6667);
 }
 
+.highlight{
+	background-color: #7FFF00;
+  	color: black;
+}
 
  
-/*body tag contains navbar so this also changes the font there and as the default for anything not otherwise specificed*/
+/*text*/
+
 body {
 	text-align: initial;
 	font-family: 'IMB';
-	background-color:#202020; 
-}
-
-#body {
-	text-align: initial;
-	font-family: 'IMB';
-	background-color:#202020; 
+	background-color: black; 
 }
 
 h1 {
@@ -49,6 +47,7 @@ h1 {
 .title {
   color: #7FFF00;
   font-family: "IMB";
+  font-size: 100%;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid #7FFF00; /* The typwriter cursor */
   white-space: normal; 
@@ -74,36 +73,58 @@ h1 {
 .subtitle {
 	color: #7FFF00;
 	font-family: "IMB";
-	font-size: 70%;
+	font-size: 60%;
 }
 
-h1 {
+#author {
 	color: #7FFF00;
 	font-family: "IMB";
-	text-align: left;
-	font-size: 100%;
+	font-size: 30%;
+}
+
+#date { 
+	color: #7FFF00;
+	font-family: "IMB";
+	font-size: 30%;
+}
+
+#licence {
+	color: #7FFF00;
+	font-family: "IMB";
+	font-size: 30%;
+}
+
+#other {
+	color: #7FFF00;
+	font-family: "IMB";
+	font-size: 30%;
+}
+
+#source {
+	color: #7FFF00;
+	font-family: "IMB";
+	font-size: 30%;
 }
 
 h2 {
 	color: #7FFF00;
 	font-family: "IMB";
 	text-align: left;
-	font-size: 80%;
+	font-size: 60%;
 	text-indent: initial;
 	margin-bottom: 2%;
 	margin-top: 2%;
 }
 
-p {
-	color: #7FFF00;
-	margin-bottom: 0%;
-}
-
-
 div.article {
 	color: #7FFF00;
 	text-indent: initial;
 }
+
+p {
+	margin-bottom: 0%;
+}
+
 
 blockquote {
 	padding-top: 3%;
@@ -120,23 +141,24 @@ blockquote {
 }	
 
 /*figure formating*/
+
 figure {
 	float: left; 
 	margin: 0% 5% 0% 5%;
 	text-indent: initial;
 	border: 5px ;
 	border-style: inset;
+	border-color: black;
 	
 }
 figcaption {
 	color: #7FFF00;
 	font-family: "IMB";
-	font-size: 60%;
+	font-size: 30%;
 	text-indent: initial;
 }
 
 img {
-    /*filter: still browsing;*/
 	filter: sepia(9%) brightness(83%) hue-rotate(194deg) saturate(743%) invert(3%);
 	webkit-filter: sepia(9%) brightness(83%) hue-rotate(194deg) saturate(743%) invert(3%);
 	moz-filter: sepia(9%) brightness(83%) hue-rotate(194deg) saturate(743%) invert(3%);
@@ -145,8 +167,9 @@ img {
 
 footer {
 	color: #7FFF00;
-	font-size: 5%;	
+	font-size: 30%;	
 }
+
 iframe {
 	width: 100%    !important;
 	height: auto   !important;
@@ -154,31 +177,34 @@ iframe {
 	display: inline;
 }
 
+/* hyperlinks*/
+
 a { 
-	color: #202020;
+	color: #7FFF00;
 	text-decoration: none;
 }
 
 a:visited {
-	color: #202020; 
+	color: #7FFF00; 
 	text-decoration: none;
 }
 
 a:hover {
-	color: #202020; 
+	color: #7FFF00; 
 	text-decoration: none;
 }
 
 a:active {
-	color: #202020; 
+	color: #7FFF00; 
 	text-decoration: none;
 }
 
 /*metadata top box formatting*/
+
 .metadata {
-    	display: block;
+    display: block;
 	margin-top: 5%;
-    	padding: 2%;
+    padding: 2%;
 	padding-left: 2%;
 	padding-right: 2%;
 	width: 100%;
@@ -187,7 +213,7 @@ a:active {
 	border: 10px #7FFF00;
 	border-style: solid;
 	border-width: medium;
-    	scrollbar-width: thin;
+    scrollbar-width: thin;
 }
 
 .metadata::-webkit-scrollbar {
@@ -201,6 +227,7 @@ a:active {
 }
 
 /*article box formatting*/
+
 .article {
 	display: block;
     	margin-top: 5%;
@@ -226,11 +253,6 @@ a:active {
 .article::-webkit-scrollbar-thumb {
   background-color:  #7FFF00;    /* color of the scroll thumb */
   width: 0;
-}
-
-.highlight{
-	background-color: #7FFF00;
-  	color: #202020;
 }
 
 /* Style for the navbar section */
@@ -263,29 +285,37 @@ a:active {
 }
 
 
-
 /* Style for the accordion (metadata) */
 
+
+.accordion  {
+	font-family: 'Mont R';
+	font-size: 12px;
+}
+
+.accordion .label {
+	font-family: 'Mont R';
+	font-size: 12px;
+	font-weight: bold;
+}
+
+
+.accordion a {
+	font-family: 'Mont R';
+	font-size: 12px;
+	color: blue;
+}
+
+.accordion-collapse{
+	height: 50vh;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
 
 .accordion h2  {
 	font-family: 'Mont R';
 }
 
-.accordion label {
-	font-family: 'Mont R';
-	font-size: 10px;
-}
-
-.accordion a {
-	font-family: 'Mont R';
-	font-size: 14px;
-}
-
-.accordion-collapse{
-	height: 25vh;
-	overflow-y: scroll;
-	overflow-x: hidden;
-}
 
 /* "art" container of articles and metadata */
 
@@ -297,7 +327,6 @@ a:active {
 	width: 100%;
 	margin-top: 12px;
 } 
-
 
 /* row to add some space under the navbar*/
 
