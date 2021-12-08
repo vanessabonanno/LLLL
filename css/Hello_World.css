@@ -115,6 +115,10 @@ blockquote {
 	display: inline-block;
 	word-break: break-word;}
 
+.question {
+	font-weight: bold;
+}	
+
 /*figure formating*/
 figure {
 	float: left; 
