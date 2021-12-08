@@ -76,31 +76,31 @@ h1 {
 	font-size: 60%;
 }
 
-#author {
+.author {
 	color: #7FFF00;
 	font-family: "IMB";
 	font-size: 30%;
 }
 
-#date { 
+.date { 
 	color: #7FFF00;
 	font-family: "IMB";
 	font-size: 30%;
 }
 
-#licence {
+.licence {
 	color: #7FFF00;
 	font-family: "IMB";
 	font-size: 30%;
 }
 
-#other {
+.other {
 	color: #7FFF00;
 	font-family: "IMB";
 	font-size: 30%;
 }
 
-#source {
+.source {
 	color: #7FFF00;
 	font-family: "IMB";
 	font-size: 30%;
@@ -140,6 +140,10 @@ blockquote {
 	font-weight: bold;
 }	
 
+.footer {
+	color: #7FFF00;
+	font-size: 30%;	
+}
 /*figure formating*/
 
 figure {
@@ -163,11 +167,6 @@ img {
 	webkit-filter: sepia(9%) brightness(83%) hue-rotate(194deg) saturate(743%) invert(3%);
 	moz-filter: sepia(9%) brightness(83%) hue-rotate(194deg) saturate(743%) invert(3%);
 	max-width: 100%;
-}
-
-footer {
-	color: #7FFF00;
-	font-size: 30%;	
 }
 
 iframe {
