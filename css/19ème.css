@@ -68,6 +68,10 @@ p {
   display: inline;  
 }
 
+.long {
+	display: inline-block;
+	word-break: break-word;}
+
 blockquote {
 	font font-family:'Morris';
 	margin: 1.5em 10px;
