@@ -141,7 +141,12 @@ iframe {
 
 }
 
-
-
+button {
+	-webkit-background-clip: text; 
+	-webkit-text-fill-color: transparent; 
+	background-image: url('imgs/gold_leaf.jpg');
+	background-repeat: repeat-x;
+	font-weight: 700;
+}
 
 
