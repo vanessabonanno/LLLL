@@ -63,8 +63,8 @@ h2 {
 }
 
 p {
-  margin:0;
-  padding:0;
+  margin:0px;
+  padding:0px;
   display: inline;  
 }
 
@@ -153,8 +153,8 @@ a:active {
 /*metadata top box formatting*/
 .metadata {
 	display: block;
-    	margin: 0;
-	padding: 0; 
+    	margin: 0px;
+	padding: 0px; 
 	width:100%;
 	height: 25vh;
 	overflow:hidden;
@@ -179,8 +179,8 @@ a:active {
 .article {
 	font-family: 'Morris';
 	display: block;
-    	margin: 0;
-	padding: 0;
+    	margin: 0px;
+	padding: 0px;
 	width: 100%;
 	height: 48vh;
 	text-align: justify;
