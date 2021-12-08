@@ -77,18 +77,21 @@ h1 {
 	font-size: 70%;
 }
 
-h2 {
-	color: #7FFF00;
-	font-family: "IMB";
-	text-align: left;
-	font-size: 80%;
-}
-
 h1 {
 	color: #7FFF00;
 	font-family: "IMB";
 	text-align: left;
 	font-size: 100%;
+}
+
+h2 {
+	color: #7FFF00;
+	font-family: "IMB";
+	text-align: left;
+	font-size: 80%;
+	text-indent: initial;
+	margin-bottom: 2%;
+	margin-top: 2%;
 }
 
 p {
@@ -100,12 +103,6 @@ p {
 div.article {
 	color: #7FFF00;
 	text-indent: initial;
-}
-
-h2 {
-	text-indent: initial;
-	margin-bottom: 2%;
-	margin-top: 2%;
 }
 
 blockquote {
@@ -150,6 +147,25 @@ iframe {
 	display: inline;
 }
 
+a { 
+	color: #202020;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #202020; 
+	text-decoration: none;
+}
+
+a:hover {
+	color: #202020; 
+	text-decoration: none;
+}
+
+a:active {
+	color: #202020; 
+	text-decoration: none;
+}
 
 /*metadata top box formatting*/
 .metadata {
