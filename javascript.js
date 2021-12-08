@@ -1,16 +1,20 @@
 function edData(id) {
-  //var x = document.getElementById(id);
   var list = document.getElementsByClassName(id);
   for (let i=0; i < list.length; i++) {
 	  var item = list[i];
-	if (item.style.display === "block") {
-		item.style.display = "none";
-	} else {
+	  if(item.hasAttribute("style")){
+	 if (item.style.display === "block") {
+			item.style.display = "none";
+		} else {
 		item.style.display = "block";
 	}
   }
-  
+  else {
+	  item.style.display = "none";
+  }
 }
+}
+
 
 function getTitles() {
 	
