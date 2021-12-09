@@ -56,7 +56,7 @@ h2 {
 	font-size: 10px;
 }
 
-,date{
+.date{
 	color: #383b3e;
 	font-family: "ArtsCrafts";
 	font-size: 10px;
@@ -180,7 +180,7 @@ a:active {
 	overflow-y: scroll;
 	overflow-x: auto;
 	border-image: url(imgs/Morris-border-metadata.png) 25% round;
-	border-width: 90px;
+	border-width: 50px;
 	border-style: solid;
 }
 
@@ -210,7 +210,7 @@ a:active {
 	overflow-x: auto;
 	font-size: 12px;
 	border-image: url(imgs/Morris-border-article.png) 25% round;
-	border-width: 90px;
+	border-width: 50px;
 	border-style: solid;
 }
 
