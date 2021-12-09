@@ -332,3 +332,7 @@ a:active {
 .row {
 	margin-top: 1%;
 }
+
+.navbar {
+    min-height: 100px;
+}
