@@ -30,7 +30,7 @@ body {
 }
 
 h1 {
-	color: ##383b3e;
+	color: #383b3e;
 	font-family: "ArtsCrafts";
 	 text-align: center;
 	 font-size: 15px;
@@ -50,21 +50,37 @@ h2 {
 	font-size: 10px;
 }
 
-#author{
+.author{
 	color: #383b3e;
 	font-family: "ArtsCrafts";
 	font-size: 10px;
 }
 
-#date{
+,date{
+	color: #383b3e;
+	font-family: "ArtsCrafts";
+	font-size: 10px;
+}
+
+.license {
+	color: #383b3e;
+	font-family: "ArtsCrafts";
+	font-size: 10px;
+}
+
+.other {
+	color: #383b3e;
+	font-family: "ArtsCrafts";
+	font-size: 10px;
+}
+
+.source {
 	color: #383b3e;
 	font-family: "ArtsCrafts";
 	font-size: 10px;
 }
 
 p {
-  margin:0px;
-  padding:0px;
   display: inline;  
 }
 
@@ -131,7 +147,7 @@ iframe {
 /*hyperlinks*/
 
 a {
-	color: ##383b3e;
+	color: #383b3e;
 	text-decoration: none;
 }
 
