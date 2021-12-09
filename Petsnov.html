@@ -1,5 +1,3 @@
-<!-- Nuovo Pets -->
-
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -12,7 +10,7 @@
 
 
 
-		<title>LLLL Pets</title>
+		<title>Pets</title>
 	
 	<!--Bootstrap CSS-->
 	  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -21,11 +19,10 @@
 	<script src="javascript.js"></script>
 	<script type="module">
 	{
-	
 	document.getElementById("label1").innerText = document.getElementById("title1").innerText;
 	document.getElementById("label2").innerText = document.getElementById("title2").innerText;
 	document.getElementById("label3").innerText = document.getElementById("title3").innerText;
-}
+	}
 	</script>
 	
 	<!-- starting css --> 
@@ -34,11 +31,11 @@
 	
 	
 	<body id="body">
-	<!--Insert code for navbar here-->	
-	  <header id="header">
+	<!-- navbar -->	
+	  	<header id="header">
 	    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 		  <div class="container-fluid">
-		  <a class="navbar-brand" href="#">LLLL</a>
+		  <a class="navbar-brand" href="index.html">Nostalgia</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			  <span class="navbar-toggler-icon"></span>
 			</button>
@@ -53,10 +50,13 @@
 					</ul>
 				</li>
 				<li class="nav-item">
-					  <a class="nav-link" href="Disclaimer.html" tabindex="-1" aria-disabled="true">Disclaimer</a>
+					<a class="nav-link" href="Disclaimer.html">Disclaimer</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="documentation.html" tabindex="-1" aria-disabled="true">Documentation</a>
+					<a class="nav-link" href="documentation.html">Documentation</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="About.html">About us</a>
 				</li>
 			  </ul>
 			  <ul class="navbar-nav mr-auto">
@@ -70,16 +70,16 @@
 			    <li class="nav-item"><a class="nav-link" id="btn8" href="#"  onclick="setStyleSheet('css/artnouveaunovember.css')"><img alt="Art Nouveau" src="icons/artnew.png" width="72"></a></li>			
 				<li class="nav-item"></li>
 				<li class="nav-item"><a class="nav-link" id="btn9" href="#"  onclick="setStyleSheet('css/sixties.css')"><img alt="Sixties" src="icons/six.png" width="72"></a></li>
-				<li class="nav-item"><a class="nav-link" id="btn13" href="#"  onclick="setStyleSheet('css/19ème.css')"><img alt="Nineties" src="icons/nine.png" width="72"></a></li>
+				<li class="nav-item"><a class="nav-link" id="btn13" href="#"  onclick="setStyleSheet('css/19ème.css')"><img alt="Nineties" src="icons/19eme.png" width="72"></a></li>
 			    <li class="nav-item"><a class="nav-link" id="btn10" href="#"  onclick="setStyleSheet('css/Hello_World.css')"><img alt="Terminal" src="icons/computer.png" width="72"></a></li>
 			    <li class="nav-item"><a class="nav-link" id="btn12" href="#"  onclick="setStyleSheet('css/future.css')"><img alt="Future" src="icons/futuro.png" width="72"></a></li>
 			  </ul>
 			</div>
 		   </div>
 	    </nav>
-	</header>
+	</header>	
 	
-		
+	
 	<div id="bar-header" class="container mt-5">
 		<div class="row mt-5">
 		</div>
@@ -123,16 +123,16 @@
 						</h2>
 						<div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
 							<div class="accordion-body">
-								<input type="checkbox" name="author" value="author" onclick="edData('author')">
-									<label for="author">Author</label><br>
-								<input type="checkbox" name="date" value="date" onclick="edData('date')">
-									<label for="date">Date</label><br>
-								<input type="checkbox" name="source" value="source" onclick="edData('source')">
-									<label for="source">Source</label><br>
-								<input type="checkbox" name="license" value="license" onclick="edData('license')">
-									<label for="license">License</label><br>
-								<input type="checkbox" name="other" value="other" onclick="edData('other')">
-									<label for="other">Other</label><br>
+								<input type="checkbox" name="author" checked="true" value="author" onclick="edData('author')">
+									<label for="author" class="label">Author</label><br>
+								<input type="checkbox" name="date" checked="true" value="date" onclick="edData('date')">
+									<label for="date" class="label">Date</label><br>
+								<input type="checkbox" name="license" checked="true" value="license" onclick="edData('license')">
+									<label for="license" class="label">License</label><br>
+								<input type="checkbox" name="other" checked="true" value="other" onclick="edData('other')">
+									<label for="other" class="label">Other</label><br>
+								<input type="checkbox" name="source" checked="true" value="source" onclick="edData('source')">
+									<label for="source" class="label">Source</label><br>
 
 							</div>
 						</div>
@@ -140,21 +140,21 @@
 					
 					<div class="accordion-item">
 						<h2 class="accordion-header" id="flush-headingThree">
-							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">Content Metadata</button>
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree"> Content Metadata</button>
 						</h2>
 						<div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
 						  <div class="accordion-body">
 							<input type="checkbox" id="people" name="people" value="people" onclick="getMetadata('metapeople', 'mention person')">
-								<label for="people">People</label><br>
+								<label for="people"class="label">People</label><br>
 								<div id="metapeople"></div>
 							<input type="checkbox" id="places" name="places" value="places" onclick="getMetadata('metaplaces', 'mention place')">
-								<label for="places">Places</label><br>
+								<label for="places" class="label">Places</label><br>
 								<div id="metaplaces"></div>
 							<input type="checkbox" id="orgs" name="orgs" value="orgs" onclick="getMetadata('metaorgs', 'mention org')">
-								<label for="orgs">Organizations</label><br>
+								<label for="orgs" class="label">Organizations</label><br>
 								<div id="metaorgs"></div>
 							<input type="checkbox" id="concepts" name="concepts" value="concepts" onclick="getMetadata('metaconcepts', 'mention concept')">
-								<label for="concepts">Concepts</label></div>
+								<label for="concepts" class="label">Concepts</label></div>
 								<div id="metaconcepts"></div>
 						</div>
 					</div>
@@ -172,14 +172,19 @@
 						<br>
 						(Spoiler alert: it's probably not <span class="mention concept" about="animal">humans</span>). </p>		
 																											
-						<p id="date">August 5, 2019</p>
-						<br>
-						<p id="author">Author: <span class="mention person" about="ChristineRo" data-sort="RoChristine" data-label="Christine Ro" url="https://www.christinero.com/">Christine Ro</span></p>
-							
-						<p id="other">Journalist of the <span class="mention org" about="BBC" data-sort="BBC" data-label="BBC" url="https://www.bbc.com/">BBC</span>, she even works for the <span class="mention org" about="IIED" data-sort="IIED" data-label="International Institute for Environment and Development" url="https://en.wikipedia.org/wiki/International_Institute_for_Environment_and_Development">International Institute for Environment and Development</span>. More at this link: <a href="https://www.christinero.com/">https://www.christinero.com/</a></p>
-
+						<p class="author">Author: <span class="mention person" about="ChristineRo" data-sort="RoChristine" data-label="Christine Ro" url="https://www.christinero.com/">Christine Ro</span></p>
+						
+						<p class="date">August 5, 2019</p>
+						
+						<p class="license">Copyright © 2021 BBC. The BBC is not responsible for the content of external sites.</p>
+						
+						<p class="other">Journalist of the <span class="mention org" about="BBC" data-sort="BBC" data-label="BBC" url="https://www.bbc.com/">BBC</span>, she even works for the <span class="mention org" about="IIED" data-sort="IIED" data-label="International Institute for Environment and Development" url="https://en.wikipedia.org/wiki/International_Institute_for_Environment_and_Development">International Institute for Environment and Development</span>. More <a href="https://www.christinero.com/">here</a>.</p>
+					
+						<p class="source"><a href="https://www.bbc.com/future/article/20190730-the-animals-that-will-survive-climate-change">Source</a></p>
+					
+					
 						<figure>
-							<img class="img" src="Pets\imgs\pet1\img1.png">
+							<img class="img" src="imgs\pet1\img1.png">
 						</figure>		
 				</div>
 				
@@ -191,18 +196,18 @@
 
 					<p>It may seem like just a thought experiment. But discussing which species are more, or less, able to survive <span class="mention concept" about="climate">climate</span> change is disturbingly concrete. As a blockbuster biodiversity report stated recently, <a href="https://www.bbc.com/news/science-environment-48133143?ocid=wsnews.chat-apps.in-app-msg.whatsapp.trial.link1_.auin">one in every four species</a> currently faces extinction. Much of this vulnerability is linked to <span class="mention concept" about="climate">climate</span> change, which is bringing about higher temperatures, <a href="http://www.bbc.com/future/story/20171130-the-ambitious-plan-to-stop-the-ground-from-sinking">sea level rise</a>, more variable conditions and more extreme weather, among other impacts.</p>
 
-					<p>You might also like:
+					<p>You might also like:</p>
 						<ul>
 							<li><a href="http://www.bbc.com/future/story/20190717-climate-change-wooden-architecture-concrete-global-warming">Could wooden buildings be a <span class="mention concept" about="climate">climate</span> change solution?</a></li>
 							<li><a href="http://www.bbc.com/future/story/20190408-how-catastrophes-can-change-the-path-of-humanity">How catastrophes can change the course of humanity</a></li>
 							<li><a href="http://www.bbc.com/future/story/20181102-what-can-i-do-about-climate-change">Ten simple ways to act on <span class="mention concept" about="climate">climate</span> change</a></li>
 						</ul>
-					</p>
+					
 								
 						<p>Some caveats are in order. While the seriousness of <span class="mention concept" about="climate">climate</span> change is undeniable, it's impossible to know exactly how those effects will play out for species vulnerability, especially far into the future. <a href="https://www.the-scientist.com/features/identifying-future-victims-of-climate-change-64347">Methods of forecasting vulnerability are ever evolving</a>, while limited and inconsistent data, plus the complex interactions of policies, land-use changes, and ecological effects, mean that projections aren't set in stone. <span class="mention concept" about="climate">climate</span> change vulnerability assessments have had <a href="https://phys.org/news/2018-10-urgent-species-threatened-climate.html">biases and blind spots</a> (just as <span class="mention concept" about="animal">humans</span> do more generally). <span>(Read more about <a href="http://www.bbc.com/future/story/20190304-human-evolution-means-we-can-tackle-climate-change">how our cognitive biases prevent <span class="mention concept" about="climate"> climate</span> action</a>)</span>. Moreover, the indirect effects that are responsible for many <span class="mention concept" about="climate">climate</span> change impacts on populations, such as in the food chain, are <a href="https://royalsocietypublishing.org/doi/full/10.1098/rspb.2012.1890">more complex to model</a> than direct effects.</p>
 						
 						<figure class="credits">
-							<img class="img" src="Pets\imgs\pet1\img2.png">
+							<img class="img" src="imgs\pet1\img2.png">
 							<figcaption>
 								<span>Some species of <span class="mention place" about="Australia" data-label="Australia" data-wikidata-id="Q408" url="https://en.wikipedia.org/wiki/Australia">Australia</span>’s <span class="mention concept" about="animal">quolls</span> already have been made locally extinct by invasive species, a trend that will intensify with <span class="mention concept" about="climate">climate</span> change</span>
 								<span class="credit">(Credit: Getty Images)</span>
@@ -212,7 +217,7 @@
 						<p>Another source of uncertainty has to do with life forms' capacity to adapt. Take <span class="mention concept" about="animal">ectotherms</span> (cold-blooded <span class="mention concept" about="animal">animal</span> like <span class="mention concept" about="animal">reptiles</span> and <span class="mention concept" about="animal">amphibians</span>), which have historically been <a href="https://www.scientificamerican.com/article/warming-threatens-reptiles-more-than-birds-and-mammals/?redirect=1">slower to adapt to climatic change</a> than <span class="mention concept" about="animal">endotherms</span>. For one thing, they are less able to adjust their body temperatures. But there are exceptions, like the <span class="mention concept" about="animal">American bullfrog</span>, which may actually find more habitable environments as a consequence of warming.</p>
 						
 						<figure class="credits">
-							<img class="img" src="Pets\imgs\pet1\img3.png">
+							<img class="img" src="imgs\pet1\img3.png">
 							<figcaption>
 								<span>The <span class="mention concept" about="animal">American bullfrog</span> could be one of few species to benefit from global warming</span>
 								<span class="credit">(Credit: Getty Images)</span>
@@ -234,12 +239,12 @@
 						
 						<p>Importantly, though, the uniquely devastating nature of the current human-made <span class="mention concept" about="climate">climate</span> crisis means that we can't fully rely on benchmarks from the past.</p>
 
-						<p>“The <span class="mention concept" about="climate">climate</span> change that we see in the future will differ in many ways from the <span class="mention concept" about="climate">climate</span> change that we've seen in the past”, notes <span class="mention person" about="JamieCarr" data-sort="CarrJamie" data-label="Jamie Carr" url="http://www.thebookgroup.com/jamie-carr">Jamie Carr</span>, an outreach officer for the <span class="mention org" about="ClimateChangeSpecialistGroup" data-label="Climate Change Specialist Group" data-sort="ClimateChangeSpecialistGroup" url="http://ccsg-iucn.com/"> <span class="mention concept" about="climate">Climate</span> Change Specialist Group</span> of the <span class="mention org" about="IUCNSpeciesSurvivalCommission" data-label="IUCN Species Survival Commission" data-label="IUCNSpeciesSurvivalCommission" url="https://en.wikipedia.org/wiki/International_Union_for_Conservation_of_Nature">IUCN Species Survival Commission</span>.</p>
+						<p>“The <span class="mention concept" about="climate">climate</span> change that we see in the future will differ in many ways from the <span class="mention concept" about="climate">climate</span> change that we've seen in the past”, notes <span class="mention person" about="JamieCarr" data-sort="CarrJamie" data-label="Jamie Carr" url="http://www.thebookgroup.com/jamie-carr">Jamie Carr</span>, an outreach officer for the <span class="mention org" about="ClimateChangeSpecialistGroup" data-label="Climate Change Specialist Group" data-sort="ClimateChangeSpecialistGroup" url="http://ccsg-iucn.com/"> <span class="mention concept" about="climate">Climate</span> Change Specialist Group</span> of the <span class="mention org" about="IUCNSpeciesSurvivalCommission" data-label="IUCN Species Survival Commission" url="https://en.wikipedia.org/wiki/International_Union_for_Conservation_of_Nature">IUCN Species Survival Commission</span>.</p>
 
 						<p>The historical record does point to the tenacity of <span class="mention concept" about="animal">cockroaches</span>. These largely unloved critters “have survived every mass extinction event in history so far”, says <span class="mention person" about="AsmeretAsefawBerhe" data-sort="BerheAsmeretAsefaw" data-label="Asmeret Asefaw Berhe" url="https://en.wikipedia.org/wiki/Asmeret_Asefaw_Berhe">Asmeret Asefaw Berhe</span>, a soil biogeochemist at the <span class="mention org" about="UniversityofCalifornia" data-label="University of California" data-sort="UniversityofCalifornia" url="https://en.wikipedia.org/wiki/University_of_California">University of California</span>, Merced. For instance, <span class="mention concept" about="animal">cockroaches</span> adapted to an increasingly arid <span class="mention place" about="Australia">Australia</span>, tens of millions of years ago, by <a href="https://royalsocietypublishing.org/doi/full/10.1098/rspb.2015.2869">starting to burrow into soil</a>.</p>
 						
 						<figure class="credits">
-							<img class="img" src="Pets\imgs\pet1\img4.png">
+							<img class="img" src="imgs\pet1\img4.png">
 							<figcaption>
 								<span><span class="mention concept" about="animal">Cockroaches</span> have survived every mass extinction event in history thus far</span>
 								<span class="credit">(Credit: Getty Images)</span>
@@ -253,7 +258,7 @@
 						<p>As a comparison, take an <span class="mention concept" about="animal">animal</span> like the <span class="mention concept" about="animal">koala</span>. <span class="mention concept" about="animal">Koalas</span> eat primarily eucalyptus leaves, which are becoming less nutritious due to increasing CO2 levels in the atmosphere. As a result, <a href="https://www.iucn.org/sites/dev/files/import/downloads/fact_sheet_red_list_koala_v2.pdf"> <span class="mention concept" about="climate">climate</span> change is increasing their risk of starvation</a>.</p>
 						
 						<figure class="credits">
-							<img class="img" src="Pets\imgs\pet1\img5.png">
+							<img class="img" src="imgs\pet1\img5.png">
 							<figcaption>
 								<span><span class="mention concept" about="climate">Climate</span> change is increasing the risk of starvation for <span class="mention concept" about="animal">koalas</span></span>
 								<span class="credit">(Credit: Getty Images)</span>
@@ -267,7 +272,7 @@
 						<p>Species that <span class="mention person" about="JamieCarr" data-sort="CarrJamie" data-label="Jamie Carr">Carr</span> calls “mobile generalists”, which can move and adapt to different environments, are likely to be more durable in the face of <span class="mention concept" about="climate">climate</span> change. While this adaptability is generally positive, it might come at a cost to other parts of an ecosystem. Invasive species like <span class="mention concept" about="animal">cane toads</span>, which are poisonous, have led to local extinctions of other species like <a href="https://theconversation.com/how-indigenous-expertise-improves-science-the-curious-case-of-shy-lizards-and-deadly-cane-toads-113997"> <span class="mention concept" about="animal">quolls</span> (carnivorous <span class="mention concept" about="animal">marsupials</span>) and <span class="mention concept" about="animal">monitors</span> (large <span class="mention concept" about="animal">lizards</span>)</a> in <span class="mention place" about="Australia" data-label="Australia" data-wikidata-id="Q408">Australia</span>. And <span class="mention person" about="JessicaHellmann" data-sort="HellmannJessica" data-label="Jessica Hellmann">Hellmann</span> says that the versatility of invasive plant species “leads to the worry that, in addition to losing vulnerable species, a warmer world will be a weedier world”. The weeds typically found along roadsides may be especially long-lasting in comparison with other <span class="mention concept" about="plant">plants</span>.</p>
 						
 						<figure class="credits">
-							<img class="img" src="Pets\imgs\pet1\img6.png">
+							<img class="img" src="imgs\pet1\img6.png">
 							<figcaption>
 								<span><span class="mention concept" about="animal">Deer</span>, which thrive in states of change and transition, may be more resilient</span>
 								<span class="credit">(Credit: Getty Images)</span>
@@ -282,10 +287,10 @@
 
 						<p>“They are pretty much uncoupled from the surface of our planet and I doubt that <span class="mention concept" about="climate">climate</span> change will impact them in the least,” he says. “Humanity didn't even know they existed until 1977. Their energy comes from the core of our Earth rather than from the Sun, and their already extreme habitat is unlikely to be altered by changes happening at the ocean surface.”</p>
 
-						<p>Similarly,<span class="mention person" about="DouglasSheil" data-sort="SheilDouglas" data-label="Douglas Sheil" url="https://www.wur.nl/en/Persons/Douglas-prof.dr.-RD-Douglas-Sheil.htm">Douglas Sheil</span>, a tropical forest ecologist at the <span class="mention org" about="NorwegianUniversityofLifeSciences" data-label="Norwegian University of Life Sciences" data-sort="NorwegianUniversityofLifeSciences" url="https://en.wikipedia.org/wiki/Norwegian_University_of_Life_Sciences">Norwegian University of Life Sciences</span>, suggests that “at some point in the future the only vertebrate species surviving in <span class="mention place" about="Africa" data-label="Africa" data-wikidata-id="Q15" url="https://en.wikipedia.org/wiki/Africa">Africa</span> might be a <span class="mention concept" about="animal">blind cave fish</span> deep underground”. As in the deep sea hydrothermal vents, “many species remain undiscovered and thus unknown – <span class="mention place" about="Europe" data-label="Europe" data-wikidata-id="Q46"url="https://en.wikipedia.org/wiki/Europe">Europe</span>’s first <span class="mention concept" about="animal">cave fish</span> was only found in <span class="mention place" about="Germany" data-label="Germany" data-wikidata-id="Q183" url="https://en.wikipedia.org/wiki/Germany">Germany</span> in 2015.”</p>
+						<p>Similarly, <span class="mention person" about="DouglasSheil" data-sort="SheilDouglas" data-label="Douglas Sheil" url="https://www.wur.nl/en/Persons/Douglas-prof.dr.-RD-Douglas-Sheil.htm">Douglas Sheil</span>, a tropical forest ecologist at the <span class="mention org" about="NorwegianUniversityofLifeSciences" data-label="Norwegian University of Life Sciences" data-sort="NorwegianUniversityofLifeSciences" url="https://en.wikipedia.org/wiki/Norwegian_University_of_Life_Sciences">Norwegian University of Life Sciences</span>, suggests that “at some point in the future the only vertebrate species surviving in <span class="mention place" about="Africa" data-label="Africa" data-wikidata-id="Q15" url="https://en.wikipedia.org/wiki/Africa">Africa</span> might be a <span class="mention concept" about="animal">blind cave fish</span> deep underground”. As in the deep sea hydrothermal vents, “many species remain undiscovered and thus unknown – <span class="mention place" about="Europe" data-label="Europe" data-wikidata-id="Q46" url="https://en.wikipedia.org/wiki/Europe">Europe</span>’s first <span class="mention concept" about="animal">cave fish</span> was only found in <span class="mention place" about="Germany" data-label="Germany" data-wikidata-id="Q183" url="https://en.wikipedia.org/wiki/Germany">Germany</span> in 2015.”</p>
 						
 						<figure class="credits">
-							<img class="img" src="Pets\imgs\pet1\img7.png">
+							<img class="img" src="imgs\pet1\img7.png">
 							<figcaption>
 								<span>Heat-adapted organisms and microbes living in extreme environments are likely 
 								to be less affected by <span class="mention concept" about="climate">climate</span> change</span>
@@ -305,7 +310,7 @@
 						<p>In the words of the <span class="mention org" about="InternationalUnionforConservationofNature">IUCN</span>’s <span class="mention person" about="JamieCarr">Carr</span>, “It doesn't sound like a very pretty world.”</p>
 						
 						<figure class="credits">
-							<img class="img" src="Pets\imgs\pet1\img8.png">
+							<img class="img" src="imgs\pet1\img8.png">
 							<figcaption>
 								<span>Endangered <span class="mention concept" about="plant">plants</span> like the <span class="mention concept" about="plant">Brodiaea</span> are likely to be increasingly vulnerable with <span class="mention concept" about="climate">climate</span> change</span>
 								<span class="credit">(Credit: Getty Images)</span>
@@ -329,23 +334,29 @@
 
 				    <p class="subtitle">The people of <span class="mention concept" about="Middle Ages">medieval Europe</span> were devoted to their <span class="mention concept" about="dog">dogs</span>; one great French <span class="mention concept" about="dog">dog-lover</span> declared that the greatest defect of the <span class="mention concept" about="breed" data-label="breed" url="https://en.wikipedia.org/wiki/Breed">species</span> was that they ‘lived not long enough’. </p>
 																																	
-					<p id="date">October 3, 2019</p>
-					<br>
-					<p id="author">Author: <span class="mention person" about="BeatriceJohnston" data-sort="JohnstonBeatrice" data-label="Beatrice Johnston" url="https://ca.linkedin.com/in/beatrice-johnston-564261180">Beatrice Johnston</span></p>
-							
-					<p id="other">Author working for <a href="https://www.historytoday.com/author/beatrice-johnston">historytoday.com</a></p>
-							
+					<p class="author">Author: <span class="mention person" about="BeatriceJohnston" data-sort="JohnstonBeatrice" data-label="Beatrice Johnston" url="https://ca.linkedin.com/in/beatrice-johnston-564261180">Beatrice Johnston</span></p>
+					
+					<p class="date">October 3, 2019</p>
+					
+					<p class="license">Database rights and all other intellectual property rights belong to History Today Ltd</p>	
+					
+					<p class="other">Author working for <a href="https://www.historytoday.com/author/beatrice-johnston">historytoday.com</a></p>
+						
+					
+					
+					<p class="source"><a href="https://www.historytoday.com/miscellanies/world-medieval-dogdom">Source</a></p>
+						
 					<figure class="credits">
-						<img class="img" src="Pets\imgs\pet2\img1.jpg">
+						<img class="img" src="imgs\pet2\img1.jpg">
 						<figcaption>
-							<span>Detail from <em>Tacuinum Sanitatis</em>, <span class="mention concept" about="Middle Ages">14th century</span> <span class="mention concept" about="Middle Ages">medieval handbook of health</span>.</span>
+							<span>Detail from <span class="em">Tacuinum Sanitatis</span>, <span class="mention concept" about="Middle Ages">14th century</span> <span class="mention concept" about="Middle Ages">medieval handbook of health</span>.</span>
 						</figcaption>
 					</figure>	
 				</div>
 			
 			<!--Article 2 content-->
 				<div class="article">
-					<p><span id="cap">T</span>he <span class="mention concept" about="Middle Ages">later middle ages</span>, and the years immediately following, were one of the most <span class="mention concept" about="dog">‘doggy' periods</span> in history. Hunting and hawking were by far the most popular sports of the leisured classes, who also liked keeping <span class="mention concept" about="dog">dogs</span> simply as pets; and the rest of the population used them for protection and herding. Performing <span class="mention concept" about="dog">dogs</span> were much admired, and people loved to hear fabulous yarns of the extraordinary fidelity and intelligence of <span class="mention concept" about="dog">dogs</span>.</p>
+					<p class="one"><span id="cap">T</span>he <span class="mention concept" about="Middle Ages">later middle ages</span>, and the years immediately following, were one of the most <span class="mention concept" about="dog">‘doggy' periods</span> in history. Hunting and hawking were by far the most popular sports of the leisured classes, who also liked keeping <span class="mention concept" about="dog">dogs</span> simply as pets; and the rest of the population used them for protection and herding. Performing <span class="mention concept" about="dog">dogs</span> were much admired, and people loved to hear fabulous yarns of the extraordinary fidelity and intelligence of <span class="mention concept" about="dog">dogs</span>.</p>
 
 					<p>Indeed, the great <span class="mention person" about="DukeofBerry" data-sort="DukeofBerry" data-label="DukeofBerry" url="https://en.wikipedia.org/wiki/Duke_of_Berry">Duke of Berry</span> went personally to see a <span class="mention concept" about="dog">dog</span> that refused to leave its master's grave, and gave a sum of money to a neighbour to keep the faithful beast in food for the rest of its days. True, rabies was unpleasantly common; but that was one of the ills that flesh is heir to, not to be held against the canine race – and for the bite of a mad <span class="mention concept" about="dog">dog</span> you had a wide choice of remedies, ranging from goat's liver to sea bathing.</p>
 
@@ -355,7 +366,7 @@
 
 				
 					<figure class="credits">
-							<img class="img" src="Pets\imgs\pet2\img2.jpg">
+							<img class="img" src="imgs\pet2\img2.jpg">
 							<figcaption>
 								<span>Detail from The Unicorn is Found (from the Unicorn Tapestries), 1495–1505. Metropolitan Museum of Art.</span>
 							</figcaption>
@@ -365,9 +376,9 @@
 
 					<p>The smaller ‘these puppies' are, he goes on to say, the more pleasure they provide as</p>
 
-					<blockquote>
+					<span class="blockquote">
 						<p>plafellows for minsing mistresses to beare in their bosoms to succour with sleep in bed and nourish with meate at board, to lie in their laps and licke their lips as they lie in their wagons and coches ... Some of this kind of people delight more in their <span class="mention concept" about="dog">dogs</span>, that are deprived of all possiblities of reason, than they do in children that are capable of wisdome and judgement</p>
-					</blockquote>
+					</span>
 
 					<p>It has a familiar ring, and this stern admonisher would have been painfully shocked by the clerical author of an earlier and popular encyclopedia who listed among the commendable traits of the species the fact that a <span class="mention concept" about="dog">dog</span> will warn his mistress and her lover of the master's approach. But moral discussions apart, what were these toys like? Some of them resembled pugs, but with longer noses. They came with long hair and short, the smooth-coated being more common, and extremes of build such as dachshund legs were not to be found.</p>
 
@@ -378,7 +389,7 @@
 					<p>But owners' notions varied, then as now, and a lady protagonist of hunting stated that <span class="mention concept" about="breed">spaniels</span> and <span class="mention concept" about="breed">grey<span class="mention concept" about="dog">hounds</span></span> slept on beds, proving that <span class="mention concept" about="dog">dogs</span>’ tastes remain the same. Actually, <span class="mention concept" about="dog">dogs</span> were regularly present at the kind of functions to which we would never dream of admitting them. They were often in evidence at royal courts, and, etiquette rules notwithstanding, the <span class="mention person" about="DukeofBerry">Duke of Berry</span>’s Très Riches Heures depicts two small <span class="mention concept" about="dog">dogs</span> right on the table at a ducal feast while in front of it a servant feeds an expectant-looking <span class="mention concept" about="breed">greyhound</span>.</p>
 					
 					<figure class="credits">
-							<img class="img" src="Pets\imgs\pet2\img3.jpg">
+							<img class="img" src="imgs\pet2\img3.jpg">
 							<figcaption>
 								<span>Detail from Très Riches Heures du duc de Berry, c.1416. Wiki Commons.</span>
 							</figcaption>
@@ -390,7 +401,7 @@
 
 					<p>The average man's <span class="mention concept" about="dog">dog</span>, however, earned his keep. In a society with no police and plenty of lawless characters, the watch <span class="mention concept" about="dog">dog</span> had an important place. For maximum efficiency he was supposed to be shut up by day to sleep so as to be fully on guard at night. Many guardians were simply big <span class="mention concept" about="dog">dogs</span>, but the most highly regarded were usually mastiffs (something like their modern descendants) or alaunts.</p>
 
-					<p>Of Spanish origin, <span class="mention concept" about="breed">alaunts</span> were large, active beasts built something like grey<span class="mention concept" about="dog">hounds</span>, but heavier, with coarse heads, short muzzles and prick ears (possibly cropped). They came in various colours, preferably white with black spots near the ears. The better-bred ones, or <span class="mention concept" about="breed"><em>alaunts gentils</em></span> were valued for hunting, but the coarser variety were in demand as watch <span class="mention concept" about="dog">dogs</span> and were used by butchers to help herd cattle – they could, it was noted, be fed cheaply on ‘the foule thinges of the boochers rowe’.</p>
+					<p>Of Spanish origin, <span class="mention concept" about="breed">alaunts</span> were large, active beasts built something like grey<span class="mention concept" about="dog">hounds</span>, but heavier, with coarse heads, short muzzles and prick ears (possibly cropped). They came in various colours, preferably white with black spots near the ears. The better-bred ones, or <span class="mention concept" about="breed"><span class="em">alaunts gentils</span></span> were valued for hunting, but the coarser variety were in demand as watch <span class="mention concept" about="dog">dogs</span> and were used by butchers to help herd cattle – they could, it was noted, be fed cheaply on ‘the foule thinges of the boochers rowe’.</p>
 
 					<p>They were capable of holding an escaped ox, which made them the obvious choice for bull-baiting. They had a reputation for ferocity and contemporary illustrations often show them carefully muzzled. Shepherds and swineherds, of course, had to have <span class="mention concept" about="dog">dogs</span>, but they were of no well-defined type and were as much for protection against thieves and wolves as for herding.</p>
 
@@ -398,10 +409,10 @@
 
 					<p>The ubiquitous <span class="mention concept" about="breed">terrier</span> was also on the scene and was used, as his name implies, in pursuing foxes to their earths, but it is disappointing to his modern friends to find few references to him. Apparently he was simply taken for granted, and fox-hunting rated little notice in those days, as our practical forbears preferred edible game.</p>
 
-					<p><span class="mention concept" about="breed">Spaniels</span> (so called because they came from Spain) were required for the popular sport of hawking, which attracted many as being both cheaper and less strenuous than hunting. The distressingly sheeplike build of these early <span class="mention concept" about="breed">spaniels</span> would pain modern fanciers. They were wavy-coated, fairly large and usually more leggy than most of their descendants, with shorter leg ‘feathers’. Their tails were not generally cut, and it is tempting to speculate that the <span class="mention concept" about="breed">bob-tailed spaniels</span> in the <em>Très Riches Heures</em> are early Brittanys, which are nowadays born short-tailed.</p>
+					<p><span class="mention concept" about="breed">Spaniels</span> (so called because they came from Spain) were required for the popular sport of hawking, which attracted many as being both cheaper and less strenuous than hunting. The distressingly sheeplike build of these early <span class="mention concept" about="breed">spaniels</span> would pain modern fanciers. They were wavy-coated, fairly large and usually more leggy than most of their descendants, with shorter leg ‘feathers’. Their tails were not generally cut, and it is tempting to speculate that the <span class="mention concept" about="breed">bob-tailed spaniels</span> in the <span class="em">Très Riches Heures</span> are early Brittanys, which are nowadays born short-tailed.</p>
 
 					<figure class="credits">
-							<img class="img" src="Pets\imgs\pet2\img4.jpg">
+							<img class="img" src="imgs\pet2\img4.jpg">
 							<figcaption>
 								<span>Hawking Party, c. 1500–1530, South Netherlandish. Metropolitan Museum of Art.</span>
 							</figcaption>
@@ -413,17 +424,17 @@
 
 					<p>That great <span class="mention concept" about="Middle Ages">14th-century sportsman</span>, <span class="mention person" about="GastonIIIdeFoix-Béarn" data-sort="deFoix-BéarnGastonIII" data-label="GastonIIIdeFoix-Béarn" url="https://en.wikipedia.org/wiki/Gaston_III,_Count_of_Foix">Gaston</span>, Comte de Foix, author of the finest <span class="mention concept" about="Middle Ages">medieval</span> hunting book, described <span class="mention concept" about="breed">spaniels</span> as faithful, affectionate and fond of going ‘before their maistre and playeng with their taile’, but he must have suffered from some particularly exuberant member of the breed, for he complains that, if you are taking your <span class="mention concept" about="breed">grey<span class="mention concept" about="dog">hounds</span></span> for a walk and have a <span class="mention concept" about="breed">spaniel</span> with you, he will chase geese, cattle or horses, and the <span class="mention concept" about="breed">grey<span class="mention concept" about="dog">hounds</span></span> through ‘his eggyng' will attack too, and thus he is responsible for ‘al the ryot and al the harm’.</p>
 
-					<p>He further declares that out hunting <span class="mention concept" about="breed">spaniels</span> are fighters and put the <span class="mention concept" about="dog">hounds</span> off the line, which is manifestly unfair as they were never intended for hunting. But <span class="mention person" about="GastonIIIdeFoix-Béarn">Gaston</span> was a fanatical Nimrod and devoted to his running <span class="mention concept" about="dog">hounds</span>. <span class="mention person" about="CharlesIer d'Orléans" data-sort="CharlesIerd'Orléans" data-label="CharlesIerd'Orléans" url="Duke Charles of Orleans">Duke Charles of Orleans</span>, on the other hand, wrote poems to his favourite <span class="mention concept" about="breed">spaniel</span>, ‘Briquet of the drooping ears' (<em>Briquet aux pendantes oreilles</em>) – a charming one in praise of his field prowess and enthusiasm, and another beginning: ‘Let Baude range the bushes, old Briquet takes his rest ... an old fellow can do but little’, which sounds the sadder note of the true <span class="mention concept" about="dog">dog-lover's</span> affection for his ageing servant.</p>
+					<p>He further declares that out hunting <span class="mention concept" about="breed">spaniels</span> are fighters and put the <span class="mention concept" about="dog">hounds</span> off the line, which is manifestly unfair as they were never intended for hunting. But <span class="mention person" about="GastonIIIdeFoix-Béarn">Gaston</span> was a fanatical Nimrod and devoted to his running <span class="mention concept" about="dog">hounds</span>. <span class="mention person" about="CharlesIer d'Orléans" data-sort="CharlesIerd'Orléans" data-label="CharlesIerd'Orléans" url="Duke Charles of Orleans">Duke Charles of Orleans</span>, on the other hand, wrote poems to his favourite <span class="mention concept" about="breed">spaniel</span>, ‘Briquet of the drooping ears' (<span class="em">Briquet aux pendantes oreilles</span>) – a charming one in praise of his field prowess and enthusiasm, and another beginning: ‘Let Baude range the bushes, old Briquet takes his rest ... an old fellow can do but little’, which sounds the sadder note of the true <span class="mention concept" about="dog">dog-lover's</span> affection for his ageing servant.</p>
 
 					<figure class="credits">
-							<img class="img" src="Pets\imgs\pet2\img5.jpg">
+							<img class="img" src="imgs\pet2\img5.jpg">
 							<figcaption>
 								<span>'Le repas de chasse' from the Livre de la Chasse, c. 1406–1407. Wiki Commons.</span>
 							</figcaption>
 					</figure>
 					
 
-					<p>The most fashionable sport of the time was stag-hunting, and for this both <span class="mention concept" about="breed">grey<span class="mention concept" about="dog">hounds</span></span> and ‘running <span class="mention concept" about="dog">hounds</span>’ (also termed ‘<em>raches</em>') were used, often together, the <span class="mention concept" about="breed">grey<span class="mention concept" about="dog">hounds</span></span> being slipped to stop the game quickly, or put in as relays to the pack, or, in the great battues sometimes organised for visiting notables, to turn back driven deer to the archers.</p>
+					<p>The most fashionable sport of the time was stag-hunting, and for this both <span class="mention concept" about="breed">grey<span class="mention concept" about="dog">hounds</span></span> and ‘running <span class="mention concept" about="dog">hounds</span>’ (also termed ‘<span class="em">raches</span>') were used, often together, the <span class="mention concept" about="breed">grey<span class="mention concept" about="dog">hounds</span></span> being slipped to stop the game quickly, or put in as relays to the pack, or, in the great battues sometimes organised for visiting notables, to turn back driven deer to the archers.</p>
 
 					<p>The truly serious huntsman, however, liked best to watch the running <span class="mention concept" about="dog">hounds</span> work alone, for <span class="mention concept" about="breed">grey<span class="mention concept" about="dog">hounds</span></span> and <span class="mention concept" about="breed">alaunts</span>, says <span class="mention person" about="GastonIIIdeFoix-Béarn" >Gaston de Foix</span>, finish the job too quickly but the ‘raches' must ‘hunt al the day questyng and makyng gret melody in their lan-gage and saying gret villeny and chydeng the beest that thei enchace’. These <span class="mention concept" about="dog">dogs</span> were rather like modern <span class="mention concept" about="breed">blood<span class="mention concept" about="dog">hounds</span></span> and a little like the type of <span class="mention concept" about="dog">hounds</span> used for ‘still' hunting – heavily built with powerful fore-quarters and short-muzzled heavy heads.</p>
 
@@ -433,13 +444,13 @@
 
 					
 					<figure class="credits">
-							<img class="img" src="Pets\imgs\pet2\img6.jpg">
+							<img class="img" src="imgs\pet2\img6.jpg">
 							<figcaption>
 								<span>'The Kennel, Livre de la Chasse, c. 1406–1407. Morgan Museum.</span>
 							</figcaption>
 					</figure>
 
-					<p>These animals, with the working <span class="mention concept" about="breed">grey<span class="mention concept" about="dog">hounds</span>, were excellently cared for. Wealthy owners set up astonishingly high standards of kennel management, described in careful detail in <span class="mention person" about="GastonIIIdeFoix-Béarn">Gaston de Foix</span>’s ‘<em>Traité de la Chasse</em>’. The kennel where the <span class="mention concept" about="dog">hounds</span> sleep, he says, should be built of wood a foot clear of the ground, with a loft for greater coolness in summer and warmth in winter, and it should also have a chimney to warm the occupants when they are cold or wet.</p>
+					<p>These animals, with the working <span class="mention concept" about="breed">grey</span><span class="mention concept" about="dog">hounds</span>, were excellently cared for. Wealthy owners set up astonishingly high standards of kennel management, described in careful detail in <span class="mention person" about="GastonIIIdeFoix-Béarn">Gaston de Foix</span>’s ‘<span class="em">Traité de la Chasse</span>’. The kennel where the <span class="mention concept" about="dog">hounds</span> sleep, he says, should be built of wood a foot clear of the ground, with a loft for greater coolness in summer and warmth in winter, and it should also have a chimney to warm the occupants when they are cold or wet.</p>
 
 					<p>It should be enclosed in a sunny yard, and the door should be left open so that ‘the houndes may go withoute to play when them liketh for it is grete likyng for the houndes whan thei may goon in and out at their lust' – as every <span class="mention concept" about="dog">dog</span> lover knows. <span class="mention concept" about="dog">hounds</span> should be taken for a walk once or twice a day and allowed to run and play ‘in a fair medow in the sun’, and must be taken to a spot where they may eat grass to heal themselves if they are sick.</p>
 
@@ -448,7 +459,7 @@
 					<p>Most of the kennel chores were performed by a <span class="mention concept" about="dog">dog-boy</span>, an embryo huntsman who was expected to start learning his trade at the age of about seven and who, in addition to his other duties, had to learn the names and colours of the <span class="mention concept" about="dog">hounds</span> and how to spin horsehair for their couplings. Besides this, he or some other child must be constantly in the kennel to prevent fights, even at night. In addition, it is laid down, in the uncompromising fashion of the age, that he should love his master and the <span class="mention concept" about="dog">hounds</span>, and, furthermore, that he should be beaten if he fails to do as he is told.</p>
 
 					<figure class="credits">
-							<img class="img" src="Pets\imgs\pet2\img7.jpg">
+							<img class="img" src="imgs\pet2\img7.jpg">
 							<figcaption>
 								<span>Livre de la chasse, fols, c. 1406–1407. Morgan Museum.</span>
 							</figcaption>
@@ -463,7 +474,7 @@
 					<p>He recommends that a suspected case be quarantined for four days to discover whether or not is is in fact madness. No kind of madness is regarded as curable, but prompt treatment of the bite of a mad <span class="mention concept" about="dog">dog</span> might prevent its development. Nearly as much space is devoted to various types of so-called ‘mange’, and some remarkable salves are described.</p>
 
 					<figure class="credits">
-							<img class="img" src="Pets\imgs\pet2\img8.jpg">
+							<img class="img" src="imgs\pet2\img8.jpg">
 							<figcaption>
 								<span>Medallion with Varlet with Horn and Hound, c. 1240–60. Metropolitan Museum of Art.</span>
 							</figcaption>
@@ -472,7 +483,7 @@
 
 					<p>There are detailed instructions on the care of injuries, including the splinting of broken bones, and <span class="mention person" about="GastonIIIdeFoix-Béarn">Gaston</span>’s English translator, the <span class="mention person" about="GastonIIIdeFoix-Béarn">Duke of York</span>, who was Master of Game to <span class="mention person" about="HenryIV" data-sort="HenryIV" data-label="HenryIV" url="https://en.wikipedia.org/wiki/Henry_IV_of_England">Henry IV</span>, winds up with this exhortation: ‘God forbid that for a little labour or cost of this medicine, man should see his good kind <span class="mention concept" about="dog">hound</span> perish, that before hath made him so many comfortable disports at divers times in hunting.’</p>
 
-					<p>In view of the <span class="mention concept" about="Middle Ages">medieval habit</span> of attributing moral qualities and moral responsibilities to animals, it is not surprising to find that <span class="mention concept" about="dog">dogs</span> sometimes received some of the benefits of religion. It is recorded that one <span class="mention person" about="DukeofOrleans" data-sort="DukeofOrleans" data-label="DukeofOrleans" url="https://en.wikipedia.org/wiki/Duke_of_Orl%C3%A9ans">Duke of Orleans</span> had masses said for his <span class="mention concept" about="dog">dogs</span>; and there was, of course, the famous <em>messe des chiens</em> on St Hubert’s day, a custom which still survives. Certain <span class="mention concept" about="dog">hounds</span> of <span class="mention person" about="CharlesVI" data-sort="CharlesVI" data-label="CharlesVI" url="https://en.wikipedia.org/wiki/Charles_VI_of_France">Charles VI</span> of <span class="mention place" about="France" data-label="France" data-wikidata-id="Q142" url="https://en.wikipedia.org/wiki/France">France</span> which fell ill were sent on a pilgrimage to hear mass at St Mesmer in order that they might recover.</p>
+					<p>In view of the <span class="mention concept" about="Middle Ages">medieval habit</span> of attributing moral qualities and moral responsibilities to animals, it is not surprising to find that <span class="mention concept" about="dog">dogs</span> sometimes received some of the benefits of religion. It is recorded that one <span class="mention person" about="DukeofOrleans" data-sort="DukeofOrleans" data-label="DukeofOrleans" url="https://en.wikipedia.org/wiki/Duke_of_Orl%C3%A9ans">Duke of Orleans</span> had masses said for his <span class="mention concept" about="dog">dogs</span>; and there was, of course, the famous <span class="em">messe des chiens</span> on St Hubert’s day, a custom which still survives. Certain <span class="mention concept" about="dog">hounds</span> of <span class="mention person" about="CharlesVI" data-sort="CharlesVI" data-label="CharlesVI" url="https://en.wikipedia.org/wiki/Charles_VI_of_France">Charles VI</span> of <span class="mention place" about="France" data-label="France" data-wikidata-id="Q142" url="https://en.wikipedia.org/wiki/France">France</span> which fell ill were sent on a pilgrimage to hear mass at St Mesmer in order that they might recover.</p>
 
 					<p>There was even once a <span class="mention concept" about="dog">dog saint</span>; near <span class="mention place" about="Lyon" data-label="Lyon" data-wikidata-id="Q456" url="https://en.wikipedia.org/wiki/Lyon">Lyon</span> a <span class="mention concept" about="breed">greyhound</span> was said to have killed a dangerous serpent attacking his master's child and, like the mythical Gelert, was himself slain on suspicion when the child could not be found. Afterwards his remorseful master buried him honourably beneath a cairn of stones where trees were planted in his memory. Later the <span class="mention concept" about="dog">dog</span> was revered as St Greyhound, or St Guinefort, and rites were held at the grave for sickly children suspected of being changelings. Before long, of course, the ecclesiastical authorities caught up with St Greyhound and the grave was destroyed.</p>
 
@@ -480,7 +491,7 @@
 
 					<p>Weird as these beasts may look by <span class="mention org" about="Kennel Club" data-label="Kennel Club" data-sort="KennelClub" url="https://en.wikipedia.org/wiki/Kennel_club"> Kennel Club</span> standards, their owners recognised and surrendered to their essential dogginess, engagingly the same, whether in snub-nosed Briquet or this year's 'Best-in-Show'. From the boy with the mongrel to the champion's master, what <span class="mention concept" about="dog">dog-owner</span> does not echo <span class="mention person" about="GastonIIIdeFoix-Béarn">Gaston de Foix</span>’s five-centuries-old plaint that 'the moost defaute of <span class="mention concept" about="dog">houndes</span> is that thei lyven not longe inowe'?</p>
 
-					<p><em>This article originally appeared in the February 1979 issue of History Today with the title ‘The <span class="mention concept" about="dog">dogs</span> of Yesteryear’.</em></p>	
+					<p><span class="em">This article originally appeared in the February 1979 issue of History Today with the title ‘The <span class="mention concept" about="dog">dogs</span> of Yesteryear’.</span></p>	
 			    </div>
 			</div>
 	
@@ -493,15 +504,18 @@
 					<p class="subtitle">
 						Bogus stories of wild <span class="mention concept" about="animal">animals</span> flourishing in quarantined cities gives false hope—and viral fame.</p>
 																																
-					<p id="date">March 20, 2020</p>
-					<br>	
-					<p id="author">Author:
+					<p class="author">Author:
 					<span class="mention person" about="NatashaDaly" data-sort="DalyNatasha" data-label="Natasha Daly" url="https://www.nationalgeographic.it/autore/natasha-daly">Natasha Daly</span></p>
+					
+					<p class="date">March 20, 2020</p>
+					
+					<p class="license">National Geographic Partners, LLC. All rights reserved</p>
+					
+					<p class="source"> <a href="https://www.nationalgeographic.com/animals/article/coronavirus-pandemic-fake-animal-viral-social-media-posts">Source</a></p>
 							
 					
-					
 					<figure class="credits">
-					<img class="img" src="Pets\imgs\pet3\img1.png">
+					<img class="img" src="imgs\pet3\img1.png">
 					<figcaption>
 						<span>As the normally bustling canals of <span class="mention place" about="Venice" data-sort="Venice" data-label="Venice" url="https://en.wikipedia.org/wiki/Venice">Venice</span> became deserted amid pandemic quarantines, viral <span class="mention concept" about="socialmedia">social media</span> posts claimed <span class="mention concept" about="animal">swans</span> and <span class="mention concept" about="animal">dolphins</span> were returning to the waters. It wasn't true. The canal water, nonetheless, is clearer because of the decrease in boat activity.</span>
 						<br>
@@ -512,7 +526,7 @@
 			
 			<!--Article 3 content-->
 				<div class="article">
-					<p><span id="cap">S</span>cattered amid a relentless barrage of news about COVID-19 case surges, quarantine orders, and medical supply shortages on <span class="mention concept" about="socialmedia">Twitter</span> this week, some happy stories softened the blows: <span class="mention concept" about="animal">Swans</span> had returned to deserted Venetian canals. <span class="mention concept" about="animal">Dolphins</span> too. And a group of <span class="mention concept" about="animal">elephants</span> had sauntered through a village in <span class="mention place" about="Yunnan" data-sort="Yunnan" data-label="Yunnan" url="https://en.wikipedia.org/wiki/Yunnan">Yunnan</span>, <span class="mention place" about="China" data-sort="China" data-label="China" url="https://en.wikipedia.org/wiki/China">China</span>, gotten drunk off corn wine, and passed out in a tea garden.</p>
+					<p class="one"><span id="cap">S</span>cattered amid a relentless barrage of news about COVID-19 case surges, quarantine orders, and medical supply shortages on <span class="mention concept" about="socialmedia">Twitter</span> this week, some happy stories softened the blows: <span class="mention concept" about="animal">Swans</span> had returned to deserted Venetian canals. <span class="mention concept" about="animal">Dolphins</span> too. And a group of <span class="mention concept" about="animal">elephants</span> had sauntered through a village in <span class="mention place" about="Yunnan" data-sort="Yunnan" data-label="Yunnan" url="https://en.wikipedia.org/wiki/Yunnan">Yunnan</span>, <span class="mention place" about="China" data-sort="China" data-label="China" url="https://en.wikipedia.org/wiki/China">China</span>, gotten drunk off corn wine, and passed out in a tea garden.</p>
 
 					<p>These reports of wildlife triumphs in countries hard-hit by the novel <span class="mention concept" about="Covid-19">coronavirus</span> got hundreds of thousands of retweets. They went viral on Instagram and Tik Tok. They made news headlines. If there's a silver lining of the pandemic, people said, this was <span class="mention concept" about="animal">it—animals</span> were bouncing back, running free in a humanless world.</p>
 
@@ -522,7 +536,10 @@
 
 					<p><span class="mention concept" about="socialmedia">Social media posts</span> claimed that, in the absence of humans, <span class="mention concept" about="animal">elephants</span> came into a village in <span class="mention place" about="China">China</span>, got drunk on corn wine, and passed out. The story has since been debunked.</p>
 					
-					<blockquote class="twitter-tweet tw-align-center"><p lang="en" dir="ltr">While humans carry out social distancing, a group of 14 <span class="mention concept" about="animal">elephants</span> broke into a village in <span class="mention place" about="Yunnan">Yunan</span> province, looking for corn and other food. They ended up drinking 30kg of corn wine and got so drunk that they fell asleep in a nearby tea garden. 😂 <a href="https://t.co/ykTCCLLCJu">pic.twitter.com/ykTCCLLCJu</a></p>&mdash; Meh (@Spilling_The_T) <a href="https://twitter.com/Spilling_The_T/status/1240387988682571776?ref_src=twsrc%5Etfw">March 18, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+					
+					<blockquote class="twitter-tweet" data-dnt="true" align="center"><p lang="en" dir="ltr">While humans carry out social distancing, a group of 14 elephants broke into a village in Yunan province, looking for corn and other food. They ended up drinking 30kg of corn wine and got so drunk that they fell asleep in a nearby tea garden. 😂 <a href="https://t.co/ykTCCLLCJu">pic.twitter.com/ykTCCLLCJu</a></p>— Meh (@Spilling_The_T) <a href="https://twitter.com/Spilling_The_T/status/1240387988682571776?ref_src=twsrc%5Etfw">March 18, 2020</a></blockquote>
+					<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+								
 
 					<p>The phenomenon highlights how quickly eye-popping, too-good-to-be-true rumors can spread in times of crisis. People are <a href="https://www.sciencedirect.com/science/article/abs/pii/S0747563213001192">compelled to share posts that make them emotional</a>. When we're feeling stressed, joyous <span class="mention concept" about="animal">animal</span> footage can be an irresistible salve. The spread of social phenomena is so powerful, <a href="https://www.nature.com/articles/srep19767">2016 research shows</a>, that it can follow same models that trace the <span class="mention concept" about="Covid-19">contagion</span> of <span class="mention concept" about="Covid-19">epidemics</span>.</p>
 
@@ -534,17 +551,9 @@
 					
 					<p>A viral tweet claimed <span class="mention concept" about="animal">swans</span> had returned to the canals of <span class="mention place" about="Venice">Venice</span>. In reality, <span class="mention concept" about="animal">swans</span> have long frequented the canals of <span class="mention place" about="Burano">Burano</span>, an island in the greater <span class="mention place" about="Venice">Venice</span> metropolitan area.</p>
 					
-					<div class="static--twitter">
-						<link rel="stylesheet" href="//interactives.natgeofe.com/vendor/css/partial-aem-main.css">
-						<blockquote class="twitter-tweet" data-twitter-extracted-i1631695237742441066="true">
-							<p dir="ltr" lang="en">
-								Here's an unexpected side effect of the <span class="mention concept" about="Covid-19">pandemic</span> - the water's flowing through the canals of <span class="mention place" about="Venice">Venice</span> is clear for the first time in forever. The fish are visible, the <span class="mention concept" about="animal">swans</span> returned.
-							<a href="https://t.co/2egMGhJs7f">pic.twitter.com/2egMGhJs7f</a>
-							</p>
-							— Kaveri 🇮🇳 (@ikaveri)
-							<a href="https://twitter.com/ikaveri/status/1239660248207589383?ref_src=twsrc%5Etfw">March 16, 2020</a>
-						</blockquote>
-					</div>
+					
+					
+					
 					
 					<p><span class="mention person" about="KaveriGanapathyAhuja" >Ahuja</span>, who lives in <span class="mention place" about="NewDelhi" data-sort="NewDelhi" data-label="New Delhi" url="https://en.wikipedia.org/wiki/New_Delhi">New Delhi</span>, <span class="mention place" about="India" data-sort="India" data-label="India" url="https://en.wikipedia.org/wiki/India">India</span>, says she saw some photos on <span class="mention concept" about="socialmedia">social media</span> and decided to put them together in a tweet, unaware that the <span class="mention concept" about="animal">swans</span> were already regulars in <span class="mention place" about="Burano">Burano</span> before the <span class="mention concept" about="Covid-19">coronavirus</span> tore across <span class="mention place" about="Italy" data-sort="Italy" data-label="Italy" url="https://en.wikipedia.org/wiki/Italy">Italy</span>.</p>
 					
@@ -554,7 +563,7 @@
 
 
 					<figure class="credits">
-						<img class="img" src="Pets\imgs\pet3\img2.png">
+						<img class="img" src="imgs\pet3\img2.png">
 						<figcaption>
 							<span class="mention concept" about="animal">Swans</span> are regular visitors to the canals of <span class="mention place" about="Burano">Burano</span>.
 							<br>
@@ -575,7 +584,7 @@
 
 					<p>Despite <span class="mention concept" about="socialmedia">social media</span> posts claiming otherwise, dolphins are not swimming in <span class="mention place" about="Venice">Venice</span>’s canals. This video footage was taken in Sardinia.</p>
 					
-					<blockquote class="twitter-tweet tw-align-center"><p lang="en" dir="ltr"><span class="mention place" about="Venice">Venice</span> hasn&#39;t seen clear canal water in a very long time. Dolphins showing up too. Nature just hit the reset button on us <a href="https://t.co/RzqOq8ftCj">pic.twitter.com/RzqOq8ftCj</a></p>&mdash; Luca (@lucadb) <a href="https://twitter.com/lucadb/status/1239863383354224641?ref_src=twsrc%5Etfw">March 17, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+					<blockquote class="twitter-tweet tw-align-center"><p lang="en" dir="ltr"><span class="mention place" about="Venice">Venice</span> hasn&#39;t seen clear canal water in a very long time. Dolphins showing up too. Nature just hit the reset button on us <a href="https://t.co/RzqOq8ftCj">pic.twitter.com/RzqOq8ftCj</a></p>&mdash; Luca (@lucadb) <a href="https://twitter.com/lucadb/status/1239863383354224641?ref_src=twsrc%5Etfw">March 17, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 					<p>“I think people really want to believe in the power of nature to recover,” says <a href="https://discover.wooster.edu/sclayton/">Susan Clayton</a>, a professor of psychology and environmental studies at the College of Wooster, in Ohio. “People hope that, no matter what we've done, nature is powerful enough to rise above it.” (<a href="https://www.nationalgeographic.com/animals/article/great-white-shark-meme-news-photography-animals-peschak">Read about how this incredible—and real—shark photo went viral.</a>)</p>
 
