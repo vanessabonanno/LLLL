@@ -70,7 +70,7 @@ body {
 	color: #262A1C;
 	text-align: justify;
 	text-justify: inter-word;
-	background-color: white;
+	background-color: #212529;
 	background-image: url('imgs/fjords.jpg');
 	background-position: 50% 99%;
 	background-size: 100%;
@@ -457,4 +457,10 @@ ul {
 
 .row {
 	margin-top: 1%;
+}
+
+
+
+.navbar {
+	min-height: 100px;
 }
