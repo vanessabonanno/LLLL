@@ -39,8 +39,8 @@ h1 {
 h2 {
 	color: #383b3e;
 	font-family: "ArtsCrafts";
-	text-align: center
-	font-size: 10px;
+	text-align: justify;
+	font-size: 12px;
 }
 
 
@@ -177,10 +177,10 @@ a:active {
 /*metadata top box formatting*/
 .metadata {
 	display: block;
-    	padding-top: -80px;
-    	padding-right: -80px;
-    	padding-bottom: -80px;
-    	padding-left: -80px;
+    	padding-top: -200px;
+    	padding-right: -200px;
+    	padding-bottom: -200px;
+    	padding-left: -200px;
 	width:100%;
 	height: 25vh;
 	overflow:hidden;
@@ -207,12 +207,12 @@ a:active {
 	font-family: 'Morris';
 	display: block;
 	margin-top: 5%;
-    	padding-top: -80px;
-    	padding-right: -80px;
-    	padding-bottom: -80px;
-    	padding-left: -80px;
+    	padding-top: -200px;
+    	padding-right: -200px;
+    	padding-bottom: -200px;
+    	padding-left: -200px;
 	width: 100%;
-	height: 46vh;
+	height: 75vh;
 	text-align: justify;
 	overflow-y: scroll;
 	overflow-x: auto;
