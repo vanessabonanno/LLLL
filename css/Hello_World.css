@@ -154,10 +154,10 @@ blockquote {
 
 figure {
 	float: left; 
-	margin: 0% 5% 0% 5%;
+	margin: 5% 5% 5% 5%;
 	text-indent: initial;
 	border: 5px ;
-	border-style: inset;
+	border-style: thin;
 	border-color: black;
 	
 }
