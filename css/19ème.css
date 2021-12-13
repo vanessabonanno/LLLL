@@ -183,7 +183,7 @@ a:active {
 	overflow:hidden;
 	overflow-y: scroll;
 	overflow-x: auto;
-	border: 10px solid transparent;
+	border-style: solid;
 	border-image: url(imgs/Morris-border-metadata.png) 25% round;
 	border-image-width: 70px;
 	box-sizing: border-box;
@@ -214,7 +214,7 @@ a:active {
 	overflow-y: scroll;
 	overflow-x: auto;
 	font-size: 12px;
-	border: 10px solid transparent;
+	border-style: solid;
 	border-image: url(imgs/Morris-border-article.png) 25% round;
 	border-image-width: 70px;
 	box-sizing: border-box;
