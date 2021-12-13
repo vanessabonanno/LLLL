@@ -174,7 +174,7 @@ a:active {
 /*metadata top box formatting*/
 .metadata {
 	display: block;
-	box-sizing: content-box 
+	box-sizing: content-box; 
     	padding-top: 10px;
     	padding-right: 10px;
     	padding-bottom: 10px;
@@ -203,7 +203,7 @@ a:active {
 .article {
 	font-family: 'Morris';
 	display: block;
-	box-sizing: content-box 
+	box-sizing: content-box; 
 	margin-top: 5%;
     	padding-top: 10px;
     	padding-right: 10px;
