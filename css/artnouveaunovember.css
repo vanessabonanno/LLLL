@@ -102,6 +102,9 @@ p {
 	padding-left: 8%;
 	padding-right: 8%;
 	font-size: 16px;
+	hyphens: auto;
+	-webkit-hyphens: auto;
+    -ms-hyphens: auto;
 	}
 	
 .metadata li {
@@ -161,6 +164,9 @@ figcaption {
 	padding-right: 30%;
 	line-height: normal;
 	justify-content: center;
+	-webkit-hyphens: auto;
+    -ms-hyphens: auto;
+	hyphens: auto;
 }
 
 img {
@@ -439,7 +445,7 @@ iframe {
 	margin-top: 1%;
 }
 
-/* checkbox style 
-input[type='checkbox'] {
-	display: none;
-	}*/
+
+.navbar {
+	min-height: 100px;
+}
