@@ -29,8 +29,9 @@ body {
 	text-align: justify;
 	background-image: url('imgs/Marigold-william-morris.jpg');
 	background-position: left bottom;
-	background-size: 100px;
+	background-size: 100%;
 	background-repeat: no-repeat;
+	height: 100%;
 }
 
 h1 {
