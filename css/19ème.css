@@ -26,7 +26,6 @@
 /*text formatting*/
 html {
 	width: 100%;
-	
 }
 
 body {
@@ -34,8 +33,8 @@ body {
 	height: 100%;
 	background-image: url('imgs/Kelmscott Logo.jpg');
 	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: left bottom;
+	background-size: 10px;
+	background-position: 15px;;
 }
 
 h1 {
@@ -220,7 +219,7 @@ a:active {
     	padding-bottom: 2px;
     	padding-left: 2px;
 	width: 100%;
-	height: 48vh;
+	height: 50vh;
 	text-align: justify;
 	overflow-y: scroll;
 	overflow-x: auto;
