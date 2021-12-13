@@ -202,9 +202,10 @@ a:active {
 /*metadata top box formatting*/
 
 .metadata {
-    display: block;
+    	display: block;
+	cursor: url('imgs/Fantasma azul.ani'),auto;
 	margin-top: 5%;
-    padding: 2%;
+    	padding: 2%;
 	padding-left: 2%;
 	padding-right: 2%;
 	width: 100%;
@@ -213,7 +214,7 @@ a:active {
 	border: 10px #7FFF00;
 	border-style: solid;
 	border-width: medium;
-    scrollbar-width: thin;
+    	scrollbar-width: thin;
 }
 
 .metadata::-webkit-scrollbar {
@@ -230,6 +231,7 @@ a:active {
 
 .article {
 	display: block;
+	cursor: url('imgs/Fantasma azul.ani'),auto;
     	margin-top: 5%;
 	padding-top: 2%;
 	padding-right: 2%;
