@@ -24,6 +24,10 @@
 }
 
 /*text formatting*/
+html {
+	width: 100%;
+	
+}
 
 body {
 	text-align: justify;
