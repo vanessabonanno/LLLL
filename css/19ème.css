@@ -189,6 +189,7 @@ a:active {
 	border-image: url(imgs/Morris-border-metadata.png) 25% round;
 	border-width: 70px;
 	border-style: solid;
+	box-sizing: border-box;
 }
 
 .metadata::-webkit-scrollbar {
@@ -219,6 +220,7 @@ a:active {
 	border-image: url(imgs/Morris-border-article.png) 25% round;
 	border-width: 70px;
 	border-style: solid;
+	box-sizing: border-box;
 }
 
 .article::-webkit-scrollbar {
