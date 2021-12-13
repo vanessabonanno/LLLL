@@ -128,7 +128,7 @@ div.article {
 }
 
 p {
-	margin-bottom: 0%;
+	margin-bottom: 2%;
 }
 
 
@@ -154,13 +154,14 @@ blockquote {
 
 figure {
 	float: left; 
-	margin: 5% 5% 5% 5%;
+	margin-top: 2%;
+	margin-bottom: 2%;
 	text-indent: initial;
 	border: 5px ;
 	border-style: thin;
-	border-color: black;
-	
+	border-color: black;	
 }
+
 figcaption {
 	color: #7FFF00;
 	font-family: "IMB";
@@ -178,6 +179,9 @@ img {
 iframe {
 	width: 100%    !important;
 	height: auto   !important;
+	filter: sepia(9%) brightness(83%) hue-rotate(194deg) saturate(743%) invert(3%);
+	webkit-filter: sepia(9%) brightness(83%) hue-rotate(194deg) saturate(743%) invert(3%);
+	moz-filter: sepia(9%) brightness(83%) hue-rotate(194deg) saturate(743%) invert(3%);
 	text-align: left;
 	display: inline;
 }
