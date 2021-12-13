@@ -203,8 +203,7 @@ a:active {
 
 .metadata {
     	display: block;
-	cursor: url('imgs/Fantasma azul.ani'),auto;
-	margin-top: 5%;
+	cursor: url('imgs/cursor.cur'),auto;
     	padding: 2%;
 	padding-left: 2%;
 	padding-right: 2%;
@@ -231,7 +230,7 @@ a:active {
 
 .article {
 	display: block;
-	cursor: url('imgs/Fantasma azul.ani'),auto;
+	cursor: url('imgs/cursor.cur'),auto;
     	margin-top: 5%;
 	padding-top: 2%;
 	padding-right: 2%;
