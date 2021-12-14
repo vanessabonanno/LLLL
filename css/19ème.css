@@ -99,13 +99,13 @@ p {
 	word-break: break-word;}
 
 blockquote {
-	font font-family:'Morris';
 	margin: 1.5em 10px;
   	padding: 0.5em 10px;
 }
 
 blockquote p {
  	display: block;
+	font font-family:'Morris';
 	border-image: url(imgs/Morris-border-metadata.png) 25% round;
 	border-width: 30px;
 	border-style: solid;
@@ -199,7 +199,7 @@ a:active {
 	overflow-y: scroll;
 	overflow-x: auto;
 	border-style: solid;
-	border-width: 80px;
+	border-width: 50px;
 	border-image: url(imgs/Morris-border-metadata.png) 25% round;
 	border-image-width: 150px;
 }
@@ -231,7 +231,7 @@ a:active {
 	overflow-x: auto;
 	font-size: 12px;
 	border-style: solid;
-	border-width: 80px;
+	border-width: 50px;
 	border-image: url(imgs/Morris-border-article.png) 25% round;
 	border-image-width: 150px;
 }
