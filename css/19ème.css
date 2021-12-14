@@ -119,6 +119,7 @@ blockquote p {
 .question {
 	font-weight: bold;
 	font-family: 'Morris';
+	white-space: pre;
 }	
 
 #cap {
@@ -138,7 +139,8 @@ blockquote p {
 
 footer {
 	color: #383b3e;
-	font-size: 8px;	
+	font-size: 8px;
+	white-space: pre;
 }
 
 /*figure formating*/
