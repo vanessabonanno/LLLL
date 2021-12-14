@@ -101,7 +101,8 @@ p {
 
 .long {
 	display: inline-block;
-	word-break: break-word;}
+	word-break: break-word;
+}
 
 blockquote {
 	margin: 1.5em 10px;
@@ -119,7 +120,6 @@ blockquote p {
 .question {
 	font-weight: bold;
 	font-family: 'Morris';
-	white-space: pre;
 }	
 
 #cap {
@@ -140,7 +140,6 @@ blockquote p {
 footer {
 	color: #383b3e;
 	font-size: 8px;
-	white-space: pre;
 }
 
 /*figure formating*/
