@@ -251,7 +251,7 @@ a:active {
 	border-style: solid;
 	border-width: medium;
 	scrollbar-width: thin;
-	font-size: 15px;
+	font-size: 10px;
 }
 
 .article::-webkit-scrollbar {
