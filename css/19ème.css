@@ -31,10 +31,6 @@ html {
 body {
 	text-align: justify;
 	height: 100%;
-	background-image: url('imgs/Kelmscott Logo.jpg');
-	background-repeat: no-repeat;
-	background-size:200px 100px;
-	background-position: left bottom;
 }
 
 h1 {
