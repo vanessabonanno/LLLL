@@ -29,12 +29,8 @@ html {
 }
 
 body {
-	text-align: justify;
+	text-align: left;
 	height: 100%;
-	background-image: url('imgs/Marigold-william-morris.jpg');
-	background-size: 100%;
-    	background-repeat: no-repeat;
-    	background-attachment: fixed;
 }
 
 h1 {
@@ -47,7 +43,7 @@ h1 {
 h2 {
 	color: #383b3e;
 	font-family: "ArtsCrafts";
-	text-align: justify;
+	text-align: left;
 	font-size: 12px;
 }
 
@@ -55,6 +51,7 @@ h2 {
 .subtitle {
 	color: #383b3e;
 	font-family: "ArtsCrafts";
+	text-align: center;
 	font-size: 10px;
 	font-weight: bold;
 }
@@ -63,12 +60,14 @@ h2 {
 	color: #383b3e;
 	font-family: "ArtsCrafts";
 	font-size: 10px;
+	text-align: left;
 }
 
 .date{
 	color: #383b3e;
 	font-family: "ArtsCrafts";
 	font-size: 10px;
+	text-align: right;
 }
 
 .license {
