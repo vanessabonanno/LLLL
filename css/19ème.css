@@ -34,7 +34,7 @@ body {
 	background-color: white;
 	background-image: url('imgs/Kelmscott Logo.jpg');
 	background-repeat: no-repeat;
-	background-size: 20px;
+	background-size: auto;
 	background-position: left center;
 }
 
