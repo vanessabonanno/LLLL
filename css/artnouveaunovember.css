@@ -410,6 +410,7 @@ iframe {
 .accordion {
 	font-family: 'Mont R';
 	font-size: 12px;
+	min-width: 160px;
 }
 
 .accordion .label {
@@ -446,11 +447,6 @@ iframe {
 
 
 .navbar {
-	min-height: 100px;
-	
-}
-
---bs-navbar-height {
 	min-height: 100px;
 	
 }
