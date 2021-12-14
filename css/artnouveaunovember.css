@@ -33,17 +33,18 @@
   src: url('fonts/Davys.ttf');
 }
 
-
 h1 {
 	display:block;
 	color: #221d0e;
 	font-family: 'Edda outline';
+	
 	text-align: center;
 	word-spacing: -1px;
 	letter-spacing: -1px;
 	font-size: 35px;
 	padding-left: 8%;
 	padding-right: 8%;
+	
 }
 
 
@@ -75,7 +76,7 @@ body {
 	background-color: rgba(241, 197, 172, 0.3);
 	background-image: url('imgs/latosx.jpg'), url('imgs/latodx.jpg');
 	background-position: left bottom, right bottom;
-	background-size: 130px, 130px;
+	background-size: 10%, 10%;
     background-repeat: no-repeat, no-repeat;
     background-attachment: fixed, fixed;
 }
@@ -284,11 +285,11 @@ iframe {
 }
 
 .metadata::-webkit-scrollbar-track {
-  background: rgba(224,187,147,255); /* color of the tracking area */
+  background: #dcc5a1; /* color of the tracking area */
 }
 
 .metadata::-webkit-scrollbar-thumb {
-  background-color: rgba(224,187,147,255);    /* color of the scroll thumb */
+  background-color: #221d0e;    /* color of the scroll thumb */
 }
 
 
@@ -306,12 +307,11 @@ iframe {
 
 
 .metadata::after {
-    content: url('imgs/end.png');
-	display: block;
-	padding-left: 20%;
-	padding-right: 20%;
+    content: url('imgs/end1.png');
+	display: flex;
+	padding-left: 24%;
+	
 }
-
 
 
 .article {
@@ -344,10 +344,9 @@ iframe {
 
 
 .article::after {
-    content: url('imgs/end.png');
-	display: block;
-	padding-left: 20%;
-	padding-right: 20%;
+    content: url('imgs/end1.png');
+	display: flex;
+	padding-left: 24%;
 }
 
 
@@ -448,4 +447,10 @@ iframe {
 
 .navbar {
 	min-height: 100px;
+	
+}
+
+--bs-navbar-height {
+	min-height: 100px;
+	
 }
