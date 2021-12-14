@@ -53,7 +53,7 @@ h1 {
 .title {
   color: #7FFF00;
   font-family: "IMB";
-  font-size: 100%;
+  font-size: 15px;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid #7FFF00; /* The typwriter cursor */
   white-space: normal; 
@@ -79,44 +79,44 @@ h1 {
 .subtitle {
 	color: #7FFF00;
 	font-family: "IMB";
-	font-size: 60%;
+	font-size: 10px;
 }
 
 .author {
 	color: #7FFF00;
 	font-family: "IMB";
-	font-size: 30%;
+	font-size: 8px;
 }
 
 .date { 
 	color: #7FFF00;
 	font-family: "IMB";
-	font-size: 30%;
+	font-size: 8px;
 }
 
 .license {
 	color: #7FFF00;
 	font-family: "IMB";
-	font-size: 30%;
+	font-size: 8px;
 }
 
 .other {
 	color: #7FFF00;
 	font-family: "IMB";
-	font-size: 30%;
+	font-size: 8px;
 }
 
 .source {
 	color: #7FFF00;
 	font-family: "IMB";
-	font-size: 30%;
+	font-size: 8px;
 }
 
 h2 {
 	color: #7FFF00;
 	font-family: "IMB";
 	text-align: left;
-	font-size: 60%;
+	font-size: 10px;
 	text-indent: initial;
 	margin-bottom: 2%;
 	margin-top: 2%;
@@ -148,7 +148,7 @@ blockquote {
 
 .footer {
 	color: #7FFF00;
-	font-size: 30%;	
+	font-size: 8px;	
 }
 /*figure formating*/
 
@@ -165,7 +165,7 @@ figure {
 figcaption {
 	color: #7FFF00;
 	font-family: "IMB";
-	font-size: 30%;
+	font-size: 8px;
 	text-indent: initial;
 }
 
@@ -251,7 +251,7 @@ a:active {
 	border-style: solid;
 	border-width: medium;
 	scrollbar-width: thin;
-	font-size: 70%;
+	font-size: 15px;
 }
 
 .article::-webkit-scrollbar {
