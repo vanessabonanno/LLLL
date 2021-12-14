@@ -227,6 +227,7 @@ a:active {
 /*article box formatting*/
 .article {
 	font-family: 'Morris';
+	word-spacing: -2px;
 	background-color: white;
 	display: block; 
 	margin-top: 5%;
