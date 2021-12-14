@@ -63,12 +63,12 @@
 				<li class="nav-item">
 				</li>
 			  </ul>
-			  <ul class="navbar-nav ms-auto">
+			  <ul class="navbar-nav ms-auto navbar-nav-scroll" style="--bs-scroll-height: 200px;">
 								
 				<li class="nav-item"><a class="nav-link" id="btn11" href="#" onclick="setStyleSheet('css/default.css')"><img alt="Default" src="icons/default.png" width="72" title="Default">
 				</a></li>
 			    <li class="nav-item"><a class="nav-link" id="btn7" href="#" onclick="setStyleSheet('css/preprint.css')"><img alt="Pre print" src="icons/manoscritto.png" width="72" title="Pre print"></a></li>
-				<li class="nav-item"><a class="nav-link" id="btn13" href="#"  onclick="setStyleSheet('css/19ème.css')"><img alt="Nineties" src="icons/19eme.png" width="72" title="19ème"></a></li>
+				<li class="nav-item"><a class="nav-link" id="btn13" href="#"  onclick="setStyleSheet('css/19ème.css')"><img alt="Nineties" src="icons/19eme.png" width="72" title="19ème"></a></li>
 			    <li class="nav-item"><a class="nav-link" id="btn8" href="#"  onclick="setStyleSheet('css/artnouveaunovember.css')"><img alt="Art Nouveau" src="icons/artnew.png" width="72" title="Art Nouveau"></a></li>			
 				<li class="nav-item"><a class="nav-link" id="btn9" href="#"  onclick="setStyleSheet('css/sixties.css')"><img alt="Sixties" src="icons/six.png" width="72" title="Sixties"></a></li>
 			    <li class="nav-item"><a class="nav-link" id="btn10" href="#"  onclick="setStyleSheet('css/Hello_World.css')"><img alt="Terminal" src="icons/computer.png" width="72"  title="Hello_World!"></a></li>
@@ -81,22 +81,23 @@
 	    </nav>
 	</header>	
 	
-	
-	<div id="bar-header" class="container mt-5">
+		
+	<div id="bar-header" class="container mt-5"> <!-- leave empty -->
 		<div class="row mt-5">
 		</div>
-	</div> 
-	
-<!--This is everything below the navbar-->
+	</div>	
 		
-	  <div class="container-fluid" id="art">		
+		
+		
+		<!-- articles -->
+		<div class="container-fluid" id="art">		
 		
 		  <div class="row">
 		  
 		  
 		  <!-- sidebar metadata viewer [Bootstrap] -->
 		  <!-- need to investigate "fieldset" element-->
-			<div class="col-2" id="metadata viewer">		
+			<div class="col-2" id="metadata_viewer">		
 			
 				<div class="accordion accordion-flush" id="accordionFlushExample">
 				
@@ -107,13 +108,13 @@
 						<div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
 							<div class="accordion-body">		
 								<input type="checkbox" id="checkbox1" onclick="getSubheadings('col1', 'subs1', 'subheading1')">
-									<label id="label1" for="checkbox1"></label><br>	
+									<label id="label1" for="checkbox1" class="label"></label><br>	
 									<div id="subs1"></div>
-								<input type="checkbox" id="checkbox2"  onclick="getSubheadings('col2', 'subs2', 'subheading2')">
-									<label id= "label2" for="checkbox2"></label><br>
+								<input type="checkbox" id="checkbox2"  onclick="getSubheadings('col2', 'subs2', 'subheading2') ">
+									<label id= "label2" for="checkbox2" class="label"></label><br>
 									<div id="subs2"></div>
 								<input type="checkbox" id="checkbox3" onclick="getSubheadings('col3', 'subs3', 'subheading3')">
-									<label id="label3" for="checkbox3"></label><br>
+									<label id="label3" for="checkbox3" class="label"></label><br>
 									<div id="subs3"></div>
 							</div>
 						</div>
@@ -147,7 +148,7 @@
 						<div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
 						  <div class="accordion-body">
 							<input type="checkbox" id="people" name="people" value="people" onclick="getMetadata('metapeople', 'mention person')">
-								<label for="people"class="label">People</label><br>
+								<label for="people"class="label" >People</label><br>
 								<div id="metapeople"></div>
 							<input type="checkbox" id="places" name="places" value="places" onclick="getMetadata('metaplaces', 'mention place')">
 								<label for="places" class="label">Places</label><br>
@@ -156,14 +157,13 @@
 								<label for="orgs" class="label">Organizations</label><br>
 								<div id="metaorgs"></div>
 							<input type="checkbox" id="concepts" name="concepts" value="concepts" onclick="getMetadata('metaconcepts', 'mention concept')">
-								<label for="concepts" class="label">Concepts</label></div>
+								<label for="concepts" class="label">Concepts</label>
 								<div id="metaconcepts"></div>
+							 </div> 
 						</div>
 					</div>
 				</div>	
-			</div>				
-		  	
-			
+			</div>
 		  
 			
 			<!--Article 1 metadata-->
