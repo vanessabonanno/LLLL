@@ -146,7 +146,8 @@ blockquote {
 	word-break: break-word;}
 
 .question {
-	font-weight: bold;
+	color: #7FFF00;
+	text-decoration: underline overline;
 }	
 
 .footer {
