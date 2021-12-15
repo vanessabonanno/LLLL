@@ -128,17 +128,13 @@ blockquote p {
 }	
 
 #cap {
-  	font-size: 40px;
+  	font-size: 60px;
   	font-family: 'Morris_Capitals';
   	margin-top: 0px;
-  	margin-right: 14px;
+  	margin-right: 0px;
   	margin-bottom: 0px;
   	float: left;
   	text-indent: 0px;
-}
-
-.one {
-	 text-indent: 0px;
 }
 
 
@@ -263,29 +259,6 @@ a:active {
   background-color:  #000000;    /* color of the scroll thumb */
 }
 
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 1024px) 
-  and (max-device-width: 1366px) 
-  and (-webkit-min-device-pixel-ratio: 1.5) {
-}
-
-/* Portrait */
-@media only screen 
-  and (min-device-width: 1024px) 
-  and (max-device-width: 1366px) 
-  and (orientation: portrait) 
-  and (-webkit-min-device-pixel-ratio: 1.5) {
-}
-
-/* Landscape */
-@media only screen 
-  and (min-device-width: 1024px) 
-  and (max-device-width: 1366px) 
-  and (orientation: landscape) 
-  and (-webkit-min-device-pixel-ratio: 1.5) {
-
-}
 
 /* Style for the navbar section */
 
