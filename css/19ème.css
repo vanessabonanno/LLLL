@@ -57,42 +57,36 @@ h2 {
 	font-family: "ArtsCrafts";
 	text-align: left;
 	font-size: 10px;
-	font-weight: bold;
 }
 
 .author{
 	color: #383b3e;
 	font-family: "ArtsCrafts";
 	font-size: 10px;
-	text-align: left;
 }
 
 .date{
 	color: #383b3e;
 	font-family: "ArtsCrafts";
 	font-size: 10px;
-	text-align: left;
 }
 
 .license {
 	color: #383b3e;
 	font-family: "ArtsCrafts";
 	font-size: 10px;
-	text-align: left;
 }
 
 .other {
 	color: #383b3e;
 	font-family: "ArtsCrafts";
 	font-size: 10px;
-	text-align: left;
 }
 
 .source {
 	color: #383b3e;
 	font-family: "ArtsCrafts";
 	font-size: 10px;
-	text-align: left;
 }
 
 p {
