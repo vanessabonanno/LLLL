@@ -137,6 +137,10 @@ blockquote {
 	padding-left: 5%;
 }
 
+.blockquote {
+	font-size: 10px;
+}
+
 .long {
 	display: inline-block;
 	word-break: break-word;}
